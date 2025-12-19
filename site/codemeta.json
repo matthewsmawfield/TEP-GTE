@@ -1,0 +1,31 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "ScholarlyArticle",
+  "name": "Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle",
+  "description": "Empirical validation of the Temporal Equivalence Principle through GNSS clock data analysis, demonstrating universal decay signatures (λ = 4,201 km), CMB alignment (5,570× variance ratio), and planetary event responses.",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Matthew Lukin",
+      "familyName": "Smawfield",
+      "@id": "https://orcid.org/0009-0003-8219-3159"
+    }
+  ],
+  "version": "0.1",
+  "datePublished": "2025-12-21",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "codeRepository": "https://github.com/matthewsmawfield/TEP-GTE",
+  "url": "https://matthewsmawfield.github.io/TEP-GTE/",
+  "identifier": "https://doi.org/10.5281/zenodo.18004833",
+  "keywords": [
+    "temporal equivalence principle",
+    "GNSS",
+    "atomic clocks",
+    "CMB alignment",
+    "dark matter",
+    "gravitational lensing",
+    "scalar-tensor gravity",
+    "synchronization holonomy",
+    "Vainshtein screening"
+  ]
+}

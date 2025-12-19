@@ -1,0 +1,240 @@
+<h1>2. Phenomenology</h1>
+
+<p>
+    This section presents the empirical findings without theoretical interpretation. The signal characteristics are established through three complementary empirical studies, each designed to address distinct validation requirements:
+</p>
+
+<p>
+    Paper 1 (Multi-Center Validation, 2023–2025): Cross-validation across three independent analysis centers (CODE, IGS, ESA) using 62.7 million station-pair measurements from 364 stations. This study established that the correlation structure is not processing-specific, achieving R² = 0.92–0.97 consistency across independent pipelines.
+</p>
+
+<p>
+    Paper 2 (25-Year Longitudinal Analysis, 2000–2025): Extended temporal baseline using CODE products with 165.2 million station pairs from 474 unique receivers. This long-span analysis enabled detection of previously inaccessible signatures including 18.6-year lunar nutation coupling and CMB frame alignment, confirming temporal stability over 25.3 years.
+</p>
+
+<p>
+    Paper 3 (Raw RINEX Validation, 2022–2024): Processing artifact elimination through analysis of raw GNSS observations using Single Point Positioning with broadcast ephemerides only. Analysis of 1.17 billion pair-samples across 539 stations achieved 100% detection rate across 72 independent metric combinations, confirming the signal exists in fundamental observables.
+</p>
+
+<p>
+    The convergence of findings across these three independent methodologies—each addressing different potential artifact sources—provides robust empirical foundation for the reported signatures.
+</p>
+
+<h2>2.1 Spatial Correlation Structure</h2>
+
+<p>
+    Clock frequency residuals exhibit systematic spatial structure that persists after removal of all modeled relativistic effects. The phase coherence between station pairs decays exponentially with geodesic distance according to:
+</p>
+
+<div class="equation">
+    $$C(r) = A \cdot \exp(-r/\lambda) + C_0$$
+</div>
+
+<p>
+    where r denotes the inter-station distance, λ the characteristic correlation length, A the amplitude, and C<sub>0</sub> the baseline offset. Fits to distance-binned means across approximately 28 bins achieve R² = 0.920–0.970 across all three analysis centers.
+</p>
+
+<p>
+    The correlation metric employed is the magnitude-weighted phase alignment index, computed via cross-spectral density analysis in the 10–500 μHz band (corresponding to periods of 33 minutes to 28 hours). This approach measures whether clock fluctuations are in phase regardless of amplitude—information that survives GNSS processing because network adjustment removes common-mode offsets while preserving differential phase structure. Magnitude weighting ensures that frequency bins with stronger cross-spectral power contribute proportionally more to the phase average, so the metric reflects genuine correlated signals rather than noise.
+</p>
+
+<p>
+    The primary result from the CODE 25-year analysis is a correlation length of λ = 4,201 ± 1,967 km. Cross-center validation yields consistent values: CODE reports λ = 3,330 km (95% CI: 1,198–5,918 km); IGS reports λ = 4,549 km (95% CI: 3,197–4,871 km); and ESA reports λ = 3,758 km (95% CI: 2,532–3,984 km). The coefficient of variation across centers is 18.2%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
+</p>
+
+<h2>2.2 Seven Independent Signatures</h2>
+
+<p>
+    The 25-year longitudinal analysis identifies seven statistically independent signatures, summarized in Table 1. Their joint occurrence under the null hypothesis has probability p ≈ 2×10<sup>−27</sup>, exceeding 10σ significance.
+</p>
+
+<table>
+    <caption>Table 1. Seven independent signatures identified in the 25-year GNSS analysis.</caption>
+    <thead>
+        <tr>
+            <th>Signature</th>
+            <th>Observed Value</th>
+            <th>Significance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Exponential Decay</td>
+            <td>λ = 4,201 ± 1,967 km</td>
+            <td>R² = 0.92–0.97</td>
+        </tr>
+        <tr>
+            <td>Spatial Anisotropy</td>
+            <td>EW/NS = 2.16</td>
+            <td>p &lt; 10<sup>−15</sup></td>
+        </tr>
+        <tr>
+            <td>Orbital Velocity Coupling</td>
+            <td>r = −0.888</td>
+            <td>5.1σ (0/5M surrogates)</td>
+        </tr>
+        <tr>
+            <td>CMB Frame Alignment</td>
+            <td>18.2° from CMB dipole</td>
+            <td>5,570× variance ratio</td>
+        </tr>
+        <tr>
+            <td>Planetary Events</td>
+            <td>56/156 significant (≥2σ)</td>
+            <td>2.8× above null rate</td>
+        </tr>
+        <tr>
+            <td>18.6-Year Nutation</td>
+            <td>R² = 0.641</td>
+            <td>p &lt; 10<sup>−8</sup></td>
+        </tr>
+        <tr>
+            <td>Semiannual Nutation</td>
+            <td>R² = 0.904</td>
+            <td>p &lt; 10<sup>−20</sup></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>2.3 CMB Frame Alignment</h2>
+
+<p>
+    The most striking result concerns the alignment of the anisotropy vector with the Cosmic Microwave Background dipole. To guard against confirmation bias, the analysis was conducted blind to the locations of known cosmological vectors. A multi-resolution grid search tested 65,341 independent sky directions, identifying the best-fit direction (RA = 186°, Dec = −4°) solely by maximizing the anisotropy ratio R(θ,φ) in the GNSS data. Only after the vector was fixed was it compared to the CMB dipole (RA = 168°, Dec = −7°).
+</p>
+
+<p>
+    The angular separation between the GNSS anisotropy vector and the CMB dipole is 18.2°. The raw p-value is p &lt; 10<sup>−15</sup>, and after Bonferroni correction for the 65,341 trials (accounting for the look-elsewhere effect), the alignment remains significant at greater than 5.8σ.
+</p>
+
+<p>
+    Bootstrap resampling analysis refines the significance estimate by accounting for spatial correlation in the grid search. The 65,341 tested directions are not statistically independent due to spatial smoothing in the anisotropy field. Resampling 10,000 bootstrap iterations with block sizes matched to the correlation length of the anisotropy ratio field (approximately 20° angular scale) yields an effective number of independent trials N<sub>eff</sub> ≈ 800–1,200, substantially smaller than the naive 65,341. With N<sub>eff</sub> ~ 1,000, the Bonferroni-corrected significance remains at 4.2σ (p ~ 10<sup>−5</sup> after correction), confirming that the CMB alignment is robust to conservative multiple-comparison accounting. The 18.2° separation falls within the bootstrap 95% confidence interval (±22°), indicating that the observed alignment is consistent with the CMB dipole within statistical uncertainty.
+</p>
+
+<p>
+    Within the TEP framework, this alignment admits a natural interpretation: the CMB frame corresponds to the cosmological rest frame where scalar field gradients ∇φ are minimized. Earth's motion at v ≈ 369 km/s through this frame creates a velocity-dependent anisotropy in the effective screening length λ, thereby modulating the clock correlation structure.
+</p>
+
+<p>
+    Reference frame discrimination strongly favors the CMB interpretation over alternatives. The CMB frame yields r = 0.747 (R² = 55.7%), whereas the Solar Apex yields r = 0.007 (R² = 0.01%)—a variance ratio of 5,570×. Beyond statistical preference, the Solar Apex hypothesis is geometrically incompatible with the observations: the Solar Apex vector (+30° Dec) predicts North-South anisotropy, directly contradicting the observed East-West dominance. Only the CMB vector (−7° Dec) is geometrically consistent with the observed anisotropy plane. Hemisphere asymmetry corroborates this conclusion: Southern stations show r = −0.79 while Northern stations show r = +0.25, matching the geometry expected from the CMB velocity vector.
+</p>
+
+<h2>2.4 Planetary Event Responses</h2>
+
+<p>
+    Analysis of 156 planetary conjunction and opposition events reveals a pattern that constrains the underlying mechanism. The detection rate is 56/156 events showing significant response at the 2σ level or above, with 25 surviving Bonferroni correction (16.0%). Random dates show 5.5× smaller effect sizes (Mann-Whitney p &lt; 10<sup>−17</sup>). Notably, however, neither GM/r² (force) nor GM/r³ (tidal gradient) scaling is detected (all p &gt; 0.5).
+</p>
+
+<p>
+    This absence of mass scaling is informative. Mercury produces comparable response rates (42.5%) to Jupiter (34.8%) despite approximately 10<sup>6</sup>× smaller gravitational influence at Earth. Classical tidal forcing would produce mass-dependent signatures scaling with GM/r³ (tidal gradient), while direct gravitational acceleration would scale as GM/r² (force). The observed absence of both scalings (all p > 0.5) distinguishes the phenomenon from conventional gravitational effects—neither tidal deformation nor fifth-force acceleration. The pattern is consistent with a threshold-dependent or geometric (alignment-driven) mechanism rather than a continuous mass-scaling effect.
+</p>
+
+<p>
+    The elevated detection rate (2.8× above null) combined with the absence of mass scaling constrains the mechanism to geometric rather than energetic coupling. Critically, the absence of GM/r² scaling persists in raw RINEX data processed with RTKLIB Single Point Positioning—a method that processes each station independently without network adjustment or common-mode filtering. This rules out the hypothesis that the null scaling is merely an artifact of CODE/IGS processing and supports the interpretation that the TEP coupling is intrinsically geometric: the network responds to planetary configuration geometry rather than gravitational field strength.
+</p>
+
+<h3>2.4.1 Proposed Mechanism: Velocity-Field Gradient Modulation</h3>
+
+<p>
+    The pattern of planetary event responses—elevated detection rate without mass scaling—suggests a specific physical mechanism consistent with TEP's velocity-dependent framework. The hypothesis is that planetary alignments modulate Earth's motion through the scalar field φ gradient, creating transient changes in the effective screening length that depend on geometric configuration rather than gravitational amplitude.
+</p>
+
+<p>
+    <strong>Physical Mechanism:</strong> Earth moves through the φ field at velocity v<sub>⊕</sub> ≈ 30 km/s (orbital) + 369 km/s (CMB frame). Planetary configurations create time-varying perturbations to the local field gradient ∇φ through their own screening halos. When planets align with Earth's velocity vector relative to the CMB frame, constructive interference enhances the velocity-dependent anisotropy; when perpendicular, destructive interference suppresses it. The effect depends on the alignment angle θ between the planetary position and Earth's CMB velocity vector:
+</p>
+
+<div class="equation">
+    $$\Delta\lambda(\theta) \propto \lambda_0 \left[1 + \epsilon \cos\theta\right]$$
+</div>
+
+<p>
+    where ε is a small coupling parameter (~10<sup>−3</sup>) and θ is measured from the CMB dipole direction. This predicts maximum modulation when planets are aligned with or opposite to the CMB velocity vector (θ = 0° or 180°), and null modulation when perpendicular (θ = 90°).
+</p>
+
+<p>
+    <strong>Why Mass Scaling is Absent:</strong> The mechanism operates through geometric alignment rather than gravitational force. Each planet creates a local perturbation to ∇φ within its own screening radius r<sub>V</sub> ∝ M<sup>1/3</sup>. However, the Earth-planet distance (AU scale) far exceeds any planetary r<sub>V</sub> (Mercury: ~100 km; Jupiter: ~5,000 km), placing Earth in the unscreened regime where the field perturbation has decayed to a threshold-dependent residual. The detection depends on whether this residual exceeds a critical threshold for modulating Earth's local screening length, not on the perturbation's amplitude. This threshold behavior explains why Mercury (smaller M but closer) produces comparable detection rates to Jupiter (larger M but farther).
+</p>
+
+<p>
+    <strong>Testable Prediction:</strong> Event detection rates should correlate with the alignment angle between planetary position and the CMB dipole direction. Specifically, events with |θ| < 30° (aligned) should show detection rates >60%, while events with 60° < |θ| < 120° (perpendicular) should show rates <30%. Analysis of the 156 planetary events stratified by alignment angle provides a falsifiable test of this geometric hypothesis.
+</p>
+
+<h2>2.5 Selectivity Profile: Inertial Interferometer</h2>
+
+<p>
+    The pattern of detections and non-detections characterizes the network's sensitivity and provides powerful constraints on viable physical mechanisms. Table 2 summarizes this selectivity profile.
+</p>
+
+<table>
+    <caption>Table 2. Network selectivity profile: detections versus null results.</caption>
+    <thead>
+        <tr>
+            <th>Observable</th>
+            <th>Result</th>
+            <th>Interpretation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Orbital velocity</td>
+            <td>r = −0.888, 5.1σ</td>
+            <td>Sensitive to kinematic dynamics</td>
+        </tr>
+        <tr>
+            <td>Semiannual nutation</td>
+            <td>R² = 0.904</td>
+            <td>Sensitive to inertial orientation</td>
+        </tr>
+        <tr>
+            <td>18.6-year nutation</td>
+            <td>R² = 0.641</td>
+            <td>Sensitive to long-period dynamics</td>
+        </tr>
+        <tr>
+            <td>CMB-frame motion</td>
+            <td>r = 0.747</td>
+            <td>Sensitive to cosmic rest frame</td>
+        </tr>
+        <tr>
+            <td>Planetary alignments</td>
+            <td>2.8× above null</td>
+            <td>Sensitive to geometric configuration</td>
+        </tr>
+        <tr>
+            <td>GM/r² and GM/r³ scaling</td>
+            <td>Both null (p &gt; 0.5)</td>
+            <td>Insensitive to gravitational amplitude (force or tidal)</td>
+        </tr>
+        <tr>
+            <td>Solar rotation (27-day)</td>
+            <td>Null (r &lt; 0.09)</td>
+            <td>Insensitive to solar surface phenomena</td>
+        </tr>
+        <tr>
+            <td>Lunar standstill</td>
+            <td>Null</td>
+            <td>Insensitive to static geometry</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    This selectivity profile is highly discriminating. The network responds to velocity-dependent and orientation-dependent phenomena while remaining blind to gravitational amplitude and solar surface effects. This pattern suggests that the GNSS network functions as an inertial interferometer—measuring velocity-dependent correlation geometry—rather than as a gravimeter measuring Newtonian force.
+</p>
+
+<p>
+    The distinction is fundamental. A gravimeter would show GM/r² (force) scaling, while a differential tidal sensor would show GM/r³ (gradient) scaling; in both cases, Mercury's influence would be negligible compared to Jupiter's. An inertial interferometer responds to geometric configuration regardless of mass—precisely what is observed. The CMB frame alignment, with its 5,570× variance ratio over galactic motion, identifies the operative kinematic reference at cosmic scales: Earth's motion at approximately 369 km/s through the cosmological rest frame.
+</p>
+
+<h2>2.6 Statistical Power</h2>
+
+<p>
+    The raw RINEX validation analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected in 72 of 72 independent metric combinations (100% detection rate) with mean R² = 0.93.
+</p>
+
+<p>
+    Hemisphere asymmetry provides independent corroboration. Southern stations show stronger orbital velocity coupling (r = −0.79) than Northern stations (r = +0.25), matching the geometry expected from Earth's motion through the CMB frame. Both hemispheres independently show East-West exceeding North-South correlation (Northern: 1.22×, Southern: 1.35×), ruling out hemisphere-specific artifacts.
+</p>
+
+<p>
+    Monthly consistency is equally striking. East-West exceeds North-South in 94–100% of all 36 months analyzed, with short-distance coherence ratios showing coefficient of variation below 1%. The underlying signal is constant; the annual modulation in full-distance correlation lengths reflects atmospheric screening effects that vary seasonally.
+</p>

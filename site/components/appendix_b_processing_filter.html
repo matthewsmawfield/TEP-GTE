@@ -1,0 +1,105 @@
+<h1>Appendix B: Processing Filter Mathematical Formulation</h1>
+
+<h2>B.1 Network Adjustment Constraint</h2>
+
+<p>
+    Standard GNSS processing applies a datum constraint that forces residuals to have zero spatial mean:
+</p>
+
+<div class="equation">
+    $$\delta t_i^{\text{adj}} = \delta t_i - \frac{1}{N}\sum_{j=1}^N \delta t_j$$
+</div>
+
+<p>
+    This constraint preserves zero-mean residuals while removing any common-mode offset.
+</p>
+
+<h2>B.2 Fourier Decomposition</h2>
+
+<p>
+    Decompose the TEP signal into spatial Fourier modes characterized by wavevector k:
+</p>
+
+<div class="equation">
+    $$\delta t_i^{\text{TEP}} = \sum_{\mathbf{k}} A_{\mathbf{k}} e^{i\mathbf{k} \cdot \mathbf{r}_i}$$
+</div>
+
+<p>
+    where r<sub>i</sub> is the position of station i. The network adjustment removes the k = 0 (monopole) component:
+</p>
+
+<div class="equation">
+    $$A_{\mathbf{k}=0}^{\text{adj}} = A_{\mathbf{k}=0} - \frac{1}{N}\sum_j A_{\mathbf{k}=0} = 0$$
+</div>
+
+<p>
+    but preserves all k ≠ 0 (dipole, quadrupole, and higher) components that have zero spatial mean.
+</p>
+
+<h2>B.3 Cross-Spectral Density</h2>
+
+<p>
+    The TEP correlation structure manifests as phase coherence between station pairs, quantified by the cross-spectral density:
+</p>
+
+<div class="equation">
+    $$C_{ij}(\omega) = \langle \tilde{\delta t}_i(\omega) \tilde{\delta t}_j^*(\omega) \rangle$$
+</div>
+
+<p>
+    where tildes denote Fourier transforms and angle brackets denote ensemble averaging.
+</p>
+
+<h2>B.4 Phase Alignment Index</h2>
+
+<p>
+    The magnitude-weighted phase alignment index extracts the phase relationship:
+</p>
+
+<div class="equation">
+    $$\Phi_{ij} = \frac{\sum_\omega |C_{ij}(\omega)| \cos[\arg C_{ij}(\omega)]}{\sum_\omega |C_{ij}(\omega)|}$$
+</div>
+
+<p>
+    This metric is invariant under common-mode amplitude rescaling because it depends only on relative phases, not absolute amplitudes. The datum constraint removes A<sub>k=0</sub> (amplitude information) but preserves the phase structure encoded in the k ≠ 0 components.
+</p>
+
+<h2>B.5 Exponential Correlation Function</h2>
+
+<p>
+    The exponential decay C(r) ∝ exp(−r/λ) reflects the two-point correlation function of the underlying φ field:
+</p>
+
+<div class="equation">
+    $$\langle \phi(\mathbf{x}) \phi(\mathbf{x}') \rangle = \phi_0^2 \exp\left(-\frac{|\mathbf{x} - \mathbf{x}'|}{\lambda}\right)$$
+</div>
+
+<p>
+    where λ = ℏ/(m<sub>φ</sub>c) is the Compton wavelength of the screened scalar field. This correlation function has nonzero spatial gradients (k ≠ 0 in Fourier space) and therefore survives network adjustment, which only removes the k = 0 component.
+</p>
+
+<h2>B.6 Tidal vs. TEP Signal Discrimination</h2>
+
+<p>
+    Classical tidal effects are parameterized as sums of spherical harmonics Y<sub>lm</sub>(θ, φ) with known frequencies:
+</p>
+
+<div class="equation">
+    $$\delta t_{\text{tidal}}(t, \mathbf{r}) = \sum_{l,m,n} A_{lmn} Y_{lm}(\theta, \phi) \cos(\omega_n t + \phi_n)$$
+</div>
+
+<p>
+    where ω<sub>n</sub> are tidal frequencies (diurnal, semidiurnal, long-period). Standard GNSS processing explicitly models and subtracts these terms using IERS conventions.
+</p>
+
+<p>
+    The TEP correlation is a distance-dependent phase coherence:
+</p>
+
+<div class="equation">
+    $$C_{\text{TEP}}(r_{ij}) = A_0 \exp(-r_{ij}/\lambda)$$
+</div>
+
+<p>
+    This functional form is not decomposable into the standard tidal spherical harmonic basis. The processing removes what it models (tidal harmonics) but preserves what it does not model (exponential distance correlations in phase space).
+</p>

@@ -1,0 +1,33 @@
+Analysis of 25.3 years of GNSS timing data (2000–2025) reveals a persistent, distance-structured correlation in global atomic clock networks that tests an empirically untested assumption of general relativity: the global integrability of proper time. Examination of 165.2 million station pairs from 474 unique receivers demonstrates a spatial correlation signal decaying exponentially with distance (λ = 4,201 ± 1,967 km, R² = 0.92–0.97 across three independent analysis centers).
+
+This integrated manuscript synthesizes results from a systematic five-paper research program: theoretical framework development with quantitative predictions (Paper 0), multi-center validation across independent processing pipelines (Paper 1), 25-year longitudinal analysis enabling long-period geophysical detection (Paper 2), raw data confirmation eliminating processing artifacts (Paper 3), and cosmological extension connecting terrestrial correlations to dark matter phenomenology (Paper 4).
+
+Seven Statistically Independent Signatures (joint probability p ≈ 2×10⁻²⁷, >10σ):
+1. Exponential spatial decay: λ = 4,201 ± 1,967 km
+2. Spatial anisotropy: EW/NS ratio = 2.16 (p < 10⁻¹⁵)
+3. Orbital velocity coupling: r = −0.888 (5.1σ)
+4. CMB frame alignment: 18.2° from dipole (5,570× variance ratio over galactic motion)
+5. Planetary event responses: 56/156 significant at ≥2σ (2.8× above null rate)
+6. 18.6-year lunar nutation coupling: R² = 0.641
+7. Semiannual nutation coupling: R² = 0.904
+
+Raw RINEX validation using Single Point Positioning with broadcast ephemerides achieves 100% detection rate across 72 metric combinations (t-statistics up to 112, Cohen's d up to 0.304), excluding processing artifacts as the origin. The network's selectivity profile—sensitive to velocity-dependent dynamics while blind to GM/r² scaling and solar rotation—characterizes it as an inertial interferometer measuring correlation geometry rather than a gravimeter measuring Newtonian force.
+
+These observations match a priori predictions of the Temporal Equivalence Principle, a bi-metric scalar-tensor framework in which proper time is a dynamical field governed by a conformal factor A(φ) = exp(2βφ/Mₚₗ). The observed correlation length corresponds to a scalar field mass mφ ≈ (4.34–5.93)×10⁻¹⁴ eV/c², consistent with Vainshtein screening at the dark energy scale Λ ~ 10⁻¹³ eV. The framework preserves local Lorentz invariance while predicting global path-dependent synchronization. Critically, the conformal sector responsible for clock-rate modulation remains unconstrained by GW170817, which bounds only disformal (cone-tilting) effects.
+
+Explicit Falsification Criteria:
+- Failure of independent groups to replicate the raw carrier-phase signal
+- Correlation length outside λ = 500–20,000 km range
+- SLR residuals showing no distance-structured correlation (ephemeris loophole)
+- Null synchronization holonomy at 10⁻¹⁹ precision (triangle test)
+- Resolution of S₈ tension through conventional mechanisms
+
+Related Work:
+- Paper 0 (TEP Theory): https://doi.org/10.5281/zenodo.16921911
+- Paper 1 (Multi-Center): https://doi.org/10.5281/zenodo.17127229
+- Paper 2 (25-Year Longspan): https://doi.org/10.5281/zenodo.17517141
+- Paper 3 (Raw RINEX): https://doi.org/10.5281/zenodo.17860166
+- Paper 4 / TEP-GL (Cosmological): https://doi.org/10.5281/zenodo.14531196
+
+Website: https://matthewsmawfield.github.io/TEP-GTE/
+Code Availability: https://github.com/matthewsmawfield/TEP-GNSS, https://github.com/matthewsmawfield/TEP-GNSS-RINEX

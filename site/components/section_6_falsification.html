@@ -1,0 +1,155 @@
+<h1>6. Falsification and Experimental Program</h1>
+
+<p>
+    A theory that cannot be falsified is not science. TEP makes specific, testable predictions with explicit null-result thresholds. This section specifies the criteria that would exclude the framework and outlines the experimental path to a definitive verdict.
+</p>
+
+<h2>6.1 Explicit Falsification Criteria</h2>
+
+<p>
+    The TEP framework is falsified if any of the following observations are confirmed:
+</p>
+
+<div class="tier-box" style="border-left: 4px solid #5a8fc7; padding: 15px 20px; margin: 20px 0; background-color: #eef4f9;">
+    <h4 style="margin: 0 0 10px 0; color: #3a6a9c;">Tier 1: Terrestrial Falsification (GNSS Signal)</h4>
+    
+    <ul style="line-height: 1.8;">
+        <li><strong>Independent replication failure:</strong> Independent research groups fail to reproduce exponential decay (λ ≈ 3,000–5,000 km) using either raw carrier-phase observables (RINEX data with Single Point Positioning) or independent clock solutions (CLK files from CODE, IGS, ESA, or JPL). This would exclude the entire GNSS evidence base.</li>
+        
+        <li><strong>Correlation length out of bounds:</strong> Independently replicated correlation length falls outside λ = 500–20,000 km range. This would exclude the TEP screening model, which predicts λ ~ 4,000 km for Earth based on Vainshtein screening at Λ ~ 10⁻¹³ eV.</li>
+        
+        <li><strong>Ephemeris loophole confirmed:</strong> Satellite Laser Ranging (SLR) residuals show no distance-structured correlation when analyzed using identical methods applied to GNSS data. This would indicate the GNSS signal arises from broadcast ephemeris artifacts rather than physical clock correlations (Section 6.3.1.1).</li>
+    </ul>
+</div>
+
+<div class="tier-box" style="border-left: 4px solid #5a8fc7; padding: 15px 20px; margin: 20px 0; background-color: #eef4f9;">
+    <h4 style="margin: 0 0 10px 0; color: #3a6a9c;">Tier 2: Synchronization Holonomy (Direct Test)</h4>
+    
+    <ul style="line-height: 1.8;">
+        <li><strong>Null holonomy at high precision:</strong> Closed-loop one-way time-transfer around triangular geometry (1,000–3,000 km legs) yields null synchronization holonomy ℋ/T<sub>loop</sub> < 10⁻¹⁹ after subtracting all known relativistic effects (Sagnac, Shapiro, gravitational redshift, Lense-Thirring). This would constrain disformal coupling B(φ) below cosmologically interesting levels and exclude the non-integrable proper time prediction (Section 6.3.3).</li>
+    </ul>
+</div>
+
+<div class="tier-box" style="border-left: 4px solid #5a8fc7; padding: 15px 20px; margin: 20px 0; background-color: #eef4f9;">
+    <h4 style="margin: 0 0 10px 0; color: #3a6a9c;">Tier 3: Cosmological Falsification (Dark Matter Connection)</h4>
+    
+    <ul style="line-height: 1.8;">
+        <li><strong>CMB-Galaxy S<sub>8</sub> convergence:</strong> Next-generation surveys (CMB-S4 + LSST) show CMB-inferred and galaxy lensing-inferred S<sub>8</sub> agreeing to better than 1σ, with no systematic dependence on source redshift or variability. This would exclude TEP's prediction of kinematic noise in galaxy surveys arising from temporal-field gradients. The current S<sub>8</sub> tension (4.5σ) between CMB and galaxy lensing measurements represents existing anomalous data consistent with TEP predictions.</li>
+    </ul>
+</div>
+
+<p style="margin-top: 20px; font-style: italic;">
+    <strong>Complete Framework Falsification:</strong> The combination of Tier 1 (independent replication failure OR ephemeris loophole confirmed) AND Tier 2 (null holonomy at high precision) AND Tier 3 (S<sub>8</sub> tension resolved without TEP mechanism) would exclude TEP as a viable framework rather than merely constraining one regime. However, failure of any single Tier 1 criterion is sufficient to exclude the GNSS evidence base, which forms the empirical foundation of the framework.
+</p>
+
+<h2>6.2 Consequences of Failed Replication</h2>
+
+<p>
+    If independent groups cannot replicate the raw RINEX signal, this would indicate one of several possibilities: a subtle processing artifact specific to the present pipeline that was not identified, a statistical fluctuation in the particular dataset selection, or an unidentified systematic in the cross-spectral analysis method.
+</p>
+
+<p>
+    In such a scenario, TEP would lose its primary empirical support. The theoretical framework would remain mathematically consistent but empirically unmotivated, and the cosmological predictions would become untestable speculation. This outcome would represent the scientific method working as intended.
+</p>
+
+<h2>6.3 Three-Tier Experimental Strategy</h2>
+
+<p>
+    TEP can be confirmed or excluded through a coordinated experimental program organized by urgency and discriminating power.
+</p>
+
+<h3>6.3.1 Tier 1: Immediate Replication</h3>
+
+<p>
+    The most urgent priority is independent replication. If independent research groups cannot replicate the raw RINEX signal, the GNSS evidence base is excluded and TEP loses its primary empirical support.
+</p>
+
+<p>
+    Required tests include independent clock analysis using either raw carrier-phase data (RINEX files with SPP processing) or processed clock solutions (CLK files from independent analysis centers), multi-constellation cross-check (verifying that the signal appears identically in GPS, GLONASS, Galileo, and BeiDou), and cross-center consistency (confirming CODE/IGS/ESA/JPL agreement with CV &lt; 20%). Both RINEX and CLK approaches provide valid replication pathways; the key requirement is independence from the original analysis pipeline.
+</p>
+
+<p>
+    These tests can be performed by any institution with GNSS processing capability, including IGS, NIST, PTB, SYRTE, and JPL. The publicly available data (both raw RINEX observations and processed CLK solutions) enable independent verification of the λ ≈ 4,000 km exponential decay, and the analysis can be completed in weeks using standard GNSS processing tools.
+</p>
+
+<h4>6.3.1.1 Addressing the Ephemeris Loophole</h4>
+
+<p>
+    A legitimate concern exists regarding the Single Point Positioning validation: SPP relies on broadcast ephemerides generated by control segments using network adjustments. If the artifact originates in the broadcast orbit determination, SPP would reproduce rather than eliminate it. This represents a potential systematic loophole requiring independent validation.
+</p>
+
+<p>
+    Satellite Laser Ranging (SLR) provides the definitive test. SLR is a purely geometric, optical measurement independent of the GNSS microwave clock and ephemeris loop. SLR stations measure satellite range using laser pulses with millimeter precision, providing orbit determination completely independent of GNSS processing chains. If the GNSS correlation structure arises from ephemeris artifacts, it should be absent in SLR residuals; if it reflects physical clock correlations, it should appear in both.
+</p>
+
+<p>
+    Proposed Tier 1.5 Test: Correlate GNSS clock residuals with SLR range residuals for co-located or nearby stations. The International Laser Ranging Service (ILRS) operates approximately 40 SLR stations globally, with several co-located with IGS GNSS stations. Analysis would proceed as follows: (1) Extract SLR range residuals after precise orbit determination; (2) Compute cross-correlation between SLR residuals and GNSS clock residuals for station pairs as a function of distance; (3) Test whether the exponential decay structure (λ ≈ 4,000 km) appears in SLR data.
+</p>
+
+<p>
+    Expected Outcome: If TEP is correct and the signal reflects physical clock-rate modulation, SLR residuals should show distance-structured correlations because the laser round-trip time depends on both the satellite orbit and the ground station clock. If the signal is an ephemeris artifact, SLR residuals (which use independent orbit determination) should show no correlation structure. This test definitively closes the ephemeris loophole and can be performed with existing ILRS data.
+</p>
+
+<h3>6.3.2 Tier 2: Direct Holonomy Test</h3>
+
+<p>
+    The triangle holonomy test provides the most direct discrimination between TEP and artifact hypotheses by measuring synchronization non-closure via closed-loop, multi-leg, one-way time-transfer. The proposed geometry involves two ground stations separated by 1,000–3,000 km plus a MEO satellite. The target sensitivity is σ(H)/T<sub>loop</sub> ≤ 10<sup>−19</sup> after averaging, with a signal forecast of H/T<sub>loop</sub> ~ 10<sup>−16</sup>–10<sup>−18</sup> for parameters saturating current bounds. This test requires a dedicated mission.
+</p>
+
+<h3>6.3.3 Tier 3: Cosmological Validation</h3>
+
+<p>
+    CMB-S4 combined with LSST weak lensing would test for source-dependent kinematic noise. TEP predicts that galaxy surveys (LSST) will infer S<sub>8</sub> systematically 3–5% lower than CMB measurements (Planck, CMB-S4), with the discriminator being correlation with source redshift and variability. The current S<sub>8</sub> tension (4.5σ) between CMB and galaxy lensing measurements represents existing anomalous data consistent with TEP predictions; resolution of this tension through conventional mechanisms would exclude TEP's kinematic noise explanation.
+</p>
+
+<h2>6.4 Path to Resolution</h2>
+
+<p>
+    Table 9 summarizes the experimental program and its decision structure.
+</p>
+
+<table>
+    <caption>Table 9. Three-tier experimental program for TEP validation.</caption>
+    <thead>
+        <tr>
+            <th>Tier</th>
+            <th>Test</th>
+            <th>Null-Result Threshold</th>
+            <th>What It Would Exclude</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Tier 1</td>
+            <td>Raw carrier-phase replication</td>
+            <td>Signal absent</td>
+            <td>Entire GNSS evidence base</td>
+        </tr>
+        <tr>
+            <td>Multi-constellation cross-check</td>
+            <td>Different λ across constellations</td>
+            <td>Universal coupling</td>
+        </tr>
+        <tr>
+            <td>SLR ephemeris validation</td>
+            <td>No correlation in SLR residuals</td>
+            <td>Physical clock origin</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td>
+            <td>Triangle holonomy test</td>
+            <td>Null &lt; 10<sup>−19</sup></td>
+            <td>Holonomy mechanism</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td>
+            <td>CMB-S4 + LSST S<sub>8</sub></td>
+            <td>Agreement &lt; 1σ</td>
+            <td>Kinematic noise</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    Tier 1 tests determine whether TEP survives as a viable hypothesis. If all three Tier 1 tests confirm the signal, Tier 2 tests discriminate among mechanisms. Tier 3 tests probe the cosmological regime. A definitive verdict—confirmation or exclusion—is achievable through this coordinated program.
+</p>
