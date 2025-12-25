@@ -3,7 +3,7 @@
 > **Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle**  
 > TEP-GTE Integrated Manuscript | v0.2 (Singapore)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18004833.svg)](https://doi.org/10.5281/zenodo.18004833)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18004832.svg)](https://doi.org/10.5281/zenodo.18004832)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ![Global Time Echoes](site/public/image.webp)
@@ -19,7 +19,7 @@ This integrated manuscript synthesizes results from a systematic five-paper rese
 | **Paper 2** | Global Time Echoes: 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
 | **Paper 3** | Global Time Echoes: Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
 | **Paper 4 / TEP-GL** | Cosmological Implications (Gravitational Lensing) | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
-| **TEP-GTE** | This Synthesis Manuscript | [10.5281/zenodo.18004833](https://doi.org/10.5281/zenodo.18004833) |
+| **TEP-GTE** | This Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
 
 ## Abstract
 

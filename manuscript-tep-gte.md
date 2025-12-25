@@ -3,7 +3,7 @@
 **Author:** Matthew Lukin Smawfield  
 **Version:** v0.2 (Singapore)  
 **Date:** First published: 21 December 2025 · Last updated: 25 December 2025  
-**DOI:** 10.5281/zenodo.18004833  
+**DOI:** 10.5281/zenodo.18004832  
 **Generated:** 2025-12-25  
 **Paper Series:** TEP-GTE
 
