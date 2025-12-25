@@ -1,7 +1,7 @@
 # TEP-GTE: Global Time Echoes
 
 > **Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle**  
-> TEP-GTE Integrated Manuscript | v0.1 (Singapore)
+> TEP-GTE Integrated Manuscript | v0.2 (Singapore)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18004833.svg)](https://doi.org/10.5281/zenodo.18004833)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -58,7 +58,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   author={Smawfield, Matthew Lukin},
   journal={Zenodo},
   year={2025},
-  note={Preprint v0.1 (Singapore)}
+  note={Preprint v0.2 (Singapore)}
 }
 ```
 

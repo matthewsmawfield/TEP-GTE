@@ -2,7 +2,7 @@
   "title": "Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle",
   "subtitle": "TEP-GTE",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.1 (Singapore)",
+  "version": "v0.2 (Singapore)",
   "description": "Empirical validation of the Temporal Equivalence Principle through GNSS clock data analysis, demonstrating universal decay signatures, CMB alignment, and planetary event responses.",
   "code_repo": "github.com/matthewsmawfield/TEP-GTE",
   "paper_series": "TEP-GTE",

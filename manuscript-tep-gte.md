@@ -1,10 +1,10 @@
 # Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.1 (Singapore)  
-**Date:** First published: 21 December 2025 · Last updated: 21 December 2025  
+**Version:** v0.2 (Singapore)  
+**Date:** First published: 21 December 2025 · Last updated: 25 December 2025  
 **DOI:** 10.5281/zenodo.18004833  
-**Generated:** 2025-12-21  
+**Generated:** 2025-12-25  
 **Paper Series:** TEP-GTE
 
 ---
@@ -17,7 +17,7 @@
 
         These observations match a priori predictions of the Temporal Equivalence Principle, a bi-metric scalar-tensor framework in which proper time is a dynamical field governed by a conformal factor A(φ) = exp(2βφ/MPl). The observed correlation length corresponds to a scalar field mass mφ ≈ (4.34–5.93)×10−14 eV/c², consistent with Vainshtein screening at the dark energy scale Λ ~ 10−13 eV. The framework preserves local Lorentz invariance while predicting global path-dependent synchronization through spatial correlations in the φ field. Critically, the conformal sector responsible for clock-rate modulation remains unconstrained by GW170817, which bounds only disformal (cone-tilting) effects.
 
-        If validated through independent replication, TEP implies that dark matter phenomenology in gravitational lensing arises from temporal-field gradients rather than particulate matter—the projection of differential proper-time accumulation onto observations that assume the Isochrony Axiom. The 4,000 km correlation on Earth and the 50 kpc dark matter halo in galaxies represent the same scalar field at different density scales, connected by the universal M1/3 Vainshtein scaling law. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; inconsistency between GPS, GLONASS, and Galileo correlation lengths (>20% coefficient of variation); absence of divergence between vacuum (GNSS) and dielectric (fiber) time transfer; and null detection of achromatic lensing residuals in fast radio bursts.
+        If validated through independent replication, TEP implies that dark matter phenomenology in gravitational lensing arises from temporal-field gradients rather than particulate matter—the projection of differential proper-time accumulation onto observations that assume the Isochrony Axiom. The 4,000 km correlation on Earth and the 50 kpc dark matter halo in galaxies represent the same scalar field at different density scales, connected by the universal M1/3 Vainshtein scaling law. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; correlation length falling outside the 500–20,000 km range; confirmation that the signal arises from ephemeris artifacts rather than physical clock correlations (via Satellite Laser Ranging validation); and null synchronization holonomy in closed-loop triangular time-transfer experiments.
 
         *Keywords:* Temporal Equivalence Principle, GNSS, atomic clocks, CMB alignment, dark matter, gravitational lensing, scalar-tensor gravity, synchronization holonomy, Vainshtein screening
 
@@ -113,7 +113,7 @@
 
     This paper presents evidence for TEP through systematic analysis of GNSS timing data. Section 2 characterizes the phenomenology of the observed signal. Section 3 validates the signal against artifact hypotheses through multiple independent tests. Section 4 presents the theoretical framework and its predictions. Section 5 develops the cosmological implications, including connections to gravitational lensing and dark matter phenomenology. Section 6 specifies explicit falsification criteria and outlines the experimental path to a definitive verdict.
 
-    Falsification is central to this work. Concrete rejection criteria are specified, including failure of independent groups to replicate the signal in raw carrier-phase data, inconsistency between GPS, GLONASS, and Galileo correlation lengths, and absence of divergence between vacuum (GNSS) and dielectric (fiber) time transfer.
+    Falsification is central to this work. Concrete rejection criteria are specified, including failure of independent groups to replicate the signal in raw carrier-phase data, correlation length falling outside the 500–20,000 km range, confirmation that the signal arises from ephemeris artifacts rather than physical clock correlations (via Satellite Laser Ranging validation), and null synchronization holonomy in closed-loop triangular time-transfer experiments.
 
 # 2. Phenomenology
 
@@ -210,7 +210,7 @@
 
     The raw RINEX validation analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected in 72 of 72 independent metric combinations (100% detection rate) with mean R² = 0.93.
 
-    Hemisphere asymmetry provides independent corroboration. Southern stations show stronger orbital velocity coupling (r = −0.79) than Northern stations (r = +0.25), matching the geometry expected from Earth's motion through the CMB frame. Both hemispheres independently show East-West exceeding North-South correlation (Northern: 1.22×, Southern: 1.35×), ruling out hemisphere-specific artifacts.
+    Hemisphere asymmetry provides independent corroboration. Southern stations show stronger orbital velocity coupling (r = −0.79) than Northern stations (r = +0.25), matching the geometry expected from Earth's motion through the CMB frame. Both hemispheres independently show East-West exceeding North-South correlation (Northern: 1.20×, Southern: 1.35×), ruling out hemisphere-specific artifacts.
 
     Monthly consistency is equally striking. East-West exceeds North-South in 94–100% of all 36 months analyzed, with short-distance coherence ratios showing coefficient of variation below 1%. The underlying signal is constant; the annual modulation in full-distance correlation lengths reflects atmospheric screening effects that vary seasonally.
 
@@ -222,7 +222,9 @@
 
     The most immediate concern is that the signal arises from sophisticated processing chains—network adjustments, Kalman filtering, or integer ambiguity resolution. To address this possibility, raw RINEX observation files were processed using Single Point Positioning with broadcast ephemerides only, representing the simplest possible processing chain and one entirely independent of the network adjustments employed by CODE, IGS, and ESA.
 
-    The raw RINEX validation dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected in all 72 metric combinations tested (100% detection rate), with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances. Orbital velocity coupling is detected at r = −0.763 (5.4σ) in multi-GNSS mode, and CMB alignment yields RA = 188°, Dec = −5° (20.0° from the CMB dipole), consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and cannot be attributed to processing artifacts.
+    The raw RINEX validation dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected in all 72 metric combinations tested (100% detection rate), with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances (<500 km). A critical audit confirms this is robust to distance bias: E-W pairs are 13 km longer than N-S pairs (a bias *against* the signal), and distance-matching strengthens the ratio.
+
+    The correlation length in raw data (λ ≈ 700–1,100 km) is shorter than in precise products (λ ≈ 4,000 km), consistent with ionospheric noise masking the long-range structure. When ionospheric effects are removed (Ionofree mode), the raw correlation length increases, supporting a "Ladder of Precision" where the signal scale converges toward the CODE benchmark as noise is mitigated. Orbital velocity coupling is detected at r = −0.763 (5.4σ) in multi-GNSS mode, and CMB alignment yields RA = 188°, Dec = −5° (20.0° from the CMB dipole), consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and cannot be attributed to processing artifacts.
 
 ## 3.2 Ionospheric Hypothesis
 

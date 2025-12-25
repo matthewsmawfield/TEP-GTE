@@ -11,7 +11,11 @@
 </p>
 
 <p>
-    The raw RINEX validation dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected in all 72 metric combinations tested (100% detection rate), with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances. Orbital velocity coupling is detected at r = −0.763 (5.4σ) in multi-GNSS mode, and CMB alignment yields RA = 188°, Dec = −5° (20.0° from the CMB dipole), consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and cannot be attributed to processing artifacts.
+    The raw RINEX validation dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected in all 72 metric combinations tested (100% detection rate), with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances (<500 km). A critical audit confirms this is robust to distance bias: E-W pairs are 13 km longer than N-S pairs (a bias <em>against</em> the signal), and distance-matching strengthens the ratio.
+</p>
+
+<p>
+    The correlation length in raw data (λ ≈ 700–1,100 km) is shorter than in precise products (λ ≈ 4,000 km), consistent with ionospheric noise masking the long-range structure. When ionospheric effects are removed (Ionofree mode), the raw correlation length increases, supporting a "Ladder of Precision" where the signal scale converges toward the CODE benchmark as noise is mitigated. Orbital velocity coupling is detected at r = −0.763 (5.4σ) in multi-GNSS mode, and CMB alignment yields RA = 188°, Dec = −5° (20.0° from the CMB dipole), consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and cannot be attributed to processing artifacts.
 </p>
 
 <h2>3.2 Ionospheric Hypothesis</h2>
