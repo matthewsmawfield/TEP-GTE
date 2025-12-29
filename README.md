@@ -36,15 +36,15 @@ This integrated manuscript synthesizes results from a systematic research progra
 
 | Paper | Repository | Title | DOI |
 |-------|-----------|-------|-----|
-| **Paper 0** | [TEP](https://github.com/matthewsmawfield/TEP) | Temporal Equivalence Principle: Theory | [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) |
-| **Paper 1** | [TEP-GNSS](https://github.com/matthewsmawfield/TEP-GNSS) | Multi-Center Validation | [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) |
-| **Paper 2** | [TEP-GNSS-II](https://github.com/matthewsmawfield/TEP-GNSS-II) | 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
-| **Paper 3** | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
-| **Paper 4** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Gravitational Lensing | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
-| **Paper 5** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | SLR Validation | [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582) |
+| **Paper 1** | [TEP](https://github.com/matthewsmawfield/TEP) | Temporal Equivalence Principle: Theory | [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) |
+| **Paper 2** | [TEP-GNSS](https://github.com/matthewsmawfield/TEP-GNSS) | Multi-Center Validation | [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) |
+| **Paper 3** | [TEP-GNSS-II](https://github.com/matthewsmawfield/TEP-GNSS-II) | 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
+| **Paper 4** | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
+| **Paper 5** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Gravitational Lensing | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
 | **Paper 6** | **TEP-GTE** (This repo) | Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
-| **Paper 7** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density | [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) |
+| **Paper 7** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density | [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) |
 | **Paper 8** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake | [10.5281/zenodo.18059251](https://doi.org/10.5281/zenodo.18059251) |
+| **Paper 9** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | SLR Validation | [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582) |
 
 ## Paper Structure
 
@@ -69,6 +69,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   author={Smawfield, Matthew Lukin},
   journal={Zenodo},
   year={2025},
+  doi={10.5281/zenodo.18004832},
   note={Preprint v0.2 (Singapore)}
 }
 ```
