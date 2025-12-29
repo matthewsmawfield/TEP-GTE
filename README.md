@@ -32,7 +32,7 @@ These observations match a priori predictions of the Temporal Equivalence Princi
 
 ## The TEP Research Program
 
-This integrated manuscript synthesizes results from a systematic five-paper research program:
+This integrated manuscript synthesizes results from a systematic research program:
 
 | Paper | Repository | Title | DOI |
 |-------|-----------|-------|-----|
@@ -41,7 +41,10 @@ This integrated manuscript synthesizes results from a systematic five-paper rese
 | **Paper 2** | [TEP-GNSS-II](https://github.com/matthewsmawfield/TEP-GNSS-II) | 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
 | **Paper 3** | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
 | **Paper 4** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Gravitational Lensing | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
-| **TEP-GTE** | **This repo** | Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
+| **Paper 5** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | SLR Validation | [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582) |
+| **Paper 6** | **TEP-GTE** (This repo) | Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
+| **Paper 7** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density | [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) |
+| **Paper 8** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake | [10.5281/zenodo.18059251](https://doi.org/10.5281/zenodo.18059251) |
 
 ## Paper Structure
 
