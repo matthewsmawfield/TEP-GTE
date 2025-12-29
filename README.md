@@ -1,29 +1,25 @@
-# TEP-GTE: Global Time Echoes
-
-> **Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle**  
-> TEP-GTE Integrated Manuscript | v0.2 (Singapore)
+# Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18004832.svg)](https://doi.org/10.5281/zenodo.18004832)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ![Global Time Echoes](site/public/image.webp)
 
-## The TEP Research Program
-
-This integrated manuscript synthesizes results from a systematic five-paper research program:
-
-| Paper | Title | DOI |
-|-------|-------|-----|
-| **Paper 0** | Temporal Equivalence Principle: Theoretical Foundation | [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) |
-| **Paper 1** | Global Time Echoes: Multi-Center Validation | [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) |
-| **Paper 2** | Global Time Echoes: 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
-| **Paper 3** | Global Time Echoes: Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
-| **Paper 4 / TEP-GL** | Cosmological Implications (Gravitational Lensing) | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
-| **TEP-GTE** | This Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
+**Author:** Matthew Lukin Smawfield  
+**Version:** v0.2 (Singapore)  
+**Date:** 21 December 2025  
+**DOI:** [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832)  
+**Website:** [https://matthewsmawfield.github.io/TEP-GTE/](https://matthewsmawfield.github.io/TEP-GTE/)
 
 ## Abstract
 
-Analysis of 25.3 years of GNSS timing data (2000–2025) reveals a persistent, distance-structured correlation in global atomic clock networks. Seven statistically independent signatures emerge with joint probability p ≈ 2×10⁻²⁷ (>10σ):
+Analysis of 25.3 years of GNSS timing data (2000–2025) reveals a persistent, distance-structured correlation in global atomic clock networks that tests an empirically untested assumption of general relativity: the global integrability of proper time. Examination of 165.2 million station pairs from 474 unique receivers demonstrates a spatial correlation signal decaying exponentially with distance (λ = 4,201 ± 1,967 km, R² = 0.92–0.97 across three independent analysis centers). These findings emerge from a systematic five-paper research program: theoretical framework development with quantitative predictions (Paper 0), multi-center validation across independent processing pipelines (Paper 1), 25-year longitudinal analysis enabling long-period geophysical detection (Paper 2), raw data confirmation eliminating processing artifacts (Paper 3), and cosmological extension connecting terrestrial correlations to dark matter phenomenology through gravitational lensing (Paper 4).
+
+Seven statistically independent signatures emerge with joint probability p ≈ 2×10⁻²⁷ (>10σ): exponential spatial decay; East-West/North-South anisotropy (ratio 2.16, p < 10⁻¹⁵); orbital velocity coupling (r = −0.888, 5.1σ); alignment with the Cosmic Microwave Background dipole (18.2° separation, 5,570× variance ratio over galactic motion); planetary event responses (56/156 significant at ≥2σ); 18.6-year lunar nutation coupling (R² = 0.641); and semiannual nutation coupling (R² = 0.904). Raw RINEX validation using Single Point Positioning with broadcast ephemerides achieves 100% detection rate across 72 metric combinations (t-statistics up to 112, Cohen's d up to 0.304), excluding processing artifacts as the origin.
+
+These observations match a priori predictions of the Temporal Equivalence Principle, a bi-metric scalar-tensor framework in which proper time is a dynamical field governed by a conformal factor A(φ) = exp(2βφ/M_Pl). The observed correlation length corresponds to a scalar field mass m_φ ≈ (4.34–5.93)×10⁻¹⁴ eV/c², consistent with Vainshtein screening at the dark energy scale Λ ~ 10⁻¹³ eV. If validated through independent replication, TEP implies that dark matter phenomenology in gravitational lensing arises from temporal-field gradients rather than particulate matter.
+
+## Key Results
 
 - **Exponential spatial decay:** λ = 4,201 ± 1,967 km (R² = 0.92–0.97)
 - **Spatial anisotropy:** EW/NS ratio = 2.16 (p < 10⁻¹⁵)
@@ -32,8 +28,20 @@ Analysis of 25.3 years of GNSS timing data (2000–2025) reveals a persistent, d
 - **Planetary event responses:** 56/156 significant (2.8× above null)
 - **18.6-year lunar nutation:** R² = 0.641
 - **Semiannual nutation:** R² = 0.904
+- **Raw RINEX validation:** 100% detection rate across 72 metric combinations
 
-Raw RINEX validation achieves 100% detection rate across 72 metric combinations (t-statistics up to 112), excluding processing artifacts.
+## The TEP Research Program
+
+This integrated manuscript synthesizes results from a systematic five-paper research program:
+
+| Paper | Repository | Title | DOI |
+|-------|-----------|-------|-----|
+| **Paper 0** | [TEP](https://github.com/matthewsmawfield/TEP) | Temporal Equivalence Principle: Theory | [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) |
+| **Paper 1** | [TEP-GNSS](https://github.com/matthewsmawfield/TEP-GNSS) | Multi-Center Validation | [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) |
+| **Paper 2** | [TEP-GNSS-II](https://github.com/matthewsmawfield/TEP-GNSS-II) | 25-Year Longitudinal Analysis | [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) |
+| **Paper 3** | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | Raw RINEX Validation | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
+| **Paper 4** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Gravitational Lensing | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
+| **TEP-GTE** | **This repo** | Synthesis Manuscript | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
 
 ## Paper Structure
 
@@ -70,4 +78,15 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
 | Spatial anisotropy | EW/NS = 2.16 | p < 10⁻¹⁵ |
 | CMB alignment | 18.2° separation | 5,570× variance ratio |
 | Raw RINEX detection | 72/72 metrics | t-stats up to 112 |
+
+---
+
+## Open Science Statement
+
+These are working preprints shared in the spirit of open science—all manuscripts, analysis code, and data products are openly available under Creative Commons and MIT licenses to encourage and facilitate replication. Feedback and collaboration are warmly invited and welcome.
+
+---
+
+**Contact:** matthewsmawfield@gmail.com  
+**ORCID:** [0009-0003-8219-3159](https://orcid.org/0009-0003-8219-3159)
 
