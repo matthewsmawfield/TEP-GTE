@@ -1,10 +1,10 @@
-# Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle
+# Global Time Echoes: Empirical Validation
 
 **Author:** Matthew Lukin Smawfield  
 **Version:** v0.2 (Singapore)  
 **Date:** First published: 21 December 2025 · Last updated: 25 December 2025  
 **DOI:** 10.5281/zenodo.18004832  
-**Generated:** 2025-12-25  
+**Generated:** 2025-12-31  
 **Paper Series:** TEP-GTE
 
 ---
@@ -21,7 +21,7 @@
 
         *Keywords:* Temporal Equivalence Principle, GNSS, atomic clocks, CMB alignment, dark matter, gravitational lensing, scalar-tensor gravity, synchronization holonomy, Vainshtein screening
 
-# 1. Introduction
+## 1. Introduction
 
 ## 1.1 The Synchronization Residual Problem
 
@@ -115,7 +115,7 @@
 
     Falsification is central to this work. Concrete rejection criteria are specified, including failure of independent groups to replicate the signal in raw carrier-phase data, correlation length falling outside the 500–20,000 km range, confirmation that the signal arises from ephemeris artifacts rather than physical clock correlations (via Satellite Laser Ranging validation), and null synchronization holonomy in closed-loop triangular time-transfer experiments.
 
-# 2. Phenomenology
+## 2. Phenomenology
 
     This section presents the empirical findings without theoretical interpretation. The signal characteristics are established through three complementary empirical studies, each designed to address distinct validation requirements:
 
@@ -214,7 +214,7 @@
 
     Monthly consistency is equally striking. East-West exceeds North-South in 94–100% of all 36 months analyzed, with short-distance coherence ratios showing coefficient of variation below 1%. The underlying signal is constant; the annual modulation in full-distance correlation lengths reflects atmospheric screening effects that vary seasonally.
 
-# 3. Validation
+## 3. Validation
 
     Extraordinary claims require extraordinary validation. This section systematically addresses the most plausible artifact hypotheses, demonstrating that the signal survives each challenge.
 
@@ -328,7 +328,7 @@
 
     Each row represents an independent test. The signal survives all challenges, constraining viable explanations to physical mechanisms operating at planetary scales with velocity-dependent, CMB-aligned geometry.
 
-# 4. Theoretical Framework
+## 4. Theoretical Framework
 
     Having established that the signal is robust and not attributable to known artifacts, this section presents the theoretical framework that predicted these observations. The Temporal Equivalence Principle is a principled extension of general relativity within the well-established class of scalar-tensor theories, with specific quantitative predictions that preceded the GNSS analysis.
 
@@ -541,7 +541,7 @@
 
     For parameters saturating current bounds, the predicted signal is H/Tloop ~ 10−16–10−18. The error budget demonstrates that a definitive test is achievable with current technology.
 
-# 5. Consistency with Cosmological Phenomenology
+## 5. Consistency with Cosmological Phenomenology
 
 #### Epistemic Status
 
@@ -711,7 +711,7 @@
 
     **Falsification asymmetry:** Null results in the tests above would exclude TEP's cosmological extension while leaving ΛCDM intact. Positive results would require reinterpretation of dark matter phenomenology but would not exclude particulate dark matter in all contexts—only in regimes where temporal-field gradients dominate the lensing signal. This asymmetry reflects TEP's status as a challenger framework rather than an established paradigm.
 
-# 6. Falsification and Experimental Program
+## 6. Falsification and Experimental Program
 
     A theory that cannot be falsified is not science. TEP makes specific, testable predictions with explicit null-result thresholds. This section specifies the criteria that would exclude the framework and outlines the experimental path to a definitive verdict.
 
@@ -787,7 +787,7 @@
 
     Tier 1 tests determine whether TEP survives as a viable hypothesis. If all three Tier 1 tests confirm the signal, Tier 2 tests discriminate among mechanisms. Tier 3 tests probe the cosmological regime. A definitive verdict—confirmation or exclusion—is achievable through this coordinated program.
 
-# 7. Conclusions
+## 7. Conclusions
 
     This paper presents empirical evidence for a persistent, distance-structured correlation in global atomic clock networks that probes an empirically untested assumption of general relativity: the global integrability of proper time.
 
@@ -843,7 +843,7 @@
 
     The author expresses gratitude to the International GNSS Service (IGS), the Center for Orbit Determination in Europe (CODE), the European Space Agency (ESA), and NASA's Crustal Dynamics Data Information System (CDDIS). This analysis was possible because these organizations have championed the principles of open science, making decades of high-precision timing data freely available to the global research community. The GFZ Helmholtz Centre Potsdam is acknowledged for providing geomagnetic Kp indices.
 
-# References
+## References
 
         Abbott, B. P. et al. (LIGO/Virgo) (2017). GW170817: Observation of gravitational waves from a binary neutron star inspiral. *Phys. Rev. Lett.* 119, 161101.
 
@@ -887,7 +887,7 @@
 
         Will, C. M. (2014). The Confrontation between General Relativity and Experiment. *Living Rev. Relativity* 17, 4.
 
-# Appendix A: Mathematical Formalism
+## Appendix A: Mathematical Formalism
 
 ## A.1 Full Action
 
@@ -945,7 +945,7 @@
 
     This apparent violation is resolved by transforming to the Jordan frame, where matter follows geodesics of g̃μν and energy-momentum is conserved with respect to the matter-frame covariant derivative.
 
-# Appendix B: Processing Filter Mathematical Formulation
+## Appendix B: Processing Filter Mathematical Formulation
 
 ## B.1 Network Adjustment Constraint
 
@@ -1004,6 +1004,31 @@
     $C_{\text{TEP}}(r_{ij}) = A_0 \exp(-r_{ij}/\lambda)$
 
     This functional form is not decomposable into the standard tidal spherical harmonic basis. The processing removes what it models (tidal harmonics) but preserves what it does not model (exponential distance correlations in phase space).
+
+        [← Home](/)
+        
+### TEP Research Series
+
+        - [Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed 18 Aug 2025](/tep/theory/)
+
+        - [Global Time Echoes: Distance-Structured Correlations in GNSS Clocks 17 Sep 2025](/tep/gnss-i/)
+
+        - [25-Year Temporal Evolution of Distance-Structured Correlations in GNSS 3 Nov 2025](/tep/gnss-ii/)
+
+        - [Global Time Echoes: Raw RINEX Validation 17 Dec 2025](/tep/gnss-iii/)
+
+        - [Temporal-Spatial Coupling in Gravitational Lensing 19 Dec 2025](/tep/gl/)
+
+        - [Global Time Echoes: Empirical Validation of TEP 21 Dec 2025](/tep/gte/)
+
+        - [Universal Critical Density: Unifying Atomic, Galactic, and Compact Object Scales 28 Dec 2025](/tep/ucd/)
+
+        - [The Soliton Wake: Identifying RBH-1 as a Gravitational Soliton 28 Dec 2025](/tep/rbh/)
+
+        - [Global Time Echoes: Optical Validation of TEP via Satellite Laser Ranging 30 Dec 2025](/tep/slr/)
+
+        ← Previous
+        Next →
 
 ---
 

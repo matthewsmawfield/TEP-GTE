@@ -53,3 +53,8 @@ results/**/*.hdf5
 # !results/.gitkeep
 # !logs/.gitkeep
 
+
+# IDE files
+*.code-workspace
+.windsurf/
+.windsurfrules
