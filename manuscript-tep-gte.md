@@ -4,7 +4,7 @@
 **Version:** v0.2 (Singapore)  
 **Date:** First published: 21 December 2025 · Last updated: 25 December 2025  
 **DOI:** 10.5281/zenodo.18004832  
-**Generated:** 2026-01-03  
+**Generated:** 2026-01-07  
 **Paper Series:** TEP-GTE
 
 ---
@@ -1004,31 +1004,6 @@
     $C_{\text{TEP}}(r_{ij}) = A_0 \exp(-r_{ij}/\lambda)$
 
     This functional form is not decomposable into the standard tidal spherical harmonic basis. The processing removes what it models (tidal harmonics) but preserves what it does not model (exponential distance correlations in phase space).
-
-        [← Home](/)
-        
-### TEP Research Series
-
-        - [Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed 18 Aug 2025](/tep/theory/)
-
-        - [Global Time Echoes: Distance-Structured Correlations in GNSS Clocks 17 Sep 2025](/tep/gnss-i/)
-
-        - [25-Year Temporal Evolution of Distance-Structured Correlations in GNSS 3 Nov 2025](/tep/gnss-ii/)
-
-        - [Global Time Echoes: Raw RINEX Validation 17 Dec 2025](/tep/gnss-iii/)
-
-        - [Temporal-Spatial Coupling in Gravitational Lensing 19 Dec 2025](/tep/gl/)
-
-        - [Global Time Echoes: Empirical Validation of TEP 21 Dec 2025](/tep/gte/)
-
-        - [Universal Critical Density: Unifying Atomic, Galactic, and Compact Object Scales 28 Dec 2025](/tep/ucd/)
-
-        - [The Soliton Wake: Identifying RBH-1 as a Gravitational Soliton 28 Dec 2025](/tep/rbh/)
-
-        - [Global Time Echoes: Optical Validation of TEP via Satellite Laser Ranging 30 Dec 2025](/tep/slr/)
-
-        ← Previous
-        Next →
 
 ---
 
