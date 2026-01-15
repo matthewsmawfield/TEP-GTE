@@ -20,56 +20,9 @@ Seven statistically independent signatures emerge with joint probability p ≈ 2
 
 These observations match a priori predictions of the Temporal Equivalence Principle, a bi-metric scalar-tensor framework in which proper time is a dynamical field governed by a conformal factor A(φ) = exp(2βφ/M_Pl). The observed correlation length corresponds to a scalar field mass m_φ ≈ (4.34–5.93)×10⁻¹⁴ eV/c², consistent with Vainshtein screening at the dark energy scale Λ ~ 10⁻¹³ eV. If validated through independent replication, TEP implies that dark matter phenomenology in gravitational lensing arises from temporal-field gradients rather than particulate matter.
 
-## Summary of Key Results and Findings
+## Key Findings
 
-### Primary Results Table (Synthesis of Papers 1–4)
-
-| Metric | Value | Uncertainty | Source Paper |
-|--------|-------|-------------|--------------|
-| **Total Station Pairs** | 165.2 million | — | Paper 2 (25-year) |
-| **Correlation Length (λ)** | 4,201 km | ± 1,967 km | Multi-center consensus |
-| **Exponential Fit (R²)** | 0.92–0.97 | 3 centers | Papers 1–2 |
-| **Scalar Field Mass** | (4.34–5.93)×10⁻¹⁴ eV/c² | — | From λ |
-
-### Seven Independent Signatures
-
-| Signature | Value | Significance | Source |
-|-----------|-------|--------------|--------|
-| **Exponential Spatial Decay** | λ = 4,201 km | R² = 0.92–0.97 | Papers 1–2 |
-| **Spatial Anisotropy** | EW/NS = 2.16 | p < 10⁻¹⁵ | Papers 1–2 |
-| **Orbital Velocity Coupling** | r = −0.888 | 5.1σ | Paper 2 |
-| **CMB Frame Alignment** | 18.2° from dipole | 5,570× variance ratio | Paper 2 |
-| **Planetary Event Responses** | 56/156 significant | 2.8× above null | Paper 2 |
-| **18.6-Year Lunar Nutation** | R² = 0.641 | p < 10⁻⁸ | Paper 2 |
-| **Semiannual Nutation** | R² = 0.904 | p < 10⁻²⁰ | Paper 2 |
-
-### Raw RINEX Validation (Paper 3)
-
-| Metric | Value | Significance |
-|--------|-------|--------------|
-| **Detection Rate** | 100% | 72/72 metric combinations |
-| **t-statistics** | up to 112 | — |
-| **Cohen's d** | up to 0.304 | — |
-| **Processing Artifact Excluded** | ✓ | SPP with broadcast ephemerides |
-
-### Cross-Paper Consistency
-
-| Observable | Paper 1 | Paper 2 | Paper 3 | Status |
-|------------|---------|---------|---------|--------|
-| **λ (km)** | 3,330–4,549 | 4,201 | 727–4,811 | ✓ Consistent |
-| **Anisotropy (EW/NS)** | 2.16 | 2.16 | 1.80–1.86 | ✓ Consistent |
-| **CMB Alignment** | — | 18.2° | 20.0° | ✓ Consistent |
-
-### Joint Statistical Significance
-
-| Combined Probability | Value |
-|---------------------|-------|
-| **Seven Signatures** | p ≈ 2×10⁻²⁷ |
-| **Equivalent σ** | >10σ |
-
-### Key Interpretation
-
-This synthesis paper integrates results from the complete GNSS research program (Papers 1–4), demonstrating that seven statistically independent signatures converge on the same physical phenomenon. The cross-paper consistency—correlation lengths matching within uncertainties, anisotropy ratios agreeing to within 17%, CMB alignment within 2°—provides strong evidence against coincidental alignment or systematic artifacts. The derived scalar field mass (m_φ ≈ 5×10⁻¹⁴ eV/c²) is consistent with Vainshtein screening at the dark energy scale. If validated by independent replication, these findings suggest dark matter phenomenology may arise from temporal-field gradients rather than particulate matter.
+This synthesis integrates Papers 1–4 and shows seven statistically independent signatures with joint probability p ≈ 2×10⁻²⁷ (>10σ): exponential spatial decay (λ = 4,201 ± 1,967 km), EW/NS anisotropy (ratio 2.16), orbital velocity coupling (r = −0.888), CMB frame alignment (18.2° from the dipole; 5,570× variance ratio), planetary event responses (56/156 significant), 18.6-year lunar nutation (R² = 0.641), and semiannual nutation (R² = 0.904). Raw RINEX validation detects the signal in 72/72 metric combinations (mean R² = 0.93), ruling out processing artifacts. The inferred scalar field mass (m_φ ≈ (4.34–5.93)×10⁻¹⁴ eV/c²) is consistent with Vainshtein screening near the dark-energy scale, linking terrestrial timing networks to lensing-scale phenomenology.
 
 ---
 
