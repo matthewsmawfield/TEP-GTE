@@ -4,7 +4,7 @@
 **Version:** v0.2 (Singapore)  
 **Date:** First published: 21 December 2025 · Last updated: 25 December 2025  
 **DOI:** 10.5281/zenodo.18004832  
-**Generated:** 2026-01-09  
+**Generated:** 2026-03-13  
 **Paper Series:** TEP-GTE
 
 ---
