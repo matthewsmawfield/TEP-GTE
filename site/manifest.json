@@ -86,16 +86,22 @@
       "order": 10
     },
     {
+      "id": "reproducibility",
+      "file": "8_reproducibility.html",
+      "title": "Data Availability & Reproducibility",
+      "order": 11
+    },
+    {
       "id": "appendix_a",
       "file": "appendix_a_mathematical_formalism.html",
       "title": "Appendix A: Mathematical Formalism",
-      "order": 11
+      "order": 12
     },
     {
       "id": "appendix_b",
       "file": "appendix_b_processing_filter.html",
       "title": "Appendix B: Processing Filter",
-      "order": 12
+      "order": 13
     }
   ]
 }
