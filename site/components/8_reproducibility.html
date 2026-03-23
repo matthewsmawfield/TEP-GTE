@@ -1,0 +1,75 @@
+<section id="reproducibility">
+    <h2>Data Availability & Reproducibility</h2>
+    
+    <div class="reproducibility-box" style="background: #f5f5f5; padding: 1.5em; margin: 1em 0; border-left: 4px solid #2c5aa0;">
+        <p>
+            This work follows open-science practices. This synthesis paper integrates results from a systematic 
+            five-paper research program. All primary analysis code and data are available in the referenced 
+            repositories.
+        </p>
+    </div>
+
+    <h3>Repository & Code</h3>
+    <p>
+        <strong>GitHub Repository:</strong> <a href="https://github.com/matthewsmawfield/TEP-GTE">github.com/matthewsmawfield/TEP-GTE</a>
+    </p>
+    <p>
+        This synthesis manuscript integrates findings from Papers 1–4. Primary analysis repositories:
+    </p>
+
+    <h4>TEP Research Program Structure</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 1em 0;">
+        <thead>
+            <tr style="background: #2c5aa0; color: white;">
+                <th style="padding: 8px; text-align: left;">Paper</th>
+                <th style="padding: 8px; text-align: left;">Repository</th>
+                <th style="padding: 8px; text-align: left;">Download Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: #f9f9f9;">
+                <td style="padding: 8px;">Paper 1: GNSS Analysis</td>
+                <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-GNSS">TEP-GNSS</a></td>
+                <td style="padding: 8px;">~50 MB (benchmark data)</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Paper 2: 25-Year Longspan</td>
+                <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-GNSS-II">TEP-GNSS-II</a></td>
+                <td style="padding: 8px;">~100 MB</td>
+            </tr>
+            <tr style="background: #f9f9f9;">
+                <td style="padding: 8px;">Paper 3: Raw RINEX</td>
+                <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-GNSS-RINEX">TEP-GNSS-RINEX</a></td>
+                <td style="padding: 8px;">~5 GB (RINEX files)</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Paper 4: Gravitational Lensing</td>
+                <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-GL">TEP-GL</a></td>
+                <td style="padding: 8px;">N/A (theoretical)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Primary Data Sources</h3>
+    <ul>
+        <li><strong>CDF Data:</strong> CODE analysis center clock products (2000–2025)</li>
+        <li><strong>IGS Data:</strong> International GNSS Service clock products</li>
+        <li><strong>ESA Data:</strong> European Space Agency navigation support products</li>
+        <li><strong>RINEX Files:</strong> Raw observation files from IGS stations</li>
+    </ul>
+
+    <h3>Reproduction Instructions</h3>
+    <pre><code># Clone this synthesis repository
+git clone https://github.com/matthewsmawfield/TEP-GTE.git
+cd TEP-GTE
+
+# Build manuscript
+cd site
+npm install
+npm run build</code></pre>
+
+    <h3>Software Versions</h3>
+    <ul>
+        <li><strong>Node.js</strong> 16+</li>
+    </ul>
+</section>
