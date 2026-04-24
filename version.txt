@@ -1,0 +1,5 @@
+v0.3 (Singapore) - Topology Nomenclature Update
+
+- Aligned with TEP v0.7 framework: Adopted continuous Temporal Topology nomenclature throughout, replacing discrete thin-shell/screening language with fluid geometric profiles to align with empirical spatial correlation curves (λ = 4,201 ± 1,967 km).
+- Formalized Temporal Shear nomenclature: Defined the non-linear superposition of φ field gradients as the primary fifth-force suppression mechanism, explicitly resolving local Parametrized Post-Newtonian (PPN) safety without invoking rigid boundary approximations.
+- Updated suppression mechanism descriptions: Replaced discrete phase boundary terminology with continuous spatial profile language (Temporal Topology), emphasizing geometric continuity from deep potential wells to weak-field regime.

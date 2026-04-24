@@ -1,8 +1,8 @@
 {
   "name": "tep-gte-site",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "TEP-GTE",
-  "comment": "Package version matches manuscript version v0.2 (Singapore)",
+  "comment": "Package version matches manuscript version v0.3 (Singapore)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",

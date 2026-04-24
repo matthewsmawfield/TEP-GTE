@@ -18,7 +18,7 @@ abstract: >
   These observations match a priori predictions of the Temporal Equivalence Principle, a bi-metric
   scalar-tensor framework in which proper time is a dynamical field.
 license: CC-BY-4.0
-version: 0.3
+version: "0.3"
 keywords:
   - temporal equivalence principle
   - GNSS
