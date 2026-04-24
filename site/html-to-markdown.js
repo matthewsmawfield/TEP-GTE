@@ -16,6 +16,7 @@ class HTMLToMarkdownConverter {
 
     /**
      * Convert HTML string to markdown with proper academic formatting
+     * Clean, no-indent style matching other TEP papers
      */
     htmlToMarkdown(html) {
         // Remove script tags and their content
@@ -35,7 +36,7 @@ class HTMLToMarkdownConverter {
         });
         
         // Convert manuscript sections to proper markdown structure FIRST
-        html = html.replace(/<div[^>]*class=["'][^"']*manuscript-section[^"']*["'][^>]*data-section=["']([^"']*)["'][^>]*>/gi, '\n\n## $1\n\n');
+        html = html.replace(/<div[^>]*class=["'][^"']*manuscript-section[^"']*["'][^>]*data-section=["']([^"]*)["'][^>]*>/gi, '\n## $1\n\n');
         
         // Convert headers
         html = html.replace(/<h1[^>]*>(.*?)<\/h1>/gi, '\n# $1\n\n');
@@ -43,8 +44,12 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n### $1\n\n');
         html = html.replace(/<h4[^>]*>(.*?)<\/h4>/gi, '\n#### $1\n\n');
         
-        // Convert paragraphs
-        html = html.replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n');
+        // Convert paragraphs - remove leading/trailing whitespace from content
+        html = html.replace(/<p[^>]*>(.*?)<\/p>/gi, (match, p1) => {
+            // Strip leading whitespace from paragraph content
+            const cleaned = p1.replace(/^\s+/g, '').replace(/\s+$/g, '');
+            return cleaned + '\n\n';
+        });
         
         // Convert strong/bold
         html = html.replace(/<(strong|b)[^>]*>(.*?)<\/(strong|b)>/gi, '**$2**');
@@ -121,6 +126,9 @@ class HTMLToMarkdownConverter {
         html = html.replace(/&lambda;/g, 'λ');
         html = html.replace(/&mu;/g, 'μ');
         html = html.replace(/&sigma;/g, 'σ');
+        
+        // Remove leading whitespace from each line (no indents)
+        html = html.replace(/^[ \t]+/gm, '');
         
         // Clean up whitespace
         html = html.replace(/\n\s*\n\s*\n/g, '\n\n');
@@ -248,8 +256,16 @@ class HTMLToMarkdownConverter {
             // Build the complete markdown document
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
+            // Read manifest to get version info for filename
+            const manifestPath = path.join(__dirname, 'manifest.json');
+            const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+            const versionMatch = manifest.version.match(/v(\d+\.\d+)\s*\(([^)]+)\)/);
+            const versionNum = versionMatch ? versionMatch[1] : '0.3';
+            const codename = versionMatch ? versionMatch[2] : 'Singapore';
+            const filename = `5-TEP-GTE-v${versionNum}-${codename}.md`;
+            
             // Write to file
-            const outputPath = path.join(__dirname, '..', 'manuscript-tep-gte.md');
+            const outputPath = path.join(__dirname, '..', filename);
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
             console.log('✅ Markdown conversion complete!');
@@ -268,6 +284,7 @@ class HTMLToMarkdownConverter {
 
     /**
      * Build the complete markdown document with metadata
+     * Clean format matching other TEP papers (no bold labels, minimal formatting)
      */
     buildMarkdownDocument(metadata, content) {
         const timestamp = new Date().toISOString().split('T')[0];
@@ -275,27 +292,24 @@ class HTMLToMarkdownConverter {
         // Clean up the title to remove the author part
         const cleanTitle = metadata.title.replace(' | Matthew Lukin Smawfield', '');
         
+        // Clean up the version (remove "Version: " prefix if present)
+        const cleanVersion = metadata.version.replace(/^Version:\s*/i, '');
+        
+        // Clean up the date (remove "First published: " prefix if present)
+        const cleanDate = metadata.date.replace(/^First published:\s*/i, '');
+        
+        // Clean content - remove leading whitespace from each line
+        const cleanContent = content.replace(/^[ \t]+/gm, '');
+        
         return `# ${cleanTitle}
-
-**Author:** ${metadata.author}  
-**Version:** ${metadata.version}  
-**Date:** ${metadata.date}  
-**DOI:** ${metadata.doi}  
-**Generated:** ${timestamp}  
-**Paper Series:** TEP-GTE
+**${metadata.author}**
+Version: ${cleanVersion}
+${cleanDate}
+DOI: ${metadata.doi}
 
 ---
 
-${content}
-
----
-
-*This document was automatically generated from the TEP-GTE research site. For the interactive version with figures and enhanced formatting, visit: https://matthewsmawfield.github.io/TEP-GTE/*
-
-*Related Work:*
-- [**TEP Theory**](https://doi.org/10.5281/zenodo.16921911) (Foundational framework)
-
-*Source code and data available at: https://github.com/matthewsmawfield/TEP-GTE*
+${cleanContent}
 `;
     }
 }
