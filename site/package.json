@@ -1,8 +1,8 @@
 {
   "name": "tep-gte-site",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "TEP-GTE",
-  "comment": "Package version matches manuscript version v0.3 (Singapore)",
+  "comment": "Package version matches manuscript version v0.4 (Singapore)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
@@ -18,7 +18,7 @@
     "TEP-GTE",
     "Temporal Equivalence Principle"
   ],
-  "author": "Matthew Lukin Smawfield <matthewsmawfield@gmail.com>",
+  "author": "Matthew Lukin Smawfield <matthew@mlsmawfield.com>",
   "license": "CC-BY-4.0",
   "repository": {
     "type": "git",

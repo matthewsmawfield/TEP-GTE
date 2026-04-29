@@ -1,11 +1,11 @@
 <h2>2. Phenomenology</h2>
 
 <p>
-    This section presents the empirical findings without theoretical interpretation. The signal characteristics are established through three complementary empirical studies, each designed to address distinct validation requirements:
+    This section presents the empirical findings without theoretical interpretation. The signal characteristics are established through three complementary empirical studies, each designed to address distinct testing requirements:
 </p>
 
 <p>
-    Paper 1 (Multi-Center Validation, 2023–2025): Cross-validation across three independent analysis centers (CODE, IGS, ESA) using 62.7 million station-pair measurements from 364 stations. This study established that the correlation structure is not processing-specific, achieving R² = 0.92–0.97 consistency across independent pipelines.
+    Paper 1 (Multi-Center Consistency, 2023–2025): Cross-validation across three independent analysis centers (CODE, IGS, ESA) using 62.7 million station-pair measurements from 364 stations. This study established that the correlation structure is not processing-specific, achieving R² = 0.92–0.97 consistency across independent pipelines.
 </p>
 
 <p>
@@ -13,7 +13,11 @@
 </p>
 
 <p>
-    Paper 3 (Raw RINEX Validation, 2022–2024): Processing artifact elimination through analysis of raw GNSS observations using Single Point Positioning with broadcast ephemerides only. Analysis of 1.17 billion pair-samples across 539 stations achieved 100% detection rate across 72 independent metric combinations, confirming the signal exists in fundamental observables.
+    Paper 3 (Raw RINEX Test, 2022–2024): Processing artifact constraint
+    through analysis of raw GNSS observations using Single Point Positioning
+    with broadcast ephemerides only. Broadcast ephemerides still contain
+    control-segment information, so Satellite Laser Ranging and non-GNSS optical
+    checks remain necessary for definitive confirmation. Analysis of 1.17 billion pair-samples across 539 stations achieved consistent signal detection across all 72 independent metric combinations, confirming the signal exists in fundamental observables.
 </p>
 
 <p>
@@ -27,11 +31,11 @@
 </p>
 
 <div class="equation">
-    $$C(r) = A \cdot \exp(-r/\lambda) + C_0$$
+    $$C(r) = A \cdot \exp(-r/\lambda_{\mathrm{T}}) + C_0$$
 </div>
 
 <p>
-    where r denotes the inter-station distance, λ the characteristic correlation length, A the amplitude, and C<sub>0</sub> the baseline offset. Fits to distance-binned means across approximately 28 bins achieve R² = 0.920–0.970 across all three analysis centers.
+    where r denotes the inter-station distance, λ<sub>T</sub> the Temporal Topology correlation length, A the amplitude, and C<sub>0</sub> the baseline offset. Fits to distance-binned means across approximately 28 bins achieve R² = 0.920–0.970 across all three analysis centers.
 </p>
 
 <p>
@@ -39,17 +43,20 @@
 </p>
 
 <p>
-    The primary result from the CODE 25-year analysis is a correlation length of λ = 4,201 ± 1,967 km. Cross-center validation yields consistent values: CODE reports λ = 3,330 km (95% CI: 1,198–5,918 km); IGS reports λ = 4,549 km (95% CI: 3,197–4,871 km); and ESA reports λ = 3,758 km (95% CI: 2,532–3,984 km). The coefficient of variation across centers is 18.2%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
+    The primary result from the CODE 25-year analysis is a Temporal Topology correlation length of λ<sub>T</sub> = 4,201 ± 1,967 km. Cross-center validation yields consistent values: CODE reports λ<sub>T</sub> = 3,330 km (95% CI: 1,198–5,918 km); IGS reports λ<sub>T</sub> = 4,549 km (95% CI: 3,197–4,871 km); and ESA reports λ<sub>T</sub> = 3,758 km (95% CI: 2,532–3,984 km). The coefficient of variation across centers is 18.2%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
 </p>
 
-<h2>2.2 Seven Independent Signatures</h2>
+<h2>2.2 Seven Convergent Signatures</h2>
 
 <p>
-    The 25-year longitudinal analysis identifies seven statistically independent signatures, summarized in Table 1. Their joint occurrence under the null hypothesis has probability p ≈ 2×10<sup>−27</sup>, exceeding 10σ significance.
+    The 25-year longitudinal analysis identifies seven convergent signatures,
+    summarized in Table 1. Each signature independently constrains the space of
+    viable explanations; their collective pattern consistently points toward a
+    velocity-dependent, CMB-aligned geometric mechanism.
 </p>
 
 <table>
-    <caption>Table 1. Seven independent signatures identified in the 25-year GNSS analysis.</caption>
+    <caption>Table 1. Seven convergent signatures identified in the 25-year GNSS analysis.</caption>
     <thead>
         <tr>
             <th>Signature</th>
@@ -60,7 +67,7 @@
     <tbody>
         <tr>
             <td>Exponential Decay</td>
-            <td>λ = 4,201 ± 1,967 km</td>
+            <td>λ<sub>T</sub> = 4,201 ± 1,967 km</td>
             <td>R² = 0.92–0.97</td>
         </tr>
         <tr>
@@ -228,7 +235,7 @@
 <h2>2.6 Statistical Power</h2>
 
 <p>
-    The raw RINEX validation analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected in 72 of 72 independent metric combinations (100% detection rate) with mean R² = 0.93.
+    The raw RINEX test analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected across all 72 independent metric combinations with mean R² = 0.93.
 </p>
 
 <p>
@@ -236,5 +243,5 @@
 </p>
 
 <p>
-    Monthly consistency is equally striking. East-West exceeds North-South in 94–100% of all 36 months analyzed, with short-distance coherence ratios showing coefficient of variation below 1%. The underlying signal is constant; the annual modulation in full-distance correlation lengths reflects atmospheric screening effects that vary seasonally.
+    Monthly consistency is equally striking. East-West exceeds North-South in 94% or more of all 36 months analyzed, with short-distance coherence ratios showing coefficient of variation below 1%. The underlying signal is constant; the annual modulation in full-distance Temporal Topology correlation lengths reflects atmospheric screening effects that vary seasonally.
 </p>
