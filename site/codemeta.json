@@ -1,6 +1,9 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-  "@type": "ScholarlyArticle",
+  "@type": [
+    "ScholarlyArticle",
+    "SoftwareSourceCode"
+  ],
   "name": "Global Time Echoes: Empirical Synthesis",
   "description": "Empirical synthesis of the Temporal Equivalence Principle through GNSS clock data analysis, demonstrating universal decay signatures (λ = 4,201 km), CMB alignment (5,570× variance ratio), and planetary event responses.",
   "author": [
@@ -27,5 +30,8 @@
     "scalar-tensor gravity",
     "synchronization holonomy",
     "Vainshtein screening"
-  ]
+  ],
+  "developmentStatus": "active",
+  "runtimePlatform": "Python",
+  "applicationCategory": "Scientific/Research"
 }
