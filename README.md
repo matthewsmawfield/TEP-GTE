@@ -6,7 +6,7 @@
 ![Global Time Echoes](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.4 (Singapore)  
+**Version:** v0.5 (Singapore)  
 **Date:** 29 April 2026  
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832)  
@@ -76,7 +76,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   journal={Zenodo},
   year={2025},
   doi={10.5281/zenodo.18004832},
-  note={Preprint v0.4 (Singapore)}
+  note={Preprint v0.5 (Singapore)}
 }
 ```
 

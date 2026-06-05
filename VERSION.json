@@ -1,6 +1,7 @@
 {
-  "version": "0.4",
+  "version": "0.5",
   "codename": "Singapore",
-  "date": "2026-04-29",
-  "description": "Paper 5: Global Time Echoes: Empirical Synthesis"
+  "date": "2026-06-05",
+  "description": "Paper 5: Global Time Echoes: Empirical Synthesis",
+  "previous_version": "0.4"
 }

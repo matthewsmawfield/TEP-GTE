@@ -1,6 +1,6 @@
 {
   "name": "tep-gte-site",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "TEP-GTE",
   "comment": "Package version matches manuscript version v0.4 (Singapore)",
   "main": "index.html",

@@ -1,3 +1,5 @@
+v0.5 (Singapore) — 05 June 2026 — Renamed conformal coupling notation from beta_conf to beta_A to avoid PPN collision
+
 v0.4 (Singapore) - Terminology & Theory Alignment
 
 - "A priori predictions" → "pre-specified expectations" for epistemological precision

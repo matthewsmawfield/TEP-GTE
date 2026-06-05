@@ -2,7 +2,7 @@
   "title": "Global Time Echoes: Empirical Synthesis",
   "subtitle": "TEP-GTE",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.4 (Singapore)",
+  "version": "v0.5 (Singapore)",
   "description": "Empirical synthesis of the Temporal Equivalence Principle through GNSS clock data analysis, demonstrating universal decay signatures, CMB alignment, and planetary event responses.",
   "code_repo": "github.com/matthewsmawfield/TEP-GTE",
   "paper_series": "TEP-GTE",
@@ -64,7 +64,7 @@
     {
       "id": "section_5_lcdm",
       "file": "section_5_relation_to_lcdm.html",
-      "title": "5.9 Relation to ΛCDM",
+      "title": "5.9 Relation to \u039bCDM",
       "order": 7
     },
     {
@@ -103,5 +103,6 @@
       "title": "Appendix B: Processing Filter",
       "order": 13
     }
-  ]
+  ],
+  "last_updated": "05 June 2026"
 }
