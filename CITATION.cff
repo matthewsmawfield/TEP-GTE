@@ -21,7 +21,7 @@ abstract: 'Analysis of 25.3 years of GNSS timing data (2000–2025) reveals a pe
 
   '
 license: CC-BY-4.0
-version: '0.4'
+version: v0.5 (Singapore)
 keywords:
 - Temporal Equivalence Principle
 - Temporal Shear
