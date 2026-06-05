@@ -14,7 +14,7 @@ def generate_pdf(quality="maximum", wait_time=5):
     # Paths
     base_dir = Path("/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GTE")
     html_path = base_dir / "site" / "dist" / "index.html"
-    pdf_name = "5-TEP-GTE-v0.4-Singapore.pdf"
+    pdf_name = "5-TEP-GTE-v0.5-Singapore.pdf"
     output_path = base_dir / "site" / "public" / "docs" / pdf_name
     root_output = base_dir / pdf_name
     
