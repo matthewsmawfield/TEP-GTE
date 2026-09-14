@@ -41,13 +41,13 @@
 </div>
 
 <p>
-    where α(φ) ≡ d ln A/dφ = β/M<sub>Pl</sub> is the conformal coupling strength (for A(φ) = exp(βφ/M<sub>Pl</sub>)), T is the trace of the matter stress-energy tensor in the Jordan frame, and S<sub>disf</sub> contains disformal source terms proportional to B(φ).
+    where α(ϕ) ≡ d ln A/dϕ = β<sub>A</sub>/M<sub>Pl</sub> is the conformal coupling strength (for A(ϕ) = exp(β<sub>A</sub>ϕ/M<sub>Pl</sub>)), T is the trace of the matter stress-energy tensor in the Jordan frame, and S<sub>disf</sub> contains disformal source terms proportional to B(ϕ).
 </p>
 
-<h2>A.3 Galileon Terms and Nonlinear Screening</h2>
+<h2>A.3 Candidate Microscopic Completions and Nonlinear Screening</h2>
 
 <p class="warning" style="border-left: 4px solid #d9534f; padding: 10px 15px; background-color: #f9f2f2; margin: 15px 0;">
-    <strong>Illustrative Only:</strong> This appendix presents one candidate microscopic completion. The empirical claims of this paper do not depend on the cubic Galileon/Vainshtein realization.
+    <strong>Illustrative Candidate Completion:</strong> This appendix presents an illustrative candidate completion (cubic Galileon derivative screening) that exhibits the (&beta;<sub>A</sub>M/M<sub>Pl</sub>&Lambda;<sup>3</sup>)<sup>1/3</sup> transition scale. In the canonical TEP architecture (Paper 0, Paper 4), environmental screening operates through continuous gradient flattening via the potential V(&phi;) and kinetic structure, independently of Horndeski derivative terms.
 </p>
 
 <p>
@@ -66,7 +66,7 @@
 </div>
 
 <p>
-    where Λ is the strong-coupling scale and c<sub>3</sub> is a dimensionless coefficient of order unity. This term becomes important when:
+    where &Lambda; is the strong-coupling scale (an energy scale, [M] in natural units c = &hbar; = 1) and c<sub>3</sub> is a dimensionless coefficient of order unity. With the canonical scalar field normalization (&phi; has mass dimension 1) and the TEP source term (&beta;<sub>A</sub>/M<sub>Pl</sub>)T, the nonlinear term becomes important when:
 </p>
 
 <div class="equation">
@@ -74,12 +74,24 @@
 </div>
 
 <p>
-    The Vainshtein radius, inside which nonlinear effects dominate, is:
+    The Vainshtein radius, inside which nonlinear effects dominate, is (in natural units c = &hbar; = 1):
 </p>
 
 <div class="equation">
-    $$r_V = \left(\frac{GM}{\Lambda^3}\right)^{1/3}$$
+    $$r_V = \left(\frac{\beta_A M}{M_{\text{Pl}} \Lambda^3}\right)^{1/3}$$
 </div>
+
+<p>
+    where &beta;<sub>A</sub> is the conformal coupling, M<sub>Pl</sub> = &radic;(&hbar;c/G) is the Planck mass, and &Lambda; is the strong-coupling energy scale. Restoring SI units:
+</p>
+
+<div class="equation">
+    $$r_V = \left(\frac{\beta_A M (\hbar c)^3}{M_{\text{Pl}} \Lambda^3}\right)^{1/3} = \left(\frac{\beta_A M}{M_{\text{Pl}}}\right)^{1/3} \frac{\hbar c}{\Lambda}$$
+</div>
+
+<p>
+    The factor &beta;<sub>A</sub>M/M<sub>Pl</sub> supplies the dimensionless source strength; (&hbar;c/&Lambda;)<sup>3</sup> supplies the length scale cubed. The bare expression (GM/&Lambda;<sup>3</sup>)<sup>1/3</sup> sometimes quoted in the Galileon literature is a shorthand that suppresses the &beta;<sub>A</sub>/M<sub>Pl</sub> coupling and implicitly assumes natural units with a specific field normalization; it is dimensionally incomplete as written.
+</p>
 
 <p>
     For a spherically symmetric source of mass M, the scalar field profile in the Vainshtein regime (r < r<sub>V</sub>) is:
@@ -90,7 +102,7 @@
 </div>
 
 <p>
-    This suppresses the fifth force by a factor of (r/r<sub>V</sub>)<sup>3</sup> inside the screening radius, reconciling weak-field cosmological behavior with strong-field solar system constraints. Other completions (e.g., chameleon mechanisms, symmetry-breaking potentials) may produce similar phenomenology.
+    This suppresses the Temporal Shear by a factor of (r/r<sub>V</sub>)<sup>3</sup> inside the screening radius, reconciling weak-field cosmological behavior with strong-field solar system constraints. Other completions (e.g., chameleon mechanisms, symmetry-breaking potentials) may produce similar phenomenology.
 </p>
 
 <h2>A.4 Conservation Laws</h2>

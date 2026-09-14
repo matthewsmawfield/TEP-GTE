@@ -3,14 +3,14 @@
 <p>
     This paper presents empirical evidence for a persistent, distance-structured
     correlation in global atomic clock networks that probes an empirically
-    untested assumption of general relativity: the global integrability of
-    proper time.
+    untested assumption of general relativity: whether distributed proper-time
+    rates contain a coherent spatial covariance beyond the standard relativistic model.
 </p>
 
 <h2>7.1 Summary of Findings</h2>
 
 <p>
-    This integrated manuscript synthesizes results from a systematic research program that establishes, validates, and independently confirms the Temporal Equivalence Principle predictions through progressively rigorous empirical tests and cosmological extension. The convergence of evidence across seven independent domains—theoretical prediction (Paper 0), multi-center microwave consistency (Paper 1), 25-year longitudinal stability (Paper 2), raw RINEX test (Paper 3), optical SLR check (Paper 8), pulsar timing (Paper 10), and Hubble Tension resolution (Paper 11)—establishes a robust empirical foundation for TEP.
+    This integrated manuscript synthesizes results from a systematic research program that establishes, tests, and independently corroborates Temporal Equivalence Principle predictions through progressively rigorous empirical tests and cosmological extension. The convergence of evidence across seven independent domains—theoretical prediction (Paper 0), multi-center microwave consistency (Paper 1), 25-year longitudinal stability (Paper 2), raw RINEX test (Paper 3), optical SLR check (Paper 8), pulsar timing (Paper 10), and Hubble Tension resolution (Paper 11)—provides a robust empirical foundation for TEP.
 </p>
 
 <p>
@@ -18,15 +18,17 @@
 </p>
 
 <p>
-    Paper 11 (Hubble Tension) demonstrates the theory's explanatory power at cosmological scales. By identifying a systematic, environment-dependent period-contraction bias in Cepheid variable stars, the framework unifies local and early-universe measurements of H₀, reducing the long-standing 5σ tension to a negligible 0.6σ. This resolution uses a Cepheid response coefficient κ<sub>Cep</sub> ∼ 10⁶ that is numerically consistent with the spin-down excess detected in globular cluster pulsars (Paper 10), establishing cross-probe consistency between astrophysical and local timing observables.
+    Paper 11 (Hubble Tension) demonstrates the theory's explanatory power at cosmological scales. By identifying a systematic, environment-dependent period-contraction bias in Cepheid variable stars, the framework unifies the local distance-ladder and CMB-inferred observational scales of H₀, reducing the long-standing 5σ tension to a negligible 0.6σ. This resolution uses a Cepheid response coefficient κ<sub>Cep</sub> ∼ 10<sup>6</sup> (fitted to Cepheid data, not derived from first principles) that is numerically consistent with the spin-down excess detected in globular cluster pulsars (Paper 10), establishing cross-probe consistency between astrophysical and local timing observables.
 </p>
 
 <p>
     Nine convergent signatures support the Temporal Topology interpretation:
     (1) exponential spatial decay (λ ≈ 4,200 km), (2) spatial anisotropy
-    (EW/NS = 2.16), (3) orbital velocity coupling (r = −0.888, 5.1σ), (4) CMB
-    frame alignment (18.2°), (5) achromatic universality (microwave-to-optical
-    matching), (6) planetary event responses, (7) 18.6-year nutation coupling,
+    (EW/NS = 2.16), (3) orbital velocity coupling (r = −0.888, 3.65σ
+    autocorrelation-corrected; surrogate p < 2×10⁻⁷ as a resolution bound), (4) CMB
+    frame alignment (18.2°; Solar Apex geometrically incompatible), (5) achromatic universality (SLR
+    confirms low-frequency spectral structure in a clock-free optical
+    system), (6) planetary event responses, (7) 18.6-year nutation coupling,
     (8) pulsar spin-down excess, and (9) host-potential H₀ correlation. The
     signal survives all challenges across solar cycles, geomagnetic storms,
     altitude, and independent processing pipelines—systematically excluding
@@ -48,31 +50,80 @@
 </p>
 
 <p>
-    The framework preserves local Lorentz invariance, with the speed of light
-    remaining exactly invariant in any freely falling laboratory, while
-    predicting global path-dependent synchronization. GW170817 constrains only
-    the disformal sector; the conformal sector responsible for clock-rate
-    modulation remains unconstrained by multi-messenger observations.
+    The framework preserves local Lorentz invariance, with the speed of light remaining exactly invariant in any freely falling laboratory, while predicting global clock-network covariance and open-path conformal transport structure. GW170817 primarily constrains the disformal differential-propagation sector; it does not directly test common-mode conformal clock-rate covariance along shared paths, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests.
+</p>
+
+<h2>7.2a Predicted vs Fitted Coefficients across Probes</h2>
+
+<table class="data-table" style="margin: 20px 0">
+    <thead>
+        <tr>
+            <th>Probe</th>
+            <th>Predicted in advance (sign/shape/ordering)</th>
+            <th>Fitted (amplitude)</th>
+            <th>Coefficient</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GNSS λ (Papers 1–3, 14)</td>
+            <td>Exponential decay; EW>NS polarity; orbital-velocity sign</td>
+            <td>Decay length (metric-dependent, 1396–4549 km)</td>
+            <td>λ_T</td>
+        </tr>
+        <tr>
+            <td>Cepheid H₀ (Paper 11)</td>
+            <td>Sign of potential-depth correlation</td>
+            <td>Response amplitude</td>
+            <td>κ_Cep = (0.326 ± 0.206)×10<sup>6</sup> mag (multi-block) / (0.452 ± 0.220)×10<sup>6</sup> mag (redshift-only); theory benchmark κ_canonical = 0.96×10<sup>6</sup></td>
+        </tr>
+        <tr>
+            <td>MSP spin-down (Paper 10)</td>
+            <td>Suppression direction vs Newtonian; field-binary null</td>
+            <td>Response amplitude</td>
+            <td>κ_MSP ~ 10<sup>6</sup></td>
+        </tr>
+        <tr>
+            <td>LLR (Paper 17)</td>
+            <td>Synodic phase; sideband structure</td>
+            <td>κ_LLR = −3.91×10<sup>-4</sup></td>
+            <td>κ_LLR (Solar-System ORC)</td>
+        </tr>
+        <tr>
+            <td>Wide binaries (Paper 13)</td>
+            <td>Transition existence; environmental ordering (high-|Z| < midplane R_s)</td>
+            <td>α_sat = 0.366; R_s = 2646 AU</td>
+            <td>α_sat, M_screen</td>
+        </tr>
+        <tr>
+            <td>Flybys (Paper 15)</td>
+            <td>Geometry correlation; null/anomaly pattern</td>
+            <td>β per flyby 1.0–5.3×10<sup>-3</sup></td>
+            <td>β_A,eff</td>
+        </tr>
+        <tr>
+            <td>Refsdal (Paper 19)</td>
+            <td>Residual sign (6/7, 7/7 blind)</td>
+            <td>Amplitude underpredicted; kernel open</td>
+            <td>Transfer kernel</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    TEP's amplitudes are currently measured, not predicted: each sector carries its own Observable Response Coefficient, and deriving their hierarchy from a single coupling function A(φ) with continuous Temporal Topology screening is the framework's central open theoretical problem. Two quantitative coincidences mark the target: κ_Cep and κ_MSP independently land at ~10<sup>6</sup>, and the saturation scale satisfies ρ_T ≈ α^{4/3}m_e⁴c³/ħ³ to ~12% (equivalently Λ ≈ α^{1/3}m_ec², 3%) with no derivation yet selecting either exponent. A completion that predicts both, or falsifiably fails to, is the program's next theoretical milestone.
 </p>
 
 <h2>7.3 Cosmological Implications</h2>
 
 <p>
-    If validated through independent replication, TEP predicts that part of the phenomenology attributed to
-    dark matter may include temporal-field gradient or covariance contributions—the projection of
-    differential proper-time accumulation onto observations that assume the Isochrony Axiom—without assuming a new particulate matter component. The Earth-Galaxy
-    scaling argument connects the ~4,000 km GNSS correlation to galactic-scale
-    phenomenology (~50 kpc), with the correlation length at each scale reflecting
-    the relaxation of Temporal Topology from deep suppression in potential wells
-    to the weak-field regime. This scaling, if confirmed, would be consistent
-    with M<sup>1/3</sup> behavior expected from certain screening completions.
+    If validated through independent replication, TEP predicts that the phenomenology attributed to dark matter is the observational projection of Temporal Topology and Temporal Shear, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance, lensing Phantom Mass, and galactic mass discrepancies are different observational projections of the same time-field topology, with the terrestrial-to-galactic transfer kernel established in Paper 4 (TEP-GL, Phantom Mass mechanism with NFW-profile halo delays of ~3–15 years) and Paper 13 (TEP-WB, SPARC-anchored wide-binary transition at R_s ≈ 2,646 ± 182 AU, consistent with the terrestrial ρ_T calibration within a factor of 1.05). The &Sscr;<sub>&Sigma;</sub>(&Epsilon;) screening operator provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime: at the terrestrial scale, R<sub>T</sub>(M<sub>⊕</sub>) ≈ 4,150 km sets the screening transition, while at galactic scales the operator retains approximately 98% of the unsuppressed Temporal Shear in the diffuse halo environment (Paper 26), producing dark-matter-like phenomenology through the active-shear regime rather than through a screening radius. The ~4,000 km GNSS correlation and the ~50 kpc galactic phenomenology are therefore manifestations of the same environment-dependent Temporal-Topology response operating in different density regimes, not a single M<sup>1/3</sup> scaling across 15 orders of magnitude.
 </p>
 
 <p>
-    The framework naturally produces the MOND acceleration scale (a<sub>0</sub>
-    ~ cH<sub>0</sub>) and offers potential resolution to the H<sub>0</sub> and
-    S<sub>8</sub> tensions. These are predictions of the framework rather than
-    post-hoc explanations.
+    The framework offers potential resolution to the H<sub>0</sub> and
+    S<sub>8</sub> tensions through the conformal clock-rate field and its
+    environmental screening structure.
 </p>
 
 <h2>7.4 The Path Forward</h2>
@@ -126,7 +177,7 @@
 
 <p>
     The ~4,000 km correlation on Earth (λ<sub>T</sub> = 4,201 ± 1,967 km) and the ~50 kpc
-    dark matter halo in galaxies are interpreted within TEP as manifestations of the same underlying topology/shear framework, pending independent replication and completion-dependent transfer calculations, connected by the continuous relaxation of Temporal
+    dark matter halo in galaxies are interpreted within TEP as manifestations of the same environment-dependent Temporal-Topology response, pending independent replication and completion-dependent transfer calculations, connected by the continuous relaxation of Temporal
     Topology from deep potential wells to the weak-field regime. The M<sup>1/3</sup>
     scaling appearing in some candidate completions remains testable through
     interplanetary missions and pulsar timing arrays, but it is not the primary empirical claim. This hypothesis is

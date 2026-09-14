@@ -9,7 +9,7 @@
 </p>
 
 <p>
-    Paper 2 (25-Year Longitudinal Analysis, 2000–2025): Extended temporal baseline using CODE products with 165.2 million station pairs from 474 unique receivers. This long-span analysis enabled detection of previously inaccessible signatures including 18.6-year lunar nutation coupling and CMB frame alignment, confirming temporal stability over 25.3 years.
+    Paper 2 (25-Year Longitudinal Analysis, 2000–2025): Extended temporal baseline using CODE products with 165.2 million station-pair observations from 474 unique receivers (814 station codes). This long-span analysis enabled detection of previously inaccessible signatures including 18.6-year lunar nutation coupling and CMB frame alignment, confirming temporal stability over 25.3 years.
 </p>
 
 <p>
@@ -17,7 +17,7 @@
     through analysis of raw GNSS observations using Single Point Positioning
     with broadcast ephemerides only. Broadcast ephemerides still contain
     control-segment information, so Satellite Laser Ranging and non-GNSS optical
-    checks remain necessary for definitive confirmation. Analysis of 1.17 billion pair-samples across 539 stations achieved consistent signal detection across all 72 independent metric combinations, confirming the signal exists in fundamental observables.
+    checks remain necessary for independent adjudication. Analysis of 1.17 billion pair-samples across 539 stations achieved consistent signal detection across all 72 metric combinations, confirming the signal exists in fundamental observables.
 </p>
 
 <p>
@@ -46,17 +46,17 @@
     The primary result from the CODE 25-year analysis is a Temporal Topology correlation length of λ<sub>T</sub> = 4,201 ± 1,967 km. Cross-center validation on the 2023–2025 multi-center sample (exponential fits to binned phase-alignment means) yields: CODE λ<sub>T</sub> = 4,549 km (95% CI: 1,198–5,918 km); IGS λ<sub>T</sub> = 3,764 km (95% CI: 3,197–4,871 km); ESA λ<sub>T</sub> = 3,330 km (95% CI: 2,532–3,984 km). The 25-year CODE long-span headline is a separate estimand from these center-specific exponential fits. The coefficient of variation across the three center fits is ~13%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
 </p>
 
-<h2>2.2 Seven Convergent Signatures</h2>
+<h2>2.2 Nine Convergent Signatures</h2>
 
 <p>
-    The 25-year longitudinal analysis identifies seven convergent signatures,
+    The 25-year longitudinal analysis identifies nine convergent signatures,
     summarized in Table 1. Each signature independently constrains the space of
     viable explanations; their collective pattern consistently points toward a
     velocity-dependent, CMB-aligned geometric mechanism.
 </p>
 
 <table>
-    <caption>Table 1. Seven convergent signatures identified in the 25-year GNSS analysis.</caption>
+    <caption>Table 1. Nine convergent signatures identified in the 25-year GNSS analysis.</caption>
     <thead>
         <tr>
             <th>Signature</th>
@@ -78,12 +78,17 @@
         <tr>
             <td>Orbital Velocity Coupling</td>
             <td>r = −0.888</td>
-            <td>5.1σ (0/5M surrogates)</td>
+            <td>3.65σ (autocorr.-corrected); surrogate p < 2×10⁻⁷ (bound)</td>
         </tr>
         <tr>
             <td>CMB Frame Alignment</td>
             <td>18.2° from CMB dipole</td>
-            <td>5,570× variance ratio</td>
+            <td>Solar Apex geometrically incompatible (N-S predicted, E-W observed)</td>
+        </tr>
+        <tr>
+            <td>Achromatic Universality</td>
+            <td>Microwave-to-optical matching (GNSS/SLR)</td>
+            <td>Cross-domain consistency (Paper 8)</td>
         </tr>
         <tr>
             <td>Planetary Events</td>
@@ -93,12 +98,17 @@
         <tr>
             <td>18.6-Year Nutation</td>
             <td>R² = 0.641</td>
-            <td>p &lt; 10<sup>−8</sup></td>
+            <td>p = 0.010</td>
         </tr>
         <tr>
-            <td>Semiannual Nutation</td>
-            <td>R² = 0.904</td>
-            <td>p &lt; 10<sup>−20</sup></td>
+            <td>Pulsar Spin-Down Excess</td>
+            <td>κ<sub>MSP</sub> ~ 10<sup>6</sup></td>
+            <td>Globular cluster pulsars (Paper 10)</td>
+        </tr>
+        <tr>
+            <td>Host-Potential H<sub>0</sub> Correlation</td>
+            <td>κ<sub>Cep</sub> ~ 10<sup>6</sup>; H<sub>0</sub> tension resolved</td>
+            <td>Cepheid response (Paper 11)</td>
         </tr>
     </tbody>
 </table>
@@ -110,11 +120,11 @@
 </p>
 
 <p>
-    The angular separation between the GNSS anisotropy vector and the CMB dipole is 18.2°. The raw p-value is p &lt; 10<sup>−15</sup>, and after Bonferroni correction for the 65,341 trials (accounting for the look-elsewhere effect), the alignment remains significant at greater than 5.8σ.
+    The angular separation between the GNSS anisotropy vector and the CMB dipole is 18.2°. The raw parametric p-value at the best-fit direction is p &lt; 10<sup>−15</sup> (Pearson r = 0.7465). The naive Bonferroni correction for the 65,341 grid-search trials gives corrected p &lt; 6.5 × 10<sup>−11</sup> (>6σ); this is conservative because the 65,341 directions are not independent.
 </p>
 
 <p>
-    Bootstrap resampling analysis refines the significance estimate by accounting for spatial correlation in the grid search. The 65,341 tested directions are not statistically independent due to spatial smoothing in the anisotropy field. Resampling 10,000 bootstrap iterations with block sizes matched to the correlation length of the anisotropy ratio field (approximately 20° angular scale) yields an effective number of independent trials N<sub>eff</sub> ≈ 800–1,200, substantially smaller than the naive 65,341. With N<sub>eff</sub> ~ 1,000, the Bonferroni-corrected significance remains at 4.2σ (p ~ 10<sup>−5</sup> after correction), confirming that the CMB alignment is robust to conservative multiple-comparison accounting. The 18.2° separation falls within the bootstrap 95% confidence interval (±22°), indicating that the observed alignment is consistent with the CMB dipole within statistical uncertainty.
+    Bootstrap resampling analysis refines the significance estimate by accounting for spatial correlation in the grid search. The 65,341 tested directions are not statistically independent due to spatial smoothing in the anisotropy field. Resampling 10,000 bootstrap iterations with block sizes matched to the correlation length of the anisotropy ratio field (approximately 20° angular scale) yields an effective number of independent trials N<sub>eff</sub> ≈ 800–1,200, substantially smaller than the naive 65,341. The primary look-elsewhere-corrected result is the permutation test (100,000 random sky directions, <code>step_2_5_dual_motion_geometry.py</code>), which directly samples the null distribution of the maximum correlation over the sky, accounting for spatial correlation by construction: p = 1.4 × 10<sup>&minus;4</sup> (~3.8&sigma;). The 18.2° separation falls within the bootstrap 95% confidence interval (±22°), indicating that the observed alignment is consistent with the CMB dipole within statistical uncertainty.
 </p>
 
 <p>
@@ -122,13 +132,13 @@
 </p>
 
 <p>
-    Reference frame discrimination strongly favors the CMB interpretation over alternatives. The CMB frame yields r = 0.747 (R² = 55.7%), whereas the Solar Apex yields r = 0.007 (R² = 0.01%)—a variance ratio of 5,570×. Beyond statistical preference, the Solar Apex hypothesis is geometrically incompatible with the observations: the Solar Apex vector (+30° Dec) predicts North-South anisotropy, directly contradicting the observed East-West dominance. Only the CMB vector (−7° Dec) is geometrically consistent with the observed anisotropy plane. Hemisphere asymmetry corroborates this conclusion: Southern stations show r = −0.79 while Northern stations show r = +0.25, matching the geometry expected from the CMB velocity vector.
+    Reference frame discrimination strongly favors the CMB interpretation over alternatives. The CMB frame yields r = 0.747 (R² = 55.7%), whereas the Solar Apex yields r = 0.007 (R² = 0.0054%)—statistically indistinguishable from zero. The variance ratio is therefore unbounded and is not reported as an evidence measure. Beyond statistical preference, the Solar Apex hypothesis is geometrically incompatible with the observations: the Solar Apex vector (+30° Dec) predicts North-South anisotropy, directly contradicting the observed East-West dominance (EW/NS = 2.16). Only the CMB vector (−7° Dec) is geometrically consistent with the observed anisotropy plane. Hemisphere asymmetry corroborates this conclusion: Southern stations show r = −0.79 while Northern stations show r = +0.25, matching the geometry expected from the CMB velocity vector.
 </p>
 
 <h2>2.4 Planetary Event Responses</h2>
 
 <p>
-    Analysis of 156 planetary conjunction and opposition events reveals a pattern that constrains the underlying mechanism. The detection rate is 56/156 events showing significant response at the 2σ level or above, with 25 surviving Bonferroni correction (16.0%). Random dates show 5.5× smaller effect sizes (Mann-Whitney p &lt; 10<sup>−17</sup>). Notably, however, neither GM/r² (force) nor GM/r³ (tidal gradient) scaling is detected (all p &gt; 0.5).
+    Analysis of 156 planetary conjunction and opposition events reveals a pattern that constrains the underlying mechanism. The detection rate is 56/156 events showing significant response at the 2σ level or above, with 19 surviving Bonferroni correction (12.2%). Random dates show 5.5× smaller effect sizes (Mann-Whitney p &lt; 10<sup>−17</sup>). Notably, however, neither GM/r² (force) nor GM/r³ (tidal gradient) scaling is detected (all p &gt; 0.5).
 </p>
 
 <p>
@@ -158,7 +168,7 @@
 </p>
 
 <p>
-    <strong>Why Mass Scaling is Absent:</strong> The mechanism operates through geometric alignment rather than gravitational force. Each planet creates a local perturbation to ∇φ within its own screening radius r<sub>V</sub> ∝ M<sup>1/3</sup>. However, the Earth-planet distance (AU scale) far exceeds any planetary r<sub>V</sub> (Mercury: ~100 km; Jupiter: ~5,000 km), placing Earth in the unscreened regime where the field perturbation has decayed to a threshold-dependent residual. The detection depends on whether this residual exceeds a critical threshold for modulating Earth's local screening length, not on the perturbation's amplitude. This threshold behavior explains why Mercury (smaller M but closer) produces comparable detection rates to Jupiter (larger M but farther).
+    <strong>Why Mass Scaling is Absent:</strong> The mechanism operates through geometric alignment rather than gravitational force. Each planet creates a local perturbation to ∇φ within its own transition scale R<sub>T</sub> ∝ M<sup>1/3</sup>. However, the Earth-planet distance (AU scale) far exceeds any planetary R<sub>T</sub> (Mercury: ~100 km; Jupiter: ~5,000 km), placing Earth in the unscreened regime where the field perturbation has decayed to a threshold-dependent residual. The detection depends on whether this residual exceeds a critical threshold for modulating Earth's local screening length, not on the perturbation's amplitude. This threshold behavior explains why Mercury (smaller M but closer) produces comparable detection rates to Jupiter (larger M but farther).
 </p>
 
 <p>
@@ -183,7 +193,7 @@
     <tbody>
         <tr>
             <td>Orbital velocity</td>
-            <td>r = −0.888, 5.1σ</td>
+            <td>r = −0.888, 3.65σ (autocorr.-corrected)</td>
             <td>Sensitive to kinematic dynamics</td>
         </tr>
         <tr>
@@ -229,13 +239,13 @@
 </p>
 
 <p>
-    The distinction is fundamental. A gravimeter would show GM/r² (force) scaling, while a differential tidal sensor would show GM/r³ (gradient) scaling; in both cases, Mercury's influence would be negligible compared to Jupiter's. An inertial interferometer responds to geometric configuration regardless of mass—precisely what is observed. The CMB frame alignment, with its 5,570× variance ratio over galactic motion, identifies the operative kinematic reference at cosmic scales: Earth's motion at approximately 369 km/s through the cosmological rest frame.
+    The distinction is fundamental. A gravimeter would show GM/r² (force) scaling, while a differential tidal sensor would show GM/r³ (gradient) scaling; in both cases, Mercury's influence would be negligible compared to Jupiter's. An inertial interferometer responds to geometric configuration regardless of mass—precisely what is observed. The CMB frame alignment—geometrically incompatible with the Solar Apex, which predicts N-S anisotropy against the observed E-W dominance (EW/NS = 2.16)—identifies the operative kinematic reference at cosmic scales: Earth's motion at approximately 369 km/s through the cosmological rest frame.
 </p>
 
 <h2>2.6 Statistical Power</h2>
 
 <p>
-    The raw RINEX test analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected across all 72 independent metric combinations with mean R² = 0.93.
+    The raw RINEX test analysis achieves extraordinary statistical power. Across 1.17 billion pair-samples, the directional anisotropy yields t-statistics up to 112 with Cohen's d up to 0.304. The signal is detected across all 72 metric combinations with mean R² = 0.93.
 </p>
 
 <p>

@@ -59,4 +59,5 @@ results/**/*.hdf5
 .windsurf/
 .windsurfrules
 
-.devin
+.devin/
+manuscripts/

@@ -6,8 +6,8 @@ from pypdf import PdfReader, PdfWriter
 from pathlib import Path
 
 def embed_metadata():
-    base_dir = Path("/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GTE")
-    pdf_path = base_dir / "5-TEP-GTE-v0.4-Singapore.pdf"
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    pdf_path = base_dir / "5-TEP-GTE-v0.6-Singapore.pdf"
     
     if not pdf_path.exists():
         print(f"Error: PDF not found at {pdf_path}")
@@ -39,7 +39,7 @@ def embed_metadata():
         writer.write(f)
     
     # Also update the copy in site/public/docs/
-    site_pdf = base_dir / "site" / "public" / "docs" / "5-TEP-GTE-v0.4-Singapore.pdf"
+    site_pdf = base_dir / "site" / "public" / "docs" / "5-TEP-GTE-v0.6-Singapore.pdf"
     with open(site_pdf, "wb") as f:
         writer.write(f)
     

@@ -1,8 +1,8 @@
 {
   "name": "tep-gte-site",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "TEP-GTE",
-  "comment": "Package version matches manuscript version v0.4 (Singapore)",
+  "comment": "Package version matches manuscript version v0.6 (Singapore)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
@@ -24,7 +24,7 @@
     "type": "git",
     "url": "https://github.com/matthewsmawfield/TEP-GTE.git"
   },
-  "homepage": "https://matthewsmawfield.github.io/TEP-GTE/",
+  "homepage": "https://mlsmawfield.com/tep/gte/",
   "devDependencies": {
     "chokidar": "^4.0.3",
     "live-server": "^1.2.2",
