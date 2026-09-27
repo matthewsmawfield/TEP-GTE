@@ -1453,46 +1453,61 @@ The amplification matrix in TEP decomposes as:
 
 $\mathcal{A}_{ij} =
 \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic}} +
-\underbrace{\mathcal{A}^{(\alpha,\text{static})}_{ij}}_{\text{Phantom Mass}}
-+ \underbrace{\mathcal{A}^{(\alpha,\text{dyn})}_{ij}}_{\text{Shear Noise}}$
+\underbrace{\mathcal{A}^{(g[\phi],\text{static})}_{ij}}_{\text{Phantom Mass}}
++ \underbrace{\mathcal{A}^{(\text{dyn})}_{ij}}_{\text{Shear Noise}}$
 
 Standard analyses attribute the sum of the first two terms to total mass.
-TEP identifies the second term as the coherent optical component of Phantom Mass—a geometric effect of the
-scalar field's Temporal Topology structure rather than particulate matter.
+TEP identifies the second term as the coherent optical component of Phantom Mass—scalar
+backreaction on the Einstein-frame metric plus the bounded disformal
+null-cone tilt (matching Paper 4's decomposition)—rather than
+particulate matter.
 
 ### 5.3.1 Static versus Dynamic Time Delays
 
 Observed strong-lens time delays (day-to-month scale, e.g., SN Refsdal
-Δt ~ 1 year between images) probe only the differential dynamic component
-of the temporal field, not the integrated temporal-depth scale accumulated across
-the halo. The distinction resolves through two complementary mechanisms.
+Δt ~ 1 year between images) are set by the propagated Fermat structure;
+the halo-scale temporal field enters the inference not through the
+measured delay itself but through the reconstructed lens model. The
+distinction resolves through two complementary mechanisms.
 
 **Mechanism 1: Static versus Dynamic Decomposition** — The
 amplification matrix decomposition (Equation above) separates temporal
 effects into distinct components with different observational signatures:
 
-**Static Temporal Structure (𝒜<sup>(α,static)</sup>):** The
-absolute proper-time signature Δτ<sub>static</sub> ~ years accumulated
-across the entire halo depth affects all light rays equally, independent
-of which image they form. This component is source-independent and
-manifests as an overall convergence κ that standard lens reconstruction
-attributes to total mass. Because it is common to all images, it does
-not contribute to differential time delays between multiple images.
+**Static Temporal Structure (𝒜<sup>(g[φ],static)</sup>):** The
+scalar's gravitational backreaction on g<sub>μν</sub> contributes
+real, structured curvature on halo scales — a smooth field on the
+image plane whose Hessian an isochronous reconstruction absorbs
+into the inferred convergence κ, with the mean level entering the
+mass-sheet normalization. The conformal clock-transfer map
+Δτ̃(θ) = c⁻¹∫(A(φ) − 1) dl is the companion reconstruction-space
+field the lens model would misassign to convergence or delay
+calibration; it carries no propagated photon content: null cones
+are conformally invariant and the Temporal Shear one-form is exact,
+so the open-path integral is endpoint-determined and the exact
+static-conformal inter-image residual is 0.0 d (Paper 19, step_56).
 
-**Dynamic Shutter (𝒜<sup>(α,dyn)</sup>):** The gradient of
-the delay field ∇(Δτ) creates differential delays that depend on the
-ray's impact parameter and the source's evolutionary state. For
+**Dynamic Shutter (𝒜<sup>(dyn)</sup>):** The gradient of
+the delay field ∇(Δτ̃) creates differential emission-time structure
+that depends on the
+ray's impact parameter and the source's evolutionary state. This is
+an endpoint-sector effect — it acts on the moving source's own
+clock/emission mapping (the temporal-composite shutter of Paper 4),
+not on photon propagation, so it inherits neither the conformal
+exact-one-form cancellation nor the disformal ≲ 0.2 s bound. For
 transient sources with variability timescale t<sub>var</sub>, the
-dynamic contribution scales as Δτ<sub>dynamic</sub> ~ ∇(Δτ) × v<sub>source</sub>
+dynamic contribution scales as Δτ<sub>dynamic</sub> ~ ∇(Δτ̃) × v<sub>source</sub>
 × t<sub>var</sub>, where v<sub>source</sub> is the source's proper
 motion or internal velocity field.
 
 **Observational Consequence:** Time delays measured between
-multiple images of transient events (supernovae, AGN flares) probe only the
-differential dynamic component, not the integrated temporal-depth scale.
-Day-to-month delays reflect the gradient-driven differential component,
-while the static temporal-structure scale affects convergence
-measurements.
+multiple images of transient events (supernovae, AGN flares) are governed
+by the propagating carriers: the standard Fermat potential plus the
+disformal multipath deformation, bounded by GW170817 to ≲ 0.2 s per
+2 Mpc halo path — far below any measured lens delay. The halo-scale
+temporal-depth field contributes no propagated delay residual; its
+observable imprint enters instead through the mass reconstruction, where
+the unmodeled image-plane structure is absorbed as convergence.
 
 **Mechanism 2: Screening Locality** — The Temporal Topology field φ
 varies significantly only within the region where Temporal Shear is
@@ -1515,31 +1530,43 @@ $\Delta \tau_{\text{depth}} \sim \frac{\epsilon}{2}
 implies systematic offsets in H<sub>0</sub> measurements from time-delay
 cosmography of 5–10%. Standard analysis assumes that measured time delays
 Δt<sub>obs</sub> between images directly constrain the Fermat potential
-differences ΔΦ via Δt = (1+z<sub>L</sub>)ΔΦ/c². However, if the static
-temporal-structure component contributes an unmodeled offset Δτ<sub>static</sub> to
-the convergence κ, the inferred H<sub>0</sub> is biased:
+differences ΔΦ via Δt = (1+z<sub>L</sub>)ΔΦ/c². The unmodeled temporal
+field does not enter the delay numerator — the propagated conformal
+residual is zero — but enters the reconstructed potential: the
+image-plane structure absorbed as phantom convergence inflates the
+inferred Fermat-potential difference by a fraction
+f<sub>pm</sub> = ΔΦ<sub>pm</sub>/ΔΦ. Since the delay distance
+D<sub>Δt</sub> = cΔt<sub>obs</sub>/((1+z<sub>L</sub>)ΔΦ) scales with
+1/H<sub>0</sub>, an inflated ΔΦ produces an over-estimated expansion
+rate:
 
 $H_0^{\text{inferred}} = H_0^{\text{true}} \left(1 +
-\frac{\Delta\tau_{\text{static}}}{\Delta t_{\text{obs}}}\right)^{-1}$
+\frac{\Delta\Phi_{\text{pm}}}{\Delta\Phi}\right) =
+H_0^{\text{true}} \left(1 + f_{\text{pm}}\right)$
 
-The differential dynamic component Δτ<sub>dynamic</sub> (the
-gradient-driven delay across the image separation, distinct from the
-integrated temporal-depth scale that is common to all images and absorbed
-into convergence) enters the time-delay bias, while the integrated
-temporal-depth scale is common to all images and absorbed into the lens
-mass model, so it does not bias H<sub>0</sub>. The magnitude of the
-predicted offset depends on the ratio Δτ<sub>dynamic</sub>/Δt<sub>obs</sub>,
-which requires lens-halo-scale modelling beyond the present analysis.
-This mechanism is consistent with the observed H<sub>0</sub> tension between local measurements
+The sign is fixed by the mass-sheet direction: phantom convergence
+raises the reconstructed potential depth, so the standard pipeline reads
+high. The magnitude of the predicted offset is set by the
+phantom-convergence fraction f<sub>pm</sub> — the ratio of temporal-field
+structure absorbed into the lens model to the true Fermat-potential
+difference — which requires lens-halo-scale modelling beyond the present
+analysis. This mechanism is consistent with the observed H<sub>0</sub> tension between local measurements
 (Cepheid-calibrated: 73 km/s/Mpc) and time-delay cosmography (H0LiCOW: 73.3
-km/s/Mpc) versus CMB inference (Planck: 67.4 km/s/Mpc).
+km/s/Mpc) versus CMB inference (Planck: 67.4 km/s/Mpc): a ~10% inflation
+of the time-delay inference maps 73.3 km/s/Mpc onto ~66.7 km/s/Mpc.
 
 **Falsification Test:** If TEP is correct, time-delay
 cosmography measurements should show systematic residuals correlated with
-lens halo mass (larger halos → larger Δτ<sub>static</sub> → larger H<sub>0</sub>
+lens halo mass (larger halos → larger f<sub>pm</sub> → larger upward H<sub>0</sub>
 bias). Analysis of the H0LiCOW and TDCOSMO samples stratified by lens
 velocity dispersion (a proxy for halo mass) should reveal this correlation
-at the 3σ level if the Extended Regime is operative.
+at the 3σ level if the Extended Regime is operative. A first pass already
+exists in Paper 19's delay-blind mass-slip analysis (step_60): implied
+mass-sheet slips are positive across all non-zero contrasts — λ = +8.7 ±
+2.6% (Refsdal SX:S1), +9.1 ± 5.8% (Encore), +9.5 ± 4.8% (H0pe AB), with a
+pooled delay-blind slip of +7.8 ± 2.0% (~4σ, χ² = 2.06/3 dof) —
+marginally above the mundane κ<sub>ext</sub> floor and in the predicted
+sign, though not yet σ<sub>v</sub>-stratified.
 
 ## 5.4 The Variability-Mass Correlation
 
