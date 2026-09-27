@@ -45,13 +45,22 @@
         </li>
 
         <li>
-            <strong>Ephemeris loophole confirmed:</strong> Satellite Laser
-            Ranging (SLR) residuals show no low-frequency spectral
-            concentration or distance-structured daily-aggregation signal
-            when analyzed using identical methods applied to GNSS data.
-            This would indicate the GNSS signal arises from broadcast
-            ephemeris artifacts rather than physical clock correlations
-            (Section 6.3.1.1).
+            <strong>Ephemeris loophole confirmed:</strong> The ephemeris
+            question splits into two layers with different adjudicators.
+            (i) <em>GNSS-product provenance</em>: Satellite Laser Ranging
+            (SLR) residuals show no low-frequency spectral concentration or
+            distance-structured daily-aggregation signal when analyzed
+            using identical methods applied to GNSS data &mdash; the signal
+            is then generated inside the GNSS product chain rather than
+            being physical clock correlations (Section 6.3.1.1).
+            (ii) <em>Generic orbit-projection confound</em>: a positive SLR
+            result cannot by itself exclude the wider hypothesis that any
+            satellite-range observable inherits distance-structured
+            residuals from its own orbit-determination chain; adjudicating
+            that layer requires the physical-confound forward model (the
+            orbit/product-error projection kernel) or an orbit-free clock
+            channel such as terrestrial fiber-link or transportable-clock
+            comparisons, which carry no satellite content at all.
         </li>
     </ul>
 </div>
@@ -184,13 +193,20 @@
 </p>
 
 <p>
-    Satellite Laser Ranging (SLR) provides the definitive test. SLR is a purely
-    geometric, optical measurement independent of the GNSS microwave clock and
-    ephemeris loop. SLR stations measure satellite range using laser pulses with
-    millimeter precision, providing orbit determination completely independent
-    of GNSS processing chains. If the GNSS correlation structure arises from
-    ephemeris artifacts, it should be absent in SLR residuals; if it reflects
-    physical clock correlations, it should appear in both.
+    Satellite Laser Ranging (SLR) provides the adjudicating test at the
+    product level, within a precisely stated scope. SLR is a purely
+    geometric, optical measurement independent of the GNSS microwave clock
+    and ephemeris loop: its satellites are passive retroreflectors, and its
+    orbits are determined from the laser ranges themselves &mdash; a
+    processing chain wholly disjoint from the GNSS broadcast and precise
+    products in which an ephemeris artifact would have to live. Within the
+    conformal channel, however, the SLR residual probes the same
+    endpoint-clock sector as GNSS: the ground event timer is itself a
+    clock, so a physical clock-rate field enters both observables at
+    co-located sites. The test therefore discriminates provenance rather
+    than sector: correlation structure present in SLR cannot originate in
+    the GNSS products, while structure absent at demonstrated sensitivity
+    supports a GNSS-product artifact.
 </p>
 
 <p>
@@ -208,10 +224,22 @@
     Expected Outcome: If TEP is correct and the signal reflects physical
     clock-rate modulation, SLR residuals should show distance-structured
     correlations because the laser round-trip time depends on both the satellite
-    orbit and the ground station clock. If the signal is an ephemeris artifact,
-    SLR residuals (which use independent orbit determination) should show no
-    correlation structure. This test would conclusively close the ephemeris loophole
-    and can be performed with existing ILRS data.
+    orbit and the ground station clock. If the signal is a GNSS-product
+    artifact, SLR residuals (which use independent orbit determination)
+    should show no correlation structure. Two qualifications bound the
+    verdict: the SLR measurement must reach the demonstrated sensitivity
+    for the GNSS-scale correlation before a null excludes the physical
+    reading, and an SLR-positive outcome remains degenerate with the
+    satellite-generic orbit-projection confound &mdash;
+    orbit-determination errors imprint spatially structured residuals on
+    any satellite-range observable. The differing orbit geometry of the
+    two systems (GNSS in medium Earth orbit, LAGEOS-class targets in low
+    Earth orbit) makes the correlation scale itself diagnostic: a common
+    &lambda;<sub>T</sub> across independent orbit-determination chains
+    indicates station-level rather than product-level origin. Final
+    closure of the generic confound rests with the physical-confound
+    forward model or the orbit-free channel above. The test can be
+    performed with existing ILRS data.
 </p>
 
 <h3>6.3.2 Tier 2: Direct Holonomy Test</h3>
@@ -271,9 +299,12 @@
             <td>Universal coupling</td>
         </tr>
         <tr>
-            <td>SLR ephemeris check</td>
-            <td>No correlation in SLR residuals</td>
-            <td>Physical clock origin</td>
+            <td>SLR ephemeris check (GNSS-product provenance)</td>
+            <td>No correlation in SLR residuals at demonstrated
+                sensitivity</td>
+            <td>Physical-clock origin; the generic orbit-projection
+                confound is excluded separately by the forward-model /
+                orbit-free test</td>
         </tr>
         <tr>
             <td>Tier 2</td>
@@ -296,4 +327,120 @@
     mechanisms. Tier 3 tests probe the cosmological regime. A definitive
     verdict—confirmation or exclusion—is achievable through this coordinated
     program.
+</p>
+
+<h2>6.5 Prediction Provenance Register</h2>
+
+<p>
+    The pre-specification claim is anchored to the immutable, timestamped
+    version record of the public Zenodo deposits rather than asserted. Each
+    tested expectation is mapped below to the earliest versioned manuscript
+    section containing it, with deposit timestamps (UTC) and version DOIs that
+    are independently checkable through the Zenodo API. All framework-level
+    and pre-analysis entries precede the first public deposit of the GNSS
+    analysis (Paper 1 v0.6-alpha, deposited 2025-09-22); the register is
+    distributed as a machine-readable artifact
+    (<code>results/prediction_provenance.json</code>) so that the ordering can
+    be verified without trusting this manuscript.
+</p>
+
+<table>
+    <caption>
+        Table 10. Prediction provenance register: each tested expectation
+        mapped to its earliest versioned statement. Deposit timestamps are
+        immutable per version DOI.
+    </caption>
+    <thead>
+        <tr>
+            <th>Tested expectation</th>
+            <th>Earliest versioned statement</th>
+            <th>Deposit (UTC)</th>
+            <th>Version DOI</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Distance-correlated clock-network residuals (observable class;
+                cross-spectral estimator, 3-D distance binning, multi-center
+                cross-validation)</td>
+            <td>Paper 0 v0.4 (Marseille), §E Phase I</td>
+            <td>2025-09-15</td>
+            <td>10.5281/zenodo.17121655</td>
+        </tr>
+        <tr>
+            <td>Exponential spatial decay,
+                $C(r)=A\exp(-r/\lambda)+C_0$</td>
+            <td>Paper 0 v0.4 (Marseille), §E Phase I; restated pre-analysis in
+                Paper 1 v0.6α §1.2</td>
+            <td>2025-09-15</td>
+            <td>10.5281/zenodo.17121655</td>
+        </tr>
+        <tr>
+            <td>Correlation-length forecast, screening-parameterized
+                $\lambda\sim2{,}000$–$3{,}000$ km; stated search range
+                $\lambda=1{,}000$–$10{,}000$ km</td>
+            <td>Paper 0 v0.4 (Marseille), §E forecast; Paper 1 v0.6α §1.2
+                search range</td>
+            <td>2025-09-15 / 2025-09-22</td>
+            <td>10.5281/zenodo.17121655; 10.5281/zenodo.17174802</td>
+        </tr>
+        <tr>
+            <td>Multi-center parameter consistency (&lt;5% variation)</td>
+            <td>Paper 0 v0.4 (Marseille), §E forecast</td>
+            <td>2025-09-15</td>
+            <td>10.5281/zenodo.17121655</td>
+        </tr>
+        <tr>
+            <td>Velocity-dependent coupling: EW/NS anisotropy anticorrelates
+                with Earth's orbital speed (negative sign)</td>
+            <td>Paper 1 v0.6α (Jaipur), §3.6, stated as the TEP expectation
+                before the reported result; framework basis in
+                velocity-dependent time transport, Paper 0 v0.1</td>
+            <td>2025-09-22 (framework 2025-08-21)</td>
+            <td>10.5281/zenodo.17174802; 10.5281/zenodo.16921912</td>
+        </tr>
+        <tr>
+            <td>Directional anisotropy of the correlation field</td>
+            <td>Paper 1 v0.6α (Jaipur), §3.2, carried as a critical TEP test;
+                the ecliptic EW&gt;NS ordering ($2.16$) is the measured
+                outcome</td>
+            <td>2025-09-22</td>
+            <td>10.5281/zenodo.17174802</td>
+        </tr>
+        <tr>
+            <td>Achromatic universality (coupling not
+                frequency-selective)</td>
+            <td>Paper 0 v0.1 (Guyana), axiom A4 universal coupling</td>
+            <td>2025-08-21</td>
+            <td>10.5281/zenodo.16921912</td>
+        </tr>
+        <tr>
+            <td>Absence of $GM/r^2$ and $GM/r^3$ scaling in clock
+                correlations (selectivity profile)</td>
+            <td>Paper 0 v0.1 (Guyana), axioms A1–A4: conformal clock-sector
+                coupling is not a fifth-force channel</td>
+            <td>2025-08-21</td>
+            <td>10.5281/zenodo.16921912</td>
+        </tr>
+        <tr>
+            <td>Preferred-frame structure (cosmological rest-frame
+                identification with the CMB dipole)</td>
+            <td>Paper 0 v0.1+ (cosmological field background defines a
+                preferred frame); the 18.2° alignment is the measured
+                identification</td>
+            <td>2025-08-21</td>
+            <td>10.5281/zenodo.16921912</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    Two entries are deliberately flagged as measured identifications rather
+    than pre-specified values: the ecliptic ordering of the anisotropy and the
+    18.2° CMB-dipole alignment. What was fixed in advance is the observable
+    class, the estimator, the functional decay form, the correlation-length
+    forecast and search range, the cross-center consistency criterion, the
+    sign of the orbital-velocity coupling, and the sector-level selectivity —
+    the elements that carry the discriminative weight of the comparison in
+    Table 3.
 </p>

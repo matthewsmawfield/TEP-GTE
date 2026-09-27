@@ -87,9 +87,11 @@
     and traversed the same path through the scalar field, any conformal time
     dilation is common-mode and cancels in the differential measurement.
     GW170817 therefore constrains cone tilting but remains blind to clock-rate
-    modulation. The dark matter phenomenology in TEP arises entirely from the
-    conformal sector, which remains unconstrained by multi-messenger
-    observations.
+    modulation. The dark matter phenomenology in TEP arises from the conformal
+    sector acting on measured lapse and arrival-time structure — the channel to
+    which multi-messenger tests and static image-plane geometry are both blind
+    — rather than from null-ray deflection, which the conformal sector leaves
+    unmodified.
 </p>
 
 <p>This can be seen explicitly in the conformal metric limit (B = 0):</p>
@@ -329,7 +331,7 @@
     unscreened regimes. The same scalar field that produces
     &lambda; &asymp; 4,000 km on Earth operates in the unscreened
     weak-field regime at galactic scales, producing extended correlation
-    structure interpreted as dark matter phenomenology. In the v0.12
+    structure interpreted as dark matter phenomenology. In the v0.14
     geometric formulation, the terrestrial correlation length is
     interpreted as the relaxation scale of Temporal Topology around Earth:
     the distance at which Temporal Shear (&nabla;&phi;) recovers from
@@ -351,8 +353,11 @@
 
 <p>
     where M is the central mass and &rho;<sub>T</sub> is the environmental
-    screening density. This M<sup>1/3</sup> scaling is universal at fixed
-    &rho;<sub>T</sub>, applying from planetary to galactic masses. Candidate
+    screening density. This M<sup>1/3</sup> scaling is a kinematic consequence
+    of the constant-&rho;<sub>T</sub> saturation model, applying within that
+    regime from planetary through intermediate mass scales; at galactic scales
+    the phenomenology is produced by the unscreened-regime response rather
+    than by a screening radius (Section 5.5). Candidate
     microscopic completions (chameleon, Vainshtein, Galileon, DBI, symmetron)
     may produce similar M<sup>1/3</sup> scaling through different microscopic
     mechanisms, but the canonical TEP framework derives this scaling from the
@@ -453,7 +458,7 @@
 <h3>5.6.2 Empirical Detection of the Bias</h3>
 
 <p>
-    Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host galaxy velocity dispersion σ (a TEP-independent kinematic proxy for potential depth), reveals a statistically significant correlation between potential depth and derived H₀ (p = 0.019). Host galaxies with σ > 90 km/s yield H₀ ≈ 72.5 km/s/Mpc, while lower-potential hosts (σ < 90 km/s) yield H₀ ≈ 67.8 km/s/Mpc.
+    Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host-galaxy potential depth u<sub>φ</sub> = V<sub>rot</sub>/√2 (a TEP-independent kinematic proxy reconstructed from pinned HyperLEDA rotation velocities), reveals a positive correlation between potential depth and derived H₀ — the sign predicted by the period-contraction mechanism. Split at the sample median (u<sub>φ</sub> = 114.6 km/s), the deep-potential subsample yields H₀ = 68.49 ± 3.21 km/s/Mpc against 66.99 ± 2.50 km/s/Mpc for the shallow-potential subsample (full host-distance covariance propagated), and the continuous endpoint response Γ<sub>X</sub> = (1.156 ± 0.958) × 10⁷ km/s/Mpc (1.2σ at the canonical σ<sub>v</sub> = 250 km/s convention; 2.0σ at the σ<sub>v</sub> = 150 km/s sensitivity variant) returns a positive sign in all 37 leave-one-host-out refits. The constraint on κ<sub>Cep</sub> is set by this environmental slope—a statistic orthogonal to the mean offset that defines the tension—and the procedure is falsifiable on the same data: a flat or opposite-sign slope admits no coefficient that reconciles the corrected value with the early-universe baseline. Two channels that never enter the Hubble-flow fit corroborate the amplitude. The Cepheid–TRGB differential on the matched hosts—regressing μ<sub>Cep</sub> − μ<sub>TRGB</sub> against the same environmental coordinate, independent of redshift information—returns κ<sub>Cep</sub> = (0.32 ± 0.39) × 10⁶ mag, a consistent point estimate at presently low significance; and the internal radial P–L gradient within the LMC (+0.0284 ± 0.0086 mag, 3.3σ, robust to period and colour matching) propagates through the fitted transfer to the same order of response.
 </p>
 
 <p>
@@ -463,7 +468,7 @@
 <div class="equation">$$H_0 = 66.65 \pm 1.58 \text{ km/s/Mpc}$$</div>
 
 <p>
-    TEP resolves the "Hubble tension" as a category error: the ladder, local, and CMB measurements probe different projections of the same continuous, nested time field. The ladder H<sub>0</sub> = 73.04 is the Hubble-flow temporal shear (cosmic-web path integral). The local cz/d = 66.65 ± 1.58 is the TEP-corrected local temporal shear (Step 04, after removing the ~1 km/s/Mpc host-potential clock distortion detected at κ<sub>SN</sub> = (3.14 ± 1.12) × 10<sup>5</sup> at 2.81σ, achromatic, agrees with κ<sub>vel</sub>; Γ<sub>X</sub> > 0, 37/37 leave-one-out positive). The CMB through TEP gives H<sub>0</sub> = 66.70 ± 0.58 (Paper 26, joint SNe+CMB MCMC with TEP-CLASS); the CMB through ΛCDM gives 67.4 (wrong model). The local and TEP-CMB values agree at 0.03σ. The 5.6 km/s/Mpc gap is the Hubble-flow temporal shear, not a correction to be closed. The halo-potential X closure confirms the fit is degenerate under coordinate rescaling.
+    TEP resolves the "Hubble tension" as a category error: the ladder, local, and CMB measurements probe different projections of the same continuous, nested time field. The ladder H<sub>0</sub> = 73.04 registers the clock-rate bias accumulated across the cosmic-web structure the ladder samples&mdash;the integrated temporal shear the calibration chain expresses through the cz/d relation. The local cz/d = 66.65 ± 1.58 is the TEP-corrected local temporal shear, obtained by removing the host-potential clock bias that the supernova-magnitude channel of the same joint ladder fit independently registers at κ<sub>SN</sub> = (4.2 ± 2.4) × 10<sup>5</sup> mag (1.7σ at canonical σ<sub>v</sub> = 250 km/s), with Γ<sub>X</sub> > 0 in all 37 leave-one-out refits. The CMB through TEP gives H<sub>0</sub> = 66.70 ± 0.58 (Paper 26, joint SNe+CMB MCMC with TEP-CLASS); the CMB through ΛCDM gives 67.4 (wrong model). The local and TEP-CMB values agree at 0.03σ. The 5.6 km/s/Mpc gap is that clock-rate bias, not a correction to be closed. Its bookkeeping is allocated by the same joint ladder fit: essentially all of the response is generated at the endpoint observing chain (the Cepheid host clocks and the distance-modulus channel they bias), with the propagation shear along the Hubble-flow leg contributing at the ~0.1% level (Paper 11, Appendix C.4)&mdash;so "Hubble-flow temporal shear" here names the same endpoint bias expressed through cz/d, not an additional propagation correction. The halo-potential X closure confirms the fit is degenerate under coordinate rescaling.
 </p>
 
 <h2>5.7 Observational Predictions</h2>

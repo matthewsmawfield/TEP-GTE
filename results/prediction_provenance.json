@@ -1,0 +1,140 @@
+{
+  "register": "TEP prediction provenance \u2014 earliest versioned statements of each tested expectation",
+  "compiled": "2026-09-26",
+  "verification_method": "Zenodo REST API record/version metadata; deposit timestamps are immutable per version DOI",
+  "concept_dois": {
+    "paper_0_theory": "10.5281/zenodo.16921911",
+    "paper_1_gnss": "10.5281/zenodo.17127229",
+    "paper_2_gnss_25yr": "10.5281/zenodo.17517141",
+    "paper_3_rinex": "10.5281/zenodo.17860166",
+    "paper_5_synthesis": "10.5281/zenodo.18004832"
+  },
+  "deposit_history_utc": [
+    {
+      "doi": "10.5281/zenodo.16921912",
+      "record": "Paper 0 v0.1 (Guyana)",
+      "created": "2025-08-21T19:05:29Z",
+      "content": "Framework axioms: two-metric action, universal conformal coupling A(phi), screening, synchronization holonomy, experimental program"
+    },
+    {
+      "doi": "10.5281/zenodo.16994147",
+      "record": "Paper 0 v0.2 (Monte Carlo)",
+      "created": "2025-08-29T12:59:03Z"
+    },
+    {
+      "doi": "10.5281/zenodo.17027455",
+      "record": "Paper 0 v0.3 (Florence)",
+      "created": "2025-09-01T21:27:34Z"
+    },
+    {
+      "doi": "10.5281/zenodo.17121655",
+      "record": "Paper 0 v0.4 (Marseille)",
+      "created": "2025-09-15T18:33:12Z",
+      "content": "Adds Sec. E 'Clock Network Correlation Analysis and Environmental Screening Maps': GNSS clock-residual correlation analysis, exponential fit C(r)=A exp(-r/lam)+C0, forecast lambda~2,000-3,000 km, multi-center cross-validation <5%"
+    },
+    {
+      "doi": "10.5281/zenodo.17174802",
+      "record": "Paper 1 v0.6 alpha (Jaipur)",
+      "created": "2025-09-22T08:45:28Z",
+      "content": "First public GNSS analysis deposit; Sec. 1.2 states pre-analysis expectations (exponential decay; lambda search range 1,000-10,000 km); Sec. 3.6 states orbital-velocity coupling prediction (negative E-W/N-S vs orbital-speed correlation)"
+    },
+    {
+      "doi": "10.5281/zenodo.17127226",
+      "record": "Paper 0 v0.5 (Guyana)",
+      "created": "2025-09-25T21:10:11Z"
+    },
+    {
+      "doi": "10.5281/zenodo.17366206",
+      "record": "Paper 0 v0.6 (Jakarta)",
+      "created": "2025-10-16T07:47:41Z"
+    },
+    {
+      "doi": "10.5281/zenodo.17517142",
+      "record": "Paper 2 v0.1 (Cairo)",
+      "created": "2025-11-03T20:30:57Z"
+    },
+    {
+      "doi": "10.5281/zenodo.17860167",
+      "record": "Paper 3 v0.1 (Kathmandu)",
+      "created": "2025-12-09T20:03:22Z"
+    },
+    {
+      "doi": "10.5281/zenodo.18004833",
+      "record": "Paper 5 v0.1 (Singapore)",
+      "created": "2025-12-21T01:33:42Z"
+    }
+  ],
+  "expectations": [
+    {
+      "expectation": "Distance-correlated clock-network residuals (observable class and estimator: phase-coherent cross-spectrum, 3D distance binning, multi-center cross-validation)",
+      "earliest_statement": "Paper 0 v0.4 (Marseille), Sec. E Phase I",
+      "doi": "10.5281/zenodo.17121655",
+      "deposit_utc": "2025-09-15",
+      "provenance": "pre-analysis"
+    },
+    {
+      "expectation": "Exponential spatial decay form C(r)=A exp(-r/lambda)+C0",
+      "earliest_statement": "Paper 0 v0.4 (Marseille), Sec. E Phase I",
+      "doi": "10.5281/zenodo.17121655",
+      "deposit_utc": "2025-09-15",
+      "provenance": "pre-analysis"
+    },
+    {
+      "expectation": "Correlation-length forecast (screening-parameterized) lambda ~ 2,000-3,000 km",
+      "earliest_statement": "Paper 0 v0.4 (Marseille), Sec. E forecast",
+      "doi": "10.5281/zenodo.17121655",
+      "deposit_utc": "2025-09-15",
+      "provenance": "pre-analysis"
+    },
+    {
+      "expectation": "Correlation-length search range lambda = 1,000-10,000 km",
+      "earliest_statement": "Paper 1 v0.6 alpha (Jaipur), Sec. 1.2 'Testable Predictions'",
+      "doi": "10.5281/zenodo.17174802",
+      "deposit_utc": "2025-09-22",
+      "provenance": "stated-at-first-analysis-deposit"
+    },
+    {
+      "expectation": "Multi-center parameter consistency (<5% variation forecast)",
+      "earliest_statement": "Paper 0 v0.4 (Marseille), Sec. E forecast",
+      "doi": "10.5281/zenodo.17121655",
+      "deposit_utc": "2025-09-15",
+      "provenance": "pre-analysis"
+    },
+    {
+      "expectation": "Velocity-dependent coupling: EW/NS anisotropy anticorrelates with Earth's orbital speed (negative sign)",
+      "earliest_statement": "Paper 1 v0.6 alpha (Jaipur), Sec. 3.6 ('as predicted by TEP theory'; expected significant negative correlation); framework basis: velocity-dependent time transport, Paper 0 v0.1 (2025-08-21)",
+      "doi": "10.5281/zenodo.17174802",
+      "deposit_utc": "2025-09-22",
+      "provenance": "stated-at-first-analysis-deposit + framework consequence"
+    },
+    {
+      "expectation": "Directional anisotropy of the correlation field",
+      "earliest_statement": "Paper 1 v0.6 alpha (Jaipur), Sec. 3.2 'critical test of TEP predictions'",
+      "doi": "10.5281/zenodo.17174802",
+      "deposit_utc": "2025-09-22",
+      "provenance": "stated-at-first-analysis-deposit; ecliptic EW>NS ordering measured"
+    },
+    {
+      "expectation": "Achromatic universality (coupling not frequency-selective)",
+      "earliest_statement": "Paper 0 v0.1 (Guyana), axiom A4 universal coupling",
+      "doi": "10.5281/zenodo.16921912",
+      "deposit_utc": "2025-08-21",
+      "provenance": "framework consequence"
+    },
+    {
+      "expectation": "Absence of GM/r^2 and GM/r^3 (Newtonian/tidal) scaling in clock correlations",
+      "earliest_statement": "Paper 0 v0.1 (Guyana), axioms A1-A4 (conformal clock-sector coupling is not a fifth-force channel)",
+      "doi": "10.5281/zenodo.16921912",
+      "deposit_utc": "2025-08-21",
+      "provenance": "framework consequence"
+    },
+    {
+      "expectation": "Preferred-frame structure (cosmological rest frame; direction identified with CMB dipole)",
+      "earliest_statement": "Paper 0 v0.1+ (cosmological field background defines a preferred frame); 18.2-degree alignment is a measured identification",
+      "doi": "10.5281/zenodo.16921912",
+      "deposit_utc": "2025-08-21",
+      "provenance": "framework consequence; direction measured"
+    }
+  ],
+  "ordering_summary": "All framework-level and pre-analysis entries (2025-08-21 through 2025-09-15) precede the first public deposit of the GNSS analysis (Paper 1 v0.6 alpha, 2025-09-22). First deposits of subsequent analyses: Paper 2 (2025-11-03), Paper 3 (2025-12-09), Paper 5 (2025-12-21)."
+}

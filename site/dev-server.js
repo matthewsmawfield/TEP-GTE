@@ -14,7 +14,7 @@ class DevServer {
         this.liveServerProcess = null;
         this.watcherReady = false;
         this.watcherRestarting = false;
-        this.port = 51817; // Unique port for TEP-GTE
+        this.port = 55505; // Unique port for TEP-GTE (Paper 5)
     }
 
     async startLiveServer() {

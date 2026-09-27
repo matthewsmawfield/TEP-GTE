@@ -47,6 +47,11 @@
                 <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-GL">TEP-GL</a></td>
                 <td style="padding: 8px;">N/A (theoretical)</td>
             </tr>
+            <tr style="background: #f9f9f9;">
+                <td style="padding: 8px;">Paper 8: Satellite Laser Ranging</td>
+                <td style="padding: 8px;"><a href="https://github.com/matthewsmawfield/TEP-SLR">TEP-SLR</a></td>
+                <td style="padding: 8px;">~200 MB (normal-point data)</td>
+            </tr>
         </tbody>
     </table>
 
@@ -57,6 +62,18 @@
         <li><strong>ESA Data:</strong> European Space Agency navigation support products</li>
         <li><strong>RINEX Files:</strong> Raw observation files from IGS stations</li>
     </ul>
+
+    <h3>Prediction Provenance</h3>
+    <p>
+        The dated prediction register of Section 6.5 is distributed as a
+        machine-readable artifact,
+        <code>results/prediction_provenance.json</code>, recording each tested
+        expectation's earliest versioned statement with its version DOI and
+        immutable deposit timestamp. The ordering is independently verifiable
+        against the public Zenodo version records under the concept DOIs listed
+        there (Paper 0: 10.5281/zenodo.16921911; Paper 1:
+        10.5281/zenodo.17127229).
+    </p>
 
     <h3>Reproduction Instructions</h3>
     <pre><code># Clone this synthesis repository

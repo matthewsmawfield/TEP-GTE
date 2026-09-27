@@ -48,8 +48,7 @@
     The framework is formulated as a scalar-tensor theory in the Einstein frame
     where gravity remains canonical. The scalar field φ couples to matter
     through the conformal factor A(φ), modulating the rate of proper time
-    accumulation. The bare conformal coupling is β_A = −1 (order unity, consistent with the wider TEP corpus), with environmental screening suppressing the effective coupling to β_{A,eff} ~ 10<sup>−3</sup> in the near-Earth GNSS environment — weak enough to evade existing constraints yet strong enough to produce
-    observable GNSS correlations. The scalar field obeys a Klein-Gordon equation
+    accumulation. The bare conformal coupling is β_A = −1 (order unity, consistent with the wider TEP corpus), with environmental screening suppressing the effective coupling to β_{A,eff} ~ 10<sup>−3</sup> in the near-Earth GNSS environment — a phenomenological factor set by the observational requirements of the local environment (consistent with Cassini/LLR bounds while permitting the observed correlations), not a suppression factor derived from the action; the derivation of S<sub>&Sigma;</sub>(E) that would predict it is an open calculation shared across the corpus. The scalar field obeys a Klein-Gordon equation
     with source terms from matter density and a screening potential V(φ) that,
     in concert with derivative self-interactions, suppresses Temporal Shear in
     dense environments through the continuous flattening of the φ-field spatial
@@ -103,7 +102,7 @@
 <div class="equation">$$R_T = \left(\frac{3M}{4\pi\rho_T}\right)^{1/3}$$</div>
 
 <p>
-    This M<sup>1/3</sup> scaling follows directly from the saturation condition and applies from planetary to galactic masses. For
+    This M<sup>1/3</sup> scaling is a kinematic consequence of the constant-&rho;<sub>T</sub> saturation model — it follows for any constant-density sphere, so the falsifiable content is the universality of &rho;<sub>T</sub> itself rather than the exponent. It applies within the saturation-model regime, from planetary through intermediate mass scales; at galactic scales the halo environment lies in the unscreened regime, where the same &Sscr;<sub>&Sigma;</sub> operator produces the phenomenology through the active-shear channel rather than through a screening radius (Section 5.5). For
     Earth with M = M<sub>⊕</sub> ≈ 6 × 10<sup>24</sup> kg and &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup>:
 </p>
 
@@ -141,7 +140,9 @@
 </ul>
 
 <p>
-    <strong>Falsifiable Predictions:</strong> The M<sup>1/3</sup> scaling law
+    <strong>Falsifiable Predictions:</strong> The density-saturation diagnostic
+    R<sub>T</sub>(M) = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> — a candidate
+    microscopic completion, not a derived consequence of the master action —
     makes specific predictions for intermediate-mass systems:
 </p>
 
@@ -170,9 +171,12 @@
 </ul>
 
 <p>
-    The M<sup>1/3</sup> scaling of R<sub>T</sub> provides a unified
-    characterization spanning 15 orders of magnitude in mass scale, from Earth to
-    galaxy clusters, with a single saturation density &rho;<sub>T</sub>. This scaling reproduces the continuous gradient-suppression behavior described by
+    Within the saturation-model regime — from planetary through intermediate
+    mass scales — R<sub>T</sub>(M) provides a unified characterization governed
+    by a single saturation density &rho;<sub>T</sub>; the testable prediction is
+    that one &rho;<sub>T</sub> fits all such masses, while galactic-scale
+    phenomenology arises from the same &Sscr;<sub>&Sigma;</sub> operator in the
+    unscreened regime rather than from a screening radius. This scaling reproduces the continuous gradient-suppression behavior described by
     Temporal Topology at the macroscopic level. Candidate microscopic completions (chameleon, Vainshtein, Galileon, DBI, symmetron) may produce similar phenomenology through different microscopic mechanisms; the empirical correlation length
     λ<sub>T</sub> = 4,201 ± 1,967 km does not uniquely select any single completion. The defining TEP ontology is the continuous suppression of Temporal Shear by the &Sscr;<sub>&Sigma;</sub>(&Epsilon;) operator, not the specific microscopic screening mechanism.
 </p>
@@ -328,8 +332,12 @@
 <h2>4.6 Prediction Comparison</h2>
 
 <p>
-    TEP established pre-specified expectations and theoretical search ranges in August 2025 (Smawfield 2025a)
-    before the GNSS analysis was conducted. Table 3 compares these forecasts to
+    TEP established pre-specified expectations and theoretical search ranges
+    before the GNSS analysis was conducted: the framework was first deposited in
+    August 2025 (Smawfield 2025a, v0.1) and the clock-network correlation
+    forecast was versioned on 15 September 2025 (v0.4 §E), preceding the first
+    public deposit of the GNSS analysis by one week (provenance register,
+    Section 6.5). Table 3 compares these forecasts to
     observations.
 </p>
 
@@ -630,12 +638,18 @@
 </p>
 
 <p>
-    Furthermore, both Earth and Moon are within each other's saturation
-    radii (R<sub>T</sub><sup>Earth</sup> ~ 4,150 km, Earth-Moon distance ~ 384,000
-    km), placing the system in a regime where screening effects partially
-    suppress the scalar field influence. The combination of universal coupling
-    and screening ensures LLR compatibility while preserving the GNSS signal in
-    the terrestrial environment where screening is less effective.
+    Furthermore, the Earth–Moon separation lies in the deeply suppressed
+    regime of the pairwise Temporal-Topology response
+    &Sscr;<sub>eff</sub>(s): the scalar-mediated Earth–Moon differential
+    acceleration is suppressed by pairwise response factors of order
+    2.5×10<sup>−14</sup> relative to the unsuppressed coupling (Paper 0,
+    screening operator), comfortably below the LLR bound. The suppression
+    acts on the shear sector (&Sscr;<sub>Σ</sub>) — the geodesic and
+    force projection — while each body's clock-amplitude coupling
+    (S<sub>A</sub>) remains unsuppressed. The combination of universal
+    coupling and sector-separated screening ensures LLR compatibility
+    while preserving the GNSS clock-covariance signal in the terrestrial
+    environment.
 </p>
 
 <h2>4.8 Relation to Established Scalar-Tensor Theory</h2>

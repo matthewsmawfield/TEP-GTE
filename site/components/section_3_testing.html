@@ -59,7 +59,7 @@
 </p>
 
 <p>
-    The data reveal clear coupling to multiple geophysical cycles. The 18.6-year lunar nutation shows R² = 0.641 (p = 0.010, F-test with N = 12 phase bins; permutation test p = 0.0016, N = 100,000; 1.4 complete cycles observed). The semiannual nutation shows R² = 0.904 (p = 2.7 &times; 10<sup>−5</sup>, F-test; permutation p = 2.7 &times; 10<sup>−4</sup>; AR(1) red-noise surrogate p = 2 &times; 10<sup>−5</sup>, N = 100,000; over 50 complete cycles). The Chandler wobble (433 days) shows R² = 0.096 with phase stability of 0.72 across more than 21 cycles. Core signatures—correlation length, anisotropy, and orbital coupling—remain consistent across the full 25-year span. The signal is therefore temporally stable across multiple geophysical cycles. Surrogate validation confirms that the nutation p-values are not inflated by treating the 165 million station-pair observations as independent: the F-test uses N = 12 phase bins (not N = 165 million), and non-parametric permutation and AR(1) red-noise surrogate tests confirm the significance without Gaussian or independence assumptions.
+    The data reveal clear coupling to multiple geophysical cycles. The 18.6-year lunar nutation shows R² = 0.641 &plusmn; 0.10 (p = 0.010, F-test with N = 12 phase bins; permutation test p = 0.0016, N = 100,000; 1.36 complete cycles observed — cycle-limited: each phase bin carries at most two independent cycle realizations). The semiannual nutation shows R² = 0.904 (p = 2.7 &times; 10<sup>−5</sup>, F-test; permutation p = 2.7 &times; 10<sup>−4</sup>; AR(1) red-noise surrogate p = 2 &times; 10<sup>−5</sup>, N = 100,000; over 50 complete cycles). The Chandler wobble (433 days) shows R² = 0.096 with phase stability of 0.72 across more than 21 cycles. Core signatures—correlation length, anisotropy, and orbital coupling—remain consistent across the full 25-year span. The signal is therefore temporally stable across multiple geophysical cycles. Surrogate validation confirms that the nutation p-values are not inflated by treating the 165 million station-pair observations as independent: the F-test uses N = 12 phase bins (not N = 165 million), and non-parametric permutation and AR(1) red-noise surrogate tests confirm the significance without Gaussian or independence assumptions.
 </p>
 
 <h2>3.6 Most Plausible Remaining Conventional Explanation</h2>
@@ -84,17 +84,17 @@
 </ul>
 
 <p>
-    <strong>Remaining Possibility:</strong> The most plausible remaining conventional explanation is a systematic tied to the fundamental geometry of GNSS satellite constellations that couples to Earth's motion through space in a way not previously recognized. Such a systematic would need to produce all observed signatures through a single coherent mechanism—a requirement that becomes increasingly implausible as the number of convergent signatures grows, but cannot be definitively excluded without independent check through non-GNSS methods (SLR, triangle holonomy test).
+    <strong>Remaining Possibility:</strong> The most plausible remaining conventional explanation is a systematic tied to the fundamental geometry of GNSS satellite constellations that couples to Earth's motion through space in a way not previously recognized. Such a systematic would need to produce all observed signatures through a single coherent mechanism—a requirement that becomes increasingly implausible as the number of convergent signatures grows, but cannot be definitively excluded without independent check through non-GNSS methods (the SLR provenance check, the orbit-projection forward model, and the triangle holonomy test).
 </p>
 
 <p>
-    <strong>Path to Resolution:</strong> Definitive exclusion of this hypothesis requires: (1) SLR check (Section 6.3.1.1) to close the ephemeris loophole; (2) multi-constellation cross-check showing identical λ across GPS, GLONASS, Galileo, and BeiDou; and (3) triangle holonomy test (Section 6.3.3) providing direct measurement of synchronization non-closure. Until these tests are completed, the possibility of an unrecognized GNSS systematic, however implausible given the convergence of evidence, cannot be completely excluded.
+    <strong>Path to Resolution:</strong> Definitive exclusion of this hypothesis requires: (1) SLR check (Section 6.3.1.1) to close the GNSS-product branch of the ephemeris loophole, with the generic orbit-projection branch closed by the physical-confound forward model or an orbit-free clock channel; (2) multi-constellation cross-check showing identical λ across GPS, GLONASS, Galileo, and BeiDou; and (3) triangle holonomy test (Section 6.3.3) providing direct measurement of synchronization non-closure. Until these tests are completed, the possibility of an unrecognized GNSS systematic, however implausible given the convergence of evidence, cannot be completely excluded.
 </p>
 
 <h2>3.7 SLR Check: Optical Domain Evidence</h2>
 
 <p>
-    Satellite Laser Ranging (SLR) provides a technology-orthogonal test pathway that strongly constrains "clock-artifact" hypotheses. Unlike GNSS, which uses active atomic clocks and microwave L-band transmission, SLR employs two-way optical pulses reflected off passive retroreflectors (LAGEOS-1/2 and Etalon-1/2). The "clock" is a ground-based event timer, and the observable is the round-trip flight time. Any TEP signal detected in SLR cannot be attributed to receiver electronics, clock steering algorithms, or microwave-specific modeling errors.
+    Satellite Laser Ranging (SLR) provides a technology-orthogonal test pathway that strongly constrains "clock-artifact" hypotheses at the product-provenance level. Unlike GNSS, which uses active atomic clocks and microwave L-band transmission, SLR employs two-way optical pulses reflected off passive retroreflectors (LAGEOS-1/2 and Etalon-1/2). The "clock" is a ground-based event timer, and the observable is the round-trip flight time. Any TEP signal detected in SLR cannot be attributed to receiver electronics, clock steering algorithms, microwave-specific modeling errors, or the GNSS broadcast/precise ephemeris chain — which the laser-range orbit determination does not consume. Within the conformal channel the event timer is itself the clock being read, so SLR is an instrument-level and orbit-provenance check on the same conformal clock sector: its independence is real at the level of hardware and product chain, and it does not by itself exclude the satellite-generic orbit-projection confound addressed in Section 6.3.1.1.
 </p>
 
 <p>
@@ -102,14 +102,14 @@
 </p>
 
 <ul>
-    <li><strong>Spectral Concentration:</strong> Residuals exhibit a 14.00× power enhancement (95% CI: 13.53–14.47) in the predicted TEP frequency band (10–500 µHz) relative to the broadband floor. This matches the spectral "clumping" observed in GNSS clocks.</li>
-    <li><strong>Achromatic Universality:</strong> The detection of the signal in the optical domain (~500 THz) matching the microwave domain (~1 GHz) provides a strong argument against dispersive propagation effects (ionospheric delay), which scale as 1/f².</li>
-    <li><strong>Distance-Structured Correlations:</strong> High-cadence (15-minute) pass-bin analysis yields statistically significant evidence for distance-structured inter-station correlations (Fisher-combined p = 0.0040), driven by strong negative correlations at intermediate ranges.</li>
+    <li><strong>Spectral Concentration:</strong> Residuals exhibit a 14.12× power enhancement (95% CI: 13.55–14.67) in the predicted TEP frequency band (10–500 µHz) relative to the broadband floor. This matches the spectral "clumping" observed in GNSS clocks.</li>
+    <li><strong>Instrument-Level Universality:</strong> The detection of the signal in the optical domain (~500 THz) matching the microwave domain (~1 GHz) confirms the coupling is achromatic — providing a strong argument against dispersive propagation effects (ionospheric delay), which scale as 1/f² — and replicates the channel across an independent instrument class and orbit chain.</li>
+    <li><strong>Distance-Structured Correlations:</strong> High-cadence (15-minute) pass-bin analysis yields statistically significant evidence for distance-structured inter-station correlations (Fisher-combined p = 0.0025), driven by strong negative correlations at intermediate ranges.</li>
     <li><strong>Geodetic Resolution:</strong> The SLR analysis reinterprets persistent geodetic anomalies—such as the VLBI-SLR scale drift (0.2 ppb) and the "flicker noise" floor in station coordinates—as physical evidence of conformal metric coupling.</li>
 </ul>
 
 <p>
-    The convergence of microwave GNSS results and optical SLR results establishes that the "Time Echo" is a universal metric phenomenon. The signal is technology-independent, frequency-independent, and persists in systems devoid of active clocks and microwave propagation.
+    The convergence of microwave GNSS results and optical SLR results shows that the "Time Echo" is not a product of the GNSS measurement chain: the signal is hardware-independent and persists in a system devoid of satellite-borne clocks and microwave propagation — the same conformal clock sector read through a different instrument class and an independent orbit determination. The independence is instrument- and provenance-level, not channel-level: under conformal null-cone invariance the optical flight time carries no propagation content, so the SLR residual reads the ground event-timer clock — a systematics and product-provenance check, not a second physical channel.
 </p>
 
 
@@ -230,8 +230,8 @@
         <tr>
             <td></td>
             <td>CMB frame alignment</td>
-            <td>18.2° separation; Solar Apex geometrically incompatible</td>
-            <td>Cosmological frame; not ephemeris-tied</td>
+            <td>18.2° separation on CODE product; Solar Apex geometrically incompatible; MGEX scan maximum 82.7° (projection-degenerate)</td>
+            <td>Cosmological frame; not ephemeris-tied; direction product-unstable</td>
         </tr>
         <tr>
             <td></td>
@@ -242,14 +242,14 @@
         <tr>
             <td></td>
             <td>Planetary event responses</td>
-            <td>56/156 events ≥2σ</td>
+            <td>56/156 events ≥2σ; 13/29 non-overlapping windows</td>
             <td>No GM/r² scaling; SPP confirmed</td>
         </tr>
         <tr>
             <td></td>
             <td>18.6-year lunar nutation</td>
-            <td>R² = 0.641, p = 0.010 (surrogate-validated)</td>
-            <td>1.4 complete cycles; longer baseline needed</td>
+            <td>R² = 0.641 &plusmn; 0.10, p = 0.010 (surrogate-validated)</td>
+            <td>1.36 complete cycles; cycle-limited, longer baseline needed</td>
         </tr>
         <tr>
             <td></td>
@@ -261,7 +261,7 @@
             <td><strong>Tier C</strong><br>(Optical-domain consistency check)</td>
             <td>SLR optical domain detection</td>
             <td>14× spectral enhancement</td>
-            <td>Technology-orthogonal; passive retroreflectors</td>
+            <td>Instrument-orthogonal; passive retroreflectors; same conformal clock channel</td>
         </tr>
     </tbody>
 </table>
@@ -269,9 +269,10 @@
 <p>
     Tier B signatures constitute the foundational timing-network evidence: they are
     detected with high statistical confidence across all GNSS test modes and
-    processing pipelines. Tier C provides an orthogonal optical-domain check
-    using an independent measurement technology; it is consistent with the
-    timing-network results but does not carry the same statistical weight owing
+    processing pipelines. Tier C provides an instrument-level optical-domain check
+    using an independent measurement technology and orbit-determination chain; it is consistent with the
+    timing-network results but probes the same conformal clock sector rather
+    than a second physical channel, and does not carry the same statistical weight owing
     to sparser station coverage and asymmetric global distribution. The pattern
     across both tiers consistently favors a velocity-dependent, CMB-aligned
     geometric mechanism over conventional explanations.

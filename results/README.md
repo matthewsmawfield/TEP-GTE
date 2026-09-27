@@ -16,6 +16,7 @@ symlink to the original output files.
 | Paper 2 | [TEP-GNSS-II](https://github.com/matthewsmawfield/TEP-GNSS-II) | `../TEP-GNSS-II` | 25-year longitudinal CODE analysis; nutation & planetary events |
 | Paper 3 | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | `../TEP-GNSS-RINEX` | Raw RINEX / SPP consistency test (72 metric combinations) |
 | Paper 4 | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | `../TEP-GL` | Gravitational lensing; Phantom Mass; Earth–Galaxy scaling |
+| Paper 8 | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | `../TEP-SLR` | Satellite Laser Ranging optical-domain spectral and distance-structure analysis |
 
 ## Key Results Referenced in this Manuscript
 
@@ -51,11 +52,19 @@ output files symlinked under `results/paper_*_*/`:
 
 - **Paper 2** (`paper_2_TEP-GNSS-II/planetary_events_jpl.json`):
   JPL ephemeris planetary-event response catalog.
+- **Paper 2** (`paper_2_TEP-GNSS-II/step_2_9_dependence_pricing.json`):
+  dependence-aware event pricing — effective independence count (29
+  non-overlapping ±120-day windows, disjoint-cell bound 38), 13 hits vs
+  null expectation 1.3 (binomial p ≈ 10⁻¹⁰).
 
-### 18.6-year and semiannual nutation coupling (R² = 0.641; R² = 0.904)
+### 18.6-year and semiannual nutation coupling (R² = 0.641 ± 0.10; R² = 0.904)
 
 - **Paper 2** (`paper_2_TEP-GNSS-II/nutation_surrogate_validation.json`):
   nutation harmonic regression and surrogate validation.
+- **Paper 2** (`paper_2_TEP-GNSS-II/step_2_9_dependence_pricing.json`):
+  cycle-count pricing — 1.36 cycles for the 18.6-year term (≤2 independent
+  realizations per phase bin), R² standard error ±0.096, permutation null
+  context (observed R² above 99th percentile of phase-shuffled nulls).
 
 ### Raw RINEX consistency (all 72 metric combinations; t up to 112)
 
@@ -70,6 +79,12 @@ output files symlinked under `results/paper_*_*/`:
   theoretical; figure outputs are in `../TEP-GL/results/figures/`. The
   Earth–Galaxy scaling argument and Phantom Mass mechanism are documented in
   the Paper 4 manuscript.
+
+### SLR spectral concentration (14.12×; 95% CI: 13.55–14.67; p = 0.0025)
+
+- **Paper 8** (`../TEP-SLR/results/outputs/step_2_3_mwpc_analysis.json`):
+  TEP-band spectral concentration ratio (TEP/broadband) and Fisher-combined
+  distance-structure p-value across 46 SLR stations.
 
 ## How to Regenerate
 
