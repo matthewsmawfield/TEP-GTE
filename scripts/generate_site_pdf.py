@@ -36,13 +36,13 @@ def load_citation_metadata():
     
     if not citation_file.exists():
         print("⚠️  CITATION.cff not found, using defaults")
-        return {'version': 'v0.6', 'codename': 'Singapore', 'title': 'TEP-GTE'}
+        return {'version': 'v0.7', 'codename': 'Singapore', 'title': 'TEP-GTE'}
     
     try:
         if yaml:
             with open(citation_file, 'r') as f:
                 data = yaml.safe_load(f)
-            version_str = data.get('version', 'v0.6')
+            version_str = data.get('version', 'v0.7')
         else:
             # Parse manually if yaml not available
             with open(citation_file, 'r') as f:
@@ -65,7 +65,7 @@ def load_citation_metadata():
         
     except Exception as e:
         print(f"⚠️  Error parsing CITATION.cff: {e}, using defaults")
-        return {'version': 'v0.6', 'codename': 'Singapore', 'title': 'TEP-GTE'}
+        return {'version': 'v0.7', 'codename': 'Singapore', 'title': 'TEP-GTE'}
 
 
 def build_static_site():

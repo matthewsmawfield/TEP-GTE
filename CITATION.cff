@@ -13,8 +13,9 @@ abstract: |
   relativity: whether distributed proper-time rates contain a coherent spatial covariance beyond the standard relativistic model. Examination of
   165.2 million station-pair observations from 474 unique receivers (814 station codes) demonstrates a
   spatial correlation signal decaying exponentially with distance (λ<sub>T</sub> =
-  4,201 ± 1,967 km, R² = 0.92–0.97 across three independent analysis
-  centers). These findings emerge from a systematic multi-paper research
+  4,201 ± 1,967 km — a measurement of order thousands of kilometres, 95%
+  CL ≈ 2,300–8,100 km, rather than a precise scale — R² = 0.92–0.97
+  across three distinct analysis-center solutions). These findings emerge from a systematic multi-paper research
   program: theoretical framework development with pre-specified expectations and theoretical search ranges
   (Paper 0), multi-center consistency across independent processing
   pipelines (Paper 1), 25-year longitudinal analysis enabling long-period
@@ -28,14 +29,20 @@ abstract: |
   orbital velocity coupling (r = −0.888, 3.65σ autocorrelation-corrected;
   surrogate p < 2×10⁻⁷ as a resolution bound); alignment with the Cosmic
   Microwave Background dipole (18.2° separation; Solar Apex geometrically
-  incompatible, predicting N-S anisotropy against the observed E-W dominance); achromatic universality (SLR confirms
-  low-frequency spectral structure in a clock-free optical system,
-  constraining receiver and clock systematics); planetary event responses (56/156 significant at
-  ≥2σ); 18.6-year lunar nutation coupling (R² = 0.641); pulsar spin-down
-  excess; and host-potential H<sub>0</sub> correlation. Raw RINEX consistency test using Single Point
+  incompatible, predicting N-S anisotropy against the observed E-W dominance;
+  on the MGEX product the scan is projection-degenerate and the axis is
+  product-unstable); instrument-level universality (the SLR optical chain
+  reproduces low-frequency spectral structure through a passive-spacecraft
+  instrument and an orbit-determination chain that consumes no GNSS
+  products — a provenance and systematics check within the same conformal
+  clock channel, not a channel-independent test); planetary event responses
+  (56/156 significant at ≥2σ; 13 hits among the 29 non-overlapping windows
+  versus ~1.3 expected under shared-structure dependence); 18.6-year lunar
+  nutation coupling (R² = 0.641 ± 0.10 over 1.36 cycles); pulsar spin-down
+  excess (exploratory channel); and host-potential H<sub>0</sub> correlation. Raw RINEX consistency test using Single Point
   Positioning with broadcast ephemerides achieves consistent signal detection
   across all 72 metric combinations (t-statistics up to 112, Cohen's d up to
-  0.304), strongly constraining precise-product processing artifacts as the sole origin. Broadcast ephemerides still contain control-segment information, so Satellite Laser Ranging and non-GNSS optical checks remain necessary for independent adjudication. The network's
+  0.304), strongly constraining precise-product processing artifacts as the sole origin. Broadcast ephemerides still contain control-segment information; the GNSS-product provenance layer is adjudicated by Satellite Laser Ranging (an orbit-determination chain independent of GNSS products), while the generic orbit-projection confound is reserved for the physical-confound forward model and orbit-free clock channels. The network's
   selectivity profile—sensitive to velocity-dependent dynamics while blind
   to GM/r² scaling and solar rotation—characterizes it as an inertial
   interferometer measuring correlation geometry rather than a gravimeter
@@ -60,24 +67,35 @@ abstract: |
   The measured GNSS covariance is interpreted primarily as a
   conformal-sector \(A(\phi)\) observable; it should not be identified
   with the non-zero closed-loop holonomy predicted only by the
-  non-exact/disformal sector.
+  non-exact/disformal sector. The empirical evidence presented here
+  therefore supports the conformal sector alone; the disformal-sector
+  holonomy — the framework's definitive discriminating test — remains
+  unmeasured.
 
   **Evidence Tiers:** A (Paper 0/EXP): Foundational theory with
   pre-specified search ranges; B (GNSS I–III): Primary timing-network
   evidence; C (SLR): Optical-domain consistency check; D (H₀, COS, WB):
   Environmental response tests; E (JWST, GL, UCD, RBH): Conditional
   astrophysical/cosmological extensions. The nine signatures are convergent but
-  not statistically independent. Critically, the conformal sector responsible for clock-rate
+  not statistically independent: the exponential decay, anisotropy, orbital
+  coupling, CMB alignment, nutation, and planetary-event signatures share the
+  same GNSS data and phase-alignment method, while the SLR check, pulsar
+  spin-down, and host-potential H<sub>0</sub> correlation use distinct data — the
+  effective number of independent tests is smaller than nine, and smaller
+  still at channel level: the SLR check reads the same conformal clock sector
+  through different hardware, the CMB axis is product-unstable, and the
+  pulsar channel is exploratory (its standalone evidence uninformative —
+  mildly GR-favouring — in the J0337 adjudication). Critically, the conformal sector responsible for clock-rate
   modulation is not directly constrained by photon–graviton differential-propagation tests such as GW170817, although local conformal-gradient/source-charge sectors remain constrained by PPN, clock, and equivalence-principle tests.
 
-  If validated through independent replication, TEP predicts that the phenomenology attributed to dark matter is the observational projection of Temporal Topology and Temporal Shear, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance, lensing Phantom Mass, and galactic mass discrepancies are different observational projections of the same time-field topology, with the terrestrial-to-galactic transfer kernel established in Paper 4 (TEP-GL, Phantom Mass mechanism) and Paper 13 (TEP-WB, SPARC-anchored wide-binary transition). The 4,000 km correlation on Earth and galactic-scale phenomenology are interpreted within TEP as manifestations of the same environment-dependent Temporal-Topology response, which provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime. The M<sup>1/3</sup> scaling of the saturation radius R<sub>T</sub> = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> remains testable through interplanetary missions. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; Temporal Topology correlation length falling outside the 500–20,000 km range; independent adjudication that the signal arises from ephemeris artifacts rather than physical clock correlations (via Satellite Laser Ranging check); and null synchronization holonomy in closed-loop triangular time-transfer experiments.
+  If validated through independent replication, TEP predicts that the phenomenology attributed to dark matter is the observational projection of Temporal Topology and Temporal Shear, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance, lensing Phantom Mass, and galactic mass discrepancies are different observational projections of the same time-field topology, with the terrestrial-to-galactic transfer kernel established in Paper 4 (TEP-GL, Phantom Mass mechanism) and Paper 13 (TEP-WB, SPARC-anchored wide-binary transition). The Phantom Mass mechanism is conditional on breakdown of the Isochrony Axiom in the presence of conformal metric couplings — an assumption whose violation amplitude is not yet derived from the action — and is presented as a conditional consequence, not a prediction. The 4,000 km correlation on Earth and galactic-scale phenomenology are interpreted within TEP as manifestations of the same environment-dependent Temporal-Topology response, which provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime. The saturation-density scale ρ<sub>T</sub> ≈ 20 g/cm³, and the diagnostic radius R<sub>T</sub> = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> it defines for each body, remain testable through interplanetary missions. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; Temporal Topology correlation length falling outside the 500–20,000 km range; adjudication of the ephemeris-artifact question — GNSS-product provenance via the Satellite Laser Ranging check, and the wider orbit-projection confound via the physical-confound forward model or an orbit-free clock channel; and null synchronization holonomy in closed-loop triangular time-transfer experiments.
 
   *Keywords:* Temporal Equivalence Principle, GNSS, atomic clocks,
   CMB alignment, dark matter, gravitational lensing, scalar-tensor
   gravity, synchronization holonomy, Temporal Topology, Temporal Shear,
   nonlinear screening mechanisms
 license: CC-BY-4.0
-version: v0.6 (Singapore)
+version: v0.7 (Singapore)
 doi: 10.5281/zenodo.18004832
 keywords:
 - Temporal Equivalence Principle
@@ -109,4 +127,4 @@ preferred-citation:
   journal: Zenodo
   url: https://mlsmawfield.com/tep/gte/
   doi: 10.5281/zenodo.18004832
-  notes: Preprint v0.6 (Singapore)
+  notes: Preprint v0.7 (Singapore)

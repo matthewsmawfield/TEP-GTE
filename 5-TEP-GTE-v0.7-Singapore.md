@@ -1,7 +1,7 @@
 # Global Time Echoes: Empirical Synthesis
 **Matthew Lukin Smawfield**
-Version: v0.6 (Singapore)
-21 December 2025 · Last updated: 14 September 2026
+Version: v0.7 (Singapore)
+21 December 2025 · Last updated: 28 September 2026
 DOI: 10.5281/zenodo.18004832
 
 ---
@@ -2053,7 +2053,7 @@ The framework preserves local Lorentz invariance, with the speed of light remain
 
 | Probe | Predicted in advance (sign/shape/ordering) | Fitted (amplitude) | Coefficient |
 | --- | --- | --- | --- |
-| GNSS λ (Papers 1–3, 14) | Exponential decay; EW>NS polarity; orbital-velocity sign | Decay length (metric-dependent, 1396–4549 km) | λ_T |
+| GNSS λ (Papers 1–3, 14) | Exponential decay; EW>NS polarity; orbital-velocity sign | Decay length (metric- and product-dependent, 1,862–4,549 km on the precise-product family) | λ_T |
 | Cepheid H₀ (Paper 11) | Sign of potential-depth correlation | Response amplitude | κ_Cep = (0.326 ± 0.206)×10<sup>6</sup> mag (multi-block) / (0.452 ± 0.220)×10<sup>6</sup> mag (redshift-only); theory benchmark κ_canonical = 0.96×10<sup>6</sup> |
 | MSP spin-down (Paper 10) | Suppression direction vs Newtonian; field-binary null | Response amplitude | κ_MSP ~ 10<sup>6</sup> |
 | LLR (Paper 17) | Synodic phase; sideband structure | κ_LLR = −3.91×10<sup>-4</sup> | κ_LLR (Solar-System ORC) |
@@ -2194,11 +2194,11 @@ Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations i
 
 Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.20 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.6 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
+Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.8 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
 
 Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.8 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.6 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5 — this work)
+Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.7 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5 — this work)
 
 Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.8 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
 
@@ -2216,11 +2216,11 @@ Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution t
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.6 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
 
-Smawfield, M. L. (2026). *Global Time Echoes: MGEX Multi-GNSS Clock Replication*. Preprint v0.2 (Suva). Zenodo. DOI: [10.5281/zenodo.20572727](https://doi.org/10.5281/zenodo.20572727) (Paper 14)
+Smawfield, M. L. (2026). *Global Time Echoes: MGEX Multi-GNSS Clock Replication*. Preprint v0.3 (Suva). Zenodo. DOI: [10.5281/zenodo.20572727](https://doi.org/10.5281/zenodo.20572727) (Paper 14)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly*. Preprint v0.2 (Yogyakarta). Zenodo. DOI: [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) (Paper 15)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Lunar Laser Ranging and the Nordtvedt Effect*. Preprint v0.2 (Lucknow). Zenodo. DOI: [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) (Paper 17)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Lunar Laser Ranging and the Nordtvedt Effect*. Preprint v0.4 (Lucknow). Zenodo. DOI: [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) (Paper 17)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.2 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572720](https://doi.org/10.5281/zenodo.20572720) (Paper 19)
 

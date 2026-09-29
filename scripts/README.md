@@ -44,7 +44,7 @@ The recommended end-to-end pipeline is:
 
 Generates the manuscript PDF from the built site (`site/dist/index.html`)
 using Playwright/Chromium. The PDF is written to both
-`site/public/docs/5-TEP-GTE-v0.6-Singapore.pdf` and the repository root.
+`site/public/docs/5-TEP-GTE-v0.7-Singapore.pdf` and the repository root.
 
 ```bash
 python scripts/utils/generate_pdf.py --quality maximum --wait-time 5
@@ -96,11 +96,11 @@ python scripts/utils/process_pdf.py <input_pdf> [--quality ebook|printer|prepres
 Example:
 
 ```bash
-python scripts/utils/process_pdf.py 5-TEP-GTE-v0.6-Singapore.pdf --quality ebook
+python scripts/utils/process_pdf.py 5-TEP-GTE-v0.7-Singapore.pdf --quality ebook
 ```
 
 ## Output
 
-- PDF: `5-TEP-GTE-v0.6-Singapore.pdf` (repository root and `site/public/docs/`)
+- PDF: `5-TEP-GTE-v0.7-Singapore.pdf` (repository root and `site/public/docs/`)
 - Site: https://mlsmawfield.com/tep/gte/
 - DOI: 10.5281/zenodo.18004832
