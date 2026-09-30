@@ -43,7 +43,7 @@ output files symlinked under `results/paper_*_*/`:
 - **Paper 1** (`paper_1_TEP-GNSS/meta_analysis_comprehensive.json`):
   orbital-velocity regression and surrogate-test significance.
 
-### CMB frame alignment (18.2°; Solar Apex geometrically incompatible)
+### Preferred-direction recovery (axis ~18° from CMB dipole axis; Solar Apex geometrically incompatible)
 
 - **Paper 1** (`paper_1_TEP-GNSS/meta_analysis_comprehensive.json`):
   CMB-dipole angular alignment and frame discrimination analysis.

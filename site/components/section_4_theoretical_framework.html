@@ -48,11 +48,11 @@
     The framework is formulated as a scalar-tensor theory in the Einstein frame
     where gravity remains canonical. The scalar field φ couples to matter
     through the conformal factor A(φ), modulating the rate of proper time
-    accumulation. The bare conformal coupling is β_A = −1 (order unity, consistent with the wider TEP corpus), with environmental screening suppressing the effective coupling to β_{A,eff} ~ 10<sup>−3</sup> in the near-Earth GNSS environment — a phenomenological factor set by the observational requirements of the local environment (consistent with Cassini/LLR bounds while permitting the observed correlations), not a suppression factor derived from the action; the derivation of S<sub>&Sigma;</sub>(E) that would predict it is an open calculation shared across the corpus. The scalar field obeys a Klein-Gordon equation
+    accumulation. The bare conformal coupling is $\beta_A = -1.0$ universally. In the near-Earth clock sector, $S_A^{(\oplus)} = \min[1, (\bar{\rho}_\oplus/\rho_T)^{1/3}] \approx 0.65$ characterizes static conformal depth, while the measured time-dependent covariance $C_A$ has a distinct environmental and processing transfer; the local shear sector is pairwise-screened by the kinetic operator (Paper 0 §2.2). The scalar field obeys a Klein-Gordon equation
     with source terms from matter density and a screening potential V(φ) that,
     in concert with derivative self-interactions, suppresses Temporal Shear in
-    dense environments through the continuous flattening of the φ-field spatial
-    profile. (Full action and field equations are provided in Appendix A.)
+    high-acceleration regions through the kinetic operator.
+    (Full action and field equations are provided in Appendix A.)
 </p>
 
 <h2>4.3 Foundational Axioms</h2>
@@ -66,22 +66,20 @@
     special relativity with invariant c. The third (causal safety) requires that
     c<sub>g</sub> = c<sub>γ</sub> within GW170817 bounds (|c<sub>g</sub> −
     c<sub>γ</sub>|/c ≲ 10<sup>−15</sup>), constraining the disformal coupling B(φ) to be small at
-    late times but not zero — a nonzero B(φ) is required for the synchronization holonomy observable (Section 4.6). The fourth (screening) states that rather than operating via
+    late times but not zero — disformal or otherwise non-exact transport is required for the synchronization holonomy observable (Section 4.6). The fourth (screening) states that rather than operating via
     discrete boundary cutoffs, screening manifests as a continuous spatial
     profile (Temporal Topology), with Temporal Shear suppression arising from
     the non-linear superposition of field gradients (Temporal Shear), suppressing
-    Temporal Shear in dense environments while leaving cosmology accessible to dynamics.
+    Temporal Shear in high-acceleration regions while leaving cosmology accessible to dynamics.
 </p>
 
 <h2>4.4 Candidate Theoretical Completions</h2>
 
 <p>
     The observed correlation length λ<sub>T</sub> is the Temporal Topology
-    correlation length—the characteristic scale at which Temporal Shear recovers
-    from deep suppression in Earth's gravitational well to the weak-field regime
-    where spatial correlations become detectable. This empirical parameter admits
+    correlation length—the characteristic scale of the clock-sector covariance $C_A$ in Earth's environment ($\lambda_T \approx R_T$ in the channel functional; Paper 0 §7). This empirical parameter admits
     multiple theoretical interpretations as candidate completions, not as unique
-    predictions. The observed exponential spatial correlation λ<sub>T</sub> ≈ 4,200 km represents the direct geodetic realization of the non-exact topological covariance term $\mathcal{C}_T$ defined in the foundational TEP axioms. It serves as the macroscopic geometric saturation scale for Earth's mass environment, providing a terrestrial anchor for the abstract operator $\mathcal{S}_\Sigma(\mathcal{E})$.</p>
+    predictions. The empirically derived correlation length λ<sub>T</sub> is a GNSS-sector covariance scale obtained after environmental projection and processing transfer. It is not the screening operator $\mathcal{S}_\Sigma(\mathcal{E})$ itself, and it is not the non-exact (disformal) covariance term, which this measurement does not access.</p>
 
 <p>
     Three classes of completion are sketched below.
@@ -93,17 +91,16 @@
     A chameleon-type completion identifies λ<sub>T</sub> with the in-medium Compton wavelength of a scalar field: λ = ℏ/(m<sub>φ</sub>c). For λ = 3,330–4,549 km, this yields m<sub>φ</sub> ≈ (4.34–5.93) × 10<sup>−14</sup> eV/c². The present framework identifies the correlation length with the geometric saturation radius R<sub>T</sub> (§4.4.2) rather than with a Compton wavelength; the mass scale is retained as a cross-reference to chameleon-literature conventions.
 </p>
 
-<h3>4.4.2 Screening Transition Scale: TEP Saturation Radius</h3>
+<h3>4.4.2 Clock Amplitude Calibration: TEP Saturation Radius</h3>
 
 <p>
-    In the canonical TEP framework, environmental screening arises from continuous gradient flattening of the dynamical proper-time field &phi;, governed by the scalar field potential V(&phi;) and kinetic structure (Paper 0 &sect;A4; Paper 4 &sect;2). The environmental screening operator &Sscr;<sub>&Sigma;</sub>(&Epsilon;) continuously suppresses the locally observable Temporal Shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A(&phi;) in high-density regimes, with the saturation density &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> serving as the bulk-matter realization of this operator (Paper 6). The geometric saturation radius provides an explicit transition scale:
+    In the TEP framework, the geometric saturation radius R<sub>T</sub>(M) = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> enters the clock sector to set the unsaturated clock-amplitude factor S<sub>A</sub> = min[1, (ρ̄/ρ<sub>T</sub>)<sup>1/3</sup>], while Earth-vicinity Temporal Shear is pairwise-screened in the force sector by the kinetic operator (Paper 0 §2.2, §7). The saturation density ρ<sub>T</sub> ≃ 20 g/cm<sup>3</sup> is calibrated from Earth's observed GNSS clock covariance:
 </p>
 
 <div class="equation">$$R_T = \left(\frac{3M}{4\pi\rho_T}\right)^{1/3}$$</div>
 
 <p>
-    This M<sup>1/3</sup> scaling is a kinematic consequence of the constant-&rho;<sub>T</sub> saturation model — it follows for any constant-density sphere, so the falsifiable content is the universality of &rho;<sub>T</sub> itself rather than the exponent. It applies within the saturation-model regime, from planetary through intermediate mass scales; at galactic scales the halo environment lies in the unscreened regime, where the same &Sscr;<sub>&Sigma;</sub> operator produces the phenomenology through the active-shear channel rather than through a screening radius (Section 5.5). For
-    Earth with M = M<sub>⊕</sub> ≈ 6 × 10<sup>24</sup> kg and &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup>:
+    This M<sup>1/3</sup> scaling is a kinematic property of the constant-ρ<sub>T</sub> saturation model. For Earth with M = M<sub>⊕</sub> ≈ 6 × 10<sup>24</sup> kg and ρ<sub>T</sub> ≃ 20 g/cm<sup>3</sup>:
 </p>
 
 <div class="equation">
@@ -111,31 +108,18 @@
 </div>
 
 <p>
-    This is consistent with the observed λ<sub>T</sub> = 4,201 ± 1,967 km,
-    providing a direct connection between the empirical GNSS correlation length and the TEP saturation scale. The mechanism operates
-    as follows:
+    This is consistent in scale with the observed GNSS correlation-length family (azimuth-averaged λ = 3,210 ± 389 km; cross-sector dispersion λ<sub>T</sub> = 4,201 ± 1,967 km), noting that the identification calibrates ρ<sub>T</sub> rather than testing an independently derived scale. The physical roles are partitioned as follows:
 </p>
 
 <ul>
     <li>
-        <strong>Deep field (r ≪ R<sub>T</sub>):</strong> The environmental screening operator &Sscr;<sub>&Sigma;</sub>(&Epsilon;) strongly suppresses Temporal Shear |∇φ|.
-        The effective coupling to matter decreases continuously, reaching α<sub
-            >PPN</sub><sub>eff</sub
-        >
-        ≪ α<sub>0</sub> well inside the saturation radius, rendering TEP effects
-        undetectable in laboratory tests and solar system observations.
+        <strong>Clock sector (S<sub>A</sub>):</strong> Governed by the potential sector and local density, returning S<sub>A</sub><sup>(⊕)</sup> ≃ 0.65 at Earth's mean density ρ̄<sub>⊕</sub> = 5.515 g/cm<sup>3</sup>. Clock residuals across continental baselines measure the spatial covariance C<sub>A</sub>(r); the transmission of time-dependent fluctuations and their processing transfer are distinct from the static S<sub>A</sub> level.
     </li>
     <li>
-        <strong>Weak field (r ≫ R<sub>T</sub>):</strong> Temporal Shear recovers
-        toward its unscreened value and the scalar field mediates long-range
-        correlations. Clock networks sampling this region detect the φ-field
-        structure through spatial covariance.
+        <strong>Shear / Force sector (S<sub>Σ</sub>):</strong> Governed by the kinetic completion P(X,φ) = X − V + X|X|/Λ<sub>X</sub><sup>4</sup>. In high-acceleration regions (g ≫ g<sub>t</sub> = cH₀/2), the two-body operator suppresses the observable shear response to 𝒮<sub>Σ</sub> ~ 10<sup>−21</sup> at Earth's surface, preserving standard General Relativity paths in local gravitational and planetary tests.
     </li>
     <li>
-        <strong>Transition scale:</strong> The correlation length λ ~ R<sub>T</sub>
-        marks the characteristic scale over which Temporal Topology relaxes from
-        deep suppression in the potential well to the weak-field regime,
-        allowing the scalar field's influence to manifest.
+        <strong>Kinetic transition scale (r<sub>*</sub>):</strong> The physical transition for dynamical shear recovery follows the kinetic law r<sub>*</sub>(M) = √(GM/g<sub>t</sub>) ∝ M<sup>1/2</sup> (Paper 0 §2.2), distinct from the geometric saturation radius R<sub>T</sub> ∝ M<sup>1/3</sup>.
     </li>
 </ul>
 
@@ -159,12 +143,12 @@
     </li>
     <li>
         <strong>Galaxies</strong> (M ~ 10<sup>12</sup> M<sub>☉</sub>): At galactic
-        scales, the screening operator &Sscr;<sub>&Sigma;</sub>(&Epsilon;) retains
+        scales, the screening operator 𝒮<sub>Σ</sub>(Ε) retains
         approximately 98% of the unsuppressed Temporal Shear in the diffuse halo
         environment (Paper 26), producing dark-matter-like phenomenology through
         the active-shear regime rather than through a screening radius. The
         galactic phenomenology is therefore a manifestation of the same
-        &Sscr;<sub>&Sigma;</sub> operator operating in the unscreened regime, not
+        𝒮<sub>Σ</sub> operator operating in the unscreened regime, not
         a Vainshtein scaling of the terrestrial correlation length. This
         connection is developed in Section 5.5.
     </li>
@@ -173,12 +157,12 @@
 <p>
     Within the saturation-model regime — from planetary through intermediate
     mass scales — R<sub>T</sub>(M) provides a unified characterization governed
-    by a single saturation density &rho;<sub>T</sub>; the testable prediction is
-    that one &rho;<sub>T</sub> fits all such masses, while galactic-scale
-    phenomenology arises from the same &Sscr;<sub>&Sigma;</sub> operator in the
+    by a single saturation density ρ<sub>T</sub>; the testable prediction is
+    that one ρ<sub>T</sub> fits all such masses, while galactic-scale
+    phenomenology arises from the same 𝒮<sub>Σ</sub> operator in the
     unscreened regime rather than from a screening radius. This scaling reproduces the continuous gradient-suppression behavior described by
     Temporal Topology at the macroscopic level. Candidate microscopic completions (chameleon, Vainshtein, Galileon, DBI, symmetron) may produce similar phenomenology through different microscopic mechanisms; the empirical correlation length
-    λ<sub>T</sub> = 4,201 ± 1,967 km does not uniquely select any single completion. The defining TEP ontology is the continuous suppression of Temporal Shear by the &Sscr;<sub>&Sigma;</sub>(&Epsilon;) operator, not the specific microscopic screening mechanism.
+    λ<sub>T</sub> = 4,201 ± 1,967 km does not uniquely select any single completion. The defining TEP ontology is the continuous suppression of Temporal Shear by the 𝒮<sub>Σ</sub>(Ε) operator, not the specific microscopic screening mechanism.
 </p>
 
 <h2>4.5 Synchronization Holonomy and Spatial Correlations</h2>
@@ -211,7 +195,7 @@
 <p>
     The resolution lies in distinguishing two observables. Synchronization
     holonomy (H) represents the non-closure of proper time around closed loops;
-    this requires B ≠ 0 and is the target of proposed triangle tests. Spatial
+    this requires disformal or otherwise non-exact transport and is the target of proposed triangle tests. Spatial
     correlation structure, by contrast, represents the statistical covariance of
     clock residuals as a function of distance; this arises from the spatial
     structure of the φ field itself—specifically, the two-point correlation
@@ -272,7 +256,7 @@
 <p>
     <strong>Observable 1: Synchronization Holonomy (ℋ)</strong> — The
     non-closure of proper time around closed loops, defined as ℋ ≡ ∮<sub>C</sub>
-    dτ<sub>prop</sub>. This observable requires B(φ) ≠ 0 (disformal coupling)
+    dτ<sub>prop</sub>. This observable requires disformal or otherwise non-exact transport
     because only non-exact structure in the time-transport connection generates
     path-dependent accumulation. In the conformal-only limit (B = 0), the
     one-form Ω<sub>μ</sub> = ∂<sub>μ</sub>(½ ln A) is exact, its curl vanishes
@@ -289,7 +273,7 @@
     function ⟨φ(x)φ(x+r)⟩ ∝ exp(−r/λ) of the underlying field induces
     correlations in clock rates through the conformal factor A(ϕ) =
     exp(β<sub>A</sub>ϕ/M<sub>Pl</sub>). The exponential decay length λ = R<sub>T</sub>(M<sub>⊕</sub>)
-    reflects the TEP screening scale of the temporal topology (topology pins in dense regions); the terrestrial correlation length is identified with the geometric saturation radius R_T(M_⊕) from the UCD model (Paper 6), not with the in-medium Compton wavelength of a candidate chameleon completion.
+    reflects the TEP screening scale of the temporal topology (temporal-topology pinning on the environmental state, of which density is one coordinate); the terrestrial correlation length is identified with the geometric saturation radius R_T(M_⊕) from the UCD model (Paper 6), not with the in-medium Compton wavelength of a candidate chameleon completion.
 </p>
 
 <p>
@@ -337,13 +321,13 @@
     August 2025 (Smawfield 2025a, v0.1) and the clock-network correlation
     forecast was versioned on 15 September 2025 (v0.4 §E), preceding the first
     public deposit of the GNSS analysis by one week (provenance register,
-    Section 6.5). Table 3 compares these forecasts to
+    Section 6.5). Table 5 compares these forecasts to
     observations.
 </p>
 
 <table>
     <caption>
-        Table 3. Comparison of TEP pre-specified expectations with GNSS observations.
+        Table 5. Comparison of TEP pre-specified expectations with GNSS observations.
     </caption>
     <thead>
         <tr>
@@ -355,22 +339,34 @@
     </thead>
     <tbody>
         <tr>
-            <td>Correlation length</td>
+            <td>Correlation length (screening-parameterized forecast)</td>
+            <td>2,000–3,000 km</td>
+            <td>3,210 ± 389 km (azimuth-averaged); IGS-final 3,330–4,549 km</td>
+            <td>Not met: observed scale lies above the band</td>
+        </tr>
+        <tr>
+            <td>Correlation length (search range)</td>
             <td>1,000–10,000 km</td>
-            <td>4,201 ± 1,967 km</td>
-            <td>Consistent</td>
+            <td>4,201 ± 1,967 km (sector dispersion)</td>
+            <td>Consistent; non-discriminating (range subsumes leading systematic scales)</td>
         </tr>
         <tr>
             <td>Spatial decay form</td>
-            <td>Exponential</td>
-            <td>ΔAIC = 12.8 vs. power-law</td>
-            <td>Consistent</td>
+            <td>Exponential; Gaussian-family preference would disfavour the screened-field reading (Paper 1, criterion iii)</td>
+            <td>Gaussian/squared-exponential preferred; exponential ΔAIC = +12.8; power law ΔAIC &gt; 30</td>
+            <td>Met in Paper 1; not met in the 25-year dataset</td>
+        </tr>
+        <tr>
+            <td>Multi-centre consistency</td>
+            <td>$\lt$ 5% variation in fitted parameters</td>
+            <td>CV of λ ≈ 13% across three centre exponential fits</td>
+            <td>Not met</td>
         </tr>
         <tr>
             <td>Velocity-dependent anisotropy</td>
             <td>Modulates with v/c</td>
             <td>r = −0.888 (3.65σ, autocorr.-corrected)</td>
-            <td>Consistent</td>
+            <td>Consistent in sign (pre-stated in Paper 1 v0.6α); coupling magnitude not derived in the current framework</td>
         </tr>
         <tr>
             <td>Geometric alignment</td>
@@ -385,10 +381,10 @@
             <td>Consistent</td>
         </tr>
         <tr>
-            <td>CMB frame alignment</td>
-            <td>Cosmological rest frame</td>
-            <td>18.2° from CMB dipole</td>
-            <td>Consistent</td>
+            <td>Annual-phase direction recovery</td>
+            <td>Orbital-phase modulation</td>
+            <td>RA = 6°, Dec = +4°; ~6° from aphelion velocity tangent; CMB apex anti-phase</td>
+            <td>Consistent with orbital-phase channel; no CMB-frame identification</td>
         </tr>
         <tr>
             <td>GM/r² and GM/r³ scaling</td>
@@ -420,12 +416,12 @@
 
 <p>
     Existing precision tests probe different observables than TEP's primary
-    signatures, as summarized in Table 4.
+    signatures, as summarized in Table 6.
 </p>
 
 <table>
     <caption>
-        Table 4. Why existing precision tests do not constrain TEP.
+        Table 6. Why existing precision tests do not constrain TEP.
     </caption>
     <thead>
         <tr>
@@ -514,7 +510,7 @@
             Cassini (PPN-γ): Two-way Doppler/Shapiro is reciprocity-even; it
             calibrates σ<sub>GR</sub> to subtract but does not bound
             ℋ<sub>resid</sub>. The measurement was performed during solar
-            conjunction, sampling the Sun's deep potential well&mdash;the
+            conjunction, sampling the Sun's deep potential well—the
             screened regime where the source-charge sector $S_\Sigma$ is
             suppressed. The bound therefore applies to the solar-vicinity
             environment, not to the dilute regimes where Temporal Shear
@@ -615,7 +611,7 @@
 <p>
     Lunar Laser Ranging: LLR measures the Earth-Moon distance to millimeter
     precision, testing the equivalence principle through the Nordtvedt parameter
-    η. The current bound η < 4.4 × 10<sup>−4</sup> constrains deviations from
+    η. The current bound η $\lt$ 4.4 × 10<sup>−4</sup> constrains deviations from
     the strong equivalence principle. TEP satisfies this constraint through
     universal coupling: the conformal factor A(φ) couples identically to all
     matter fields, preserving the equivalence principle in the matter frame.
@@ -634,17 +630,17 @@
 <div class="equation">$$\eta = 4\beta_{\text{PPN}} - \gamma - 3$$</div>
 
 <p>
-    remains within observational bounds. The PPN nonlinearity parameter β<sub>PPN</sub> is driven to its GR value β<sub>PPN</sub> → 1 + O(β<sub>A,eff</sub><sup>2</sup>) by the TEP screening operator, where β<sub>A,eff</sub> ~ 10<sup>−3</sup> is the environmentally screened effective coupling (bare β<sub>A</sub> = −1) in the near-Earth regime. With γ ≈ 1 (Cassini constraint) and β<sub>PPN</sub> ≈ 1 + 10<sup>−6</sup>, the predicted Nordtvedt parameter is η ≈ 4 × 10<sup>−6</sup>, well below the LLR bound. The predicted metric deviation η ≈ 4 × 10<sup>−6</sup> applies to the gravitational sector, preserving the Strong Equivalence Principle. The ∼10<sup>−4</sup> synodic-phase anomaly reported in Paper 17 is an empirical matter-frame clock residual (κ<sub>LLR</sub>), not a classical Nordtvedt metric violation.
+    remains within observational bounds. The PPN nonlinearity parameter β<sub>PPN</sub> is driven to its GR value β<sub>PPN</sub> → 1 by the TEP screening operator, where the pairwise response is suppressed by the kinetic operator ($S_\Sigma(g_{\text{lunar}}) \approx 1.6 \times 10^{-14}$; Paper 0 §2.2). With γ ≈ 1 (Cassini constraint), the predicted Nordtvedt parameter is well below the LLR bound. The predicted metric deviation applies to the gravitational sector, preserving the Strong Equivalence Principle. The ∼10<sup>−4</sup> synodic-phase anomaly reported in Paper 17 is an empirical matter-frame clock residual (κ<sub>LLR</sub>), not a classical Nordtvedt metric violation.
 </p>
 
 <p>
     Furthermore, the Earth–Moon separation lies in the deeply suppressed
     regime of the pairwise Temporal-Topology response
-    &Sscr;<sub>eff</sub>(s): the scalar-mediated Earth–Moon differential
+    𝒮<sub>eff</sub>(s): the scalar-mediated Earth–Moon differential
     acceleration is suppressed by pairwise response factors of order
     2.5×10<sup>−14</sup> relative to the unsuppressed coupling (Paper 0,
     screening operator), comfortably below the LLR bound. The suppression
-    acts on the shear sector (&Sscr;<sub>Σ</sub>) — the geodesic and
+    acts on the shear sector (𝒮<sub>Σ</sub>) — the geodesic and
     force projection — while each body's clock-amplitude coupling
     (S<sub>A</sub>) remains unsuppressed. The combination of universal
     coupling and sector-separated screening ensures LLR compatibility
@@ -655,14 +651,11 @@
 <h2>4.8 Relation to Established Scalar-Tensor Theory</h2>
 
 <p>
-    The TEP framework is not a novel field theory but rather a phenomenological
-    application of well-established scalar-tensor gravity to precision timing.
-    In the limiting case B = 0, TEP with A(ϕ) = exp(β<sub>A</sub>ϕ/M<sub>Pl</sub>) reduces to Brans-Dicke
+    In the canonical non-screened limit, TEP shares structural similarities with scalar-tensor theories, but its physical realization is defined by the non-canonical kinetic sector $P(X,\phi) = X - V + X|X|/\Lambda_X^4$ and universal matter-metric coupling.
+    In the limit B = 0, V = 0, Λ<sub>X</sub> → ∞, TEP with A(ϕ) = exp(β<sub>A</sub>ϕ/M<sub>Pl</sub>) reduces to Brans-Dicke
     gravity in the Jordan frame, with the coupling β<sub>A</sub> related to the Brans-Dicke
-    parameter ω<sub>BD</sub>. However, the full TEP framework requires B(φ) ≠ 0 for the synchronization holonomy observable (Section 4.6); the B = 0 case is a limiting benchmark, not the operative theory. Candidate derivative-screening models (such as the Vainshtein mechanism in Horndeski gravity)
-    demonstrate how derivative self-interactions can suppress forces in deep fields. In the canonical
-    TEP framework, however, screening is realized through continuous gradient flattening of Temporal Shear (&Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A), separating the conformal clock response S<sub>A</sub> from the environmental source-charge projection S<sub>&Sigma;</sub> without requiring higher-order derivative interactions. TEP's environmental screening is
-    analogous to chameleon mechanisms but operates through derivative
+    parameter ω<sub>BD</sub>. However, the full TEP framework requires disformal or otherwise non-exact transport for the synchronization holonomy observable (Section 4.6); the B = 0 case is a limiting benchmark, not the operative theory. In the master
+    TEP framework, screening is realized through the non-canonical kinetic operator, separating the conformal clock response S<sub>A</sub> from the environmental source-charge projection S<sub>Σ</sub> (Paper 0 §2.2). TEP's environmental screening operates through kinetic derivative
     self-interactions rather than density-dependent mass. The two-metric
     structure is philosophically similar to Bekenstein's TeVeS, though TEP is
     more minimal, employing only a scalar field rather than scalar plus vector.
@@ -700,8 +693,8 @@
 
 <p>
     This mechanism implies: GM/r² scaling should be absent in processed data
-    because it is common-mode, while geometric signatures (anisotropy, CMB
-    alignment) should survive because they are differential. The observations
+    because it is common-mode, while geometric signatures (anisotropy, preferred-direction
+    structure) should survive because they are differential. The observations
     are consistent with both expectations. The processing filter is not a
     bug but a feature: it explains why the signal was categorized as systematic
     error rather than physical phenomenon, and why it can now be detected by
@@ -773,7 +766,7 @@
         <strong>Positive Prediction:</strong> Geometric anisotropy (EW/NS ratio)
         should survive because it represents a k ≠ 0 quadrupole moment with zero
         spatial mean but nonzero phase structure. Observed: EW/NS = 2.16
-        detected at p < 10<sup>−15</sup>.
+        detected at p $\lt$ 10<sup>−15</sup>.
     </li>
 </ul>
 
@@ -789,13 +782,13 @@
 <p>
     For the proposed triangle holonomy test to achieve definitive
     discrimination, systematic errors must be controlled below the target
-    sensitivity of 10<sup>−19</sup> fractional. Table 5 presents the error
+    sensitivity of 10<sup>−19</sup> fractional. Table 7 presents the error
     budget.
 </p>
 
 <table>
     <caption>
-        Table 5. Systematic error budget for the triangle holonomy test.
+        Table 7. Systematic error budget for the triangle holonomy test.
     </caption>
     <thead>
         <tr>

@@ -39,13 +39,13 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<div[^>]*class=["'][^"']*manuscript-section[^"']*["'][^>]*data-section=["']([^"]*)["'][^>]*>/gi, '\n## $1\n\n');
         
         // Convert headers
-        html = html.replace(/<h1[^>]*>(.*?)<\/h1>/gi, '\n# $1\n\n');
-        html = html.replace(/<h2[^>]*>(.*?)<\/h2>/gi, '\n## $1\n\n');
-        html = html.replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n### $1\n\n');
-        html = html.replace(/<h4[^>]*>(.*?)<\/h4>/gi, '\n#### $1\n\n');
+        html = html.replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, (match, level, content) => {
+            const heading = content.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+            return `\n${'#'.repeat(Number(level))} ${heading}\n\n`;
+        });
         
         // Convert paragraphs - remove leading/trailing whitespace from content
-        html = html.replace(/<p[^>]*>(.*?)<\/p>/gi, (match, p1) => {
+        html = html.replace(/<p\b[^>]*>(.*?)<\/p>/gi, (match, p1) => {
             // Strip leading whitespace from paragraph content
             const cleaned = p1.replace(/^\s+/g, '').replace(/\s+$/g, '');
             return cleaned + '\n\n';
@@ -71,7 +71,8 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<blockquote[^>]*>(.*?)<\/blockquote>/gi, '\n> $1\n\n');
         
         // Convert code blocks
-        html = html.replace(/<pre[^>]*><code[^>]*>(.*?)<\/code><\/pre>/gi, '\n```\n$1\n```\n\n');
+        html = html.replace(/<pre[^>]*>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, '\n```\n$1\n```\n\n');
+        html = html.replace(/<pre[^>]*>([\s\S]*?)<\/pre>/gi, '\n```\n$1\n```\n\n');
         html = html.replace(/<code[^>]*>(.*?)<\/code>/gi, '`$1`');
         
         // Convert line breaks
@@ -118,15 +119,15 @@ class HTMLToMarkdownConverter {
         
         // Restore MathJax expressions
         mathExpressions.forEach((expr, index) => {
-            html = html.replace(`__MATH_EXPRESSION_${index}__`, expr);
+            html = html.replace(`__MATH_EXPRESSION_${index}__`, () => expr);
         });
 
         // Restore sub/sup tags
         subTags.forEach((inner, index) => {
-            html = html.replace(`__SUB_${index}__`, `<sub>${inner}</sub>`);
+            html = html.replace(`__SUB_${index}__`, () => `<sub>${inner}</sub>`);
         });
         supTags.forEach((inner, index) => {
-            html = html.replace(`__SUP_${index}__`, `<sup>${inner}</sup>`);
+            html = html.replace(`__SUP_${index}__`, () => `<sup>${inner}</sup>`);
         });
         
         // Decode HTML entities
@@ -148,7 +149,11 @@ class HTMLToMarkdownConverter {
         html = html.replace(/&sigma;/g, 'σ');
         
         // Remove leading whitespace from each line (no indents)
-        html = html.replace(/^[ \t]+/gm, '');
+        let inFence = false;
+        html = html.split('\n').map((line) => {
+            if (line.trimStart().startsWith('```')) inFence = !inFence;
+            return inFence ? line : line.replace(/^[ \t]+/, '');
+        }).join('\n');
         
         // Clean up whitespace
         html = html.replace(/\n\s*\n\s*\n/g, '\n\n');
@@ -189,7 +194,7 @@ class HTMLToMarkdownConverter {
                         });
                     processed = processed.replace(/<[^>]+>/g, '').trim();
                     subSupPlaceholders.forEach((tag, i) => {
-                        processed = processed.replace(`__SUBSUP_${i}__`, tag);
+                        processed = processed.replace(`__SUBSUP_${i}__`, () => tag);
                     });
                     return processed;
                 });
@@ -227,7 +232,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.3 (Tortola)';
+            .trim() : 'v0.7 (Singapore)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
         const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 29 November 2025';
@@ -340,8 +345,6 @@ class HTMLToMarkdownConverter {
      * Clean format matching other TEP papers (no bold labels, minimal formatting)
      */
     buildMarkdownDocument(metadata, content) {
-        const timestamp = new Date().toISOString().split('T')[0];
-        
         // Clean up the title to remove the author part
         const cleanTitle = metadata.title.replace(' | Matthew Lukin Smawfield', '');
         
@@ -351,13 +354,17 @@ class HTMLToMarkdownConverter {
         // Clean up the date (remove "First published: " prefix if present)
         const cleanDate = metadata.date.replace(/^First published:\s*/i, '');
         
-        // Clean content - remove leading whitespace from each line
-        const cleanContent = content.replace(/^[ \t]+/gm, '');
+        // Clean content - remove leading whitespace from each line (outside code fences)
+        let inFence = false;
+        const cleanContent = content.split('\n').map((line) => {
+            if (line.trimStart().startsWith('```')) inFence = !inFence;
+            return inFence ? line : line.replace(/^[ \t]+/, '');
+        }).join('\n');
         
         return `# ${cleanTitle}
 **${metadata.author}**
 Version: ${cleanVersion}
-${cleanDate}
+First published: ${cleanDate}
 DOI: ${metadata.doi}
 
 ---

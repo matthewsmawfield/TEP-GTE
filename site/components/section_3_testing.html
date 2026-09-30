@@ -11,11 +11,11 @@
 </p>
 
 <p>
-    The raw RINEX test dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected with consistent results across all 72 metric combinations tested, with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances (<500 km). A critical audit confirms this is robust to distance bias: E-W pairs are 13 km longer than N-S pairs (a bias <em>against</em> the signal), and distance-matching strengthens the ratio.
+    The raw RINEX test dataset comprises 539 stations over three years (2022–2024), totaling 1.17 billion pair-samples. The signal is detected with consistent results across all 72 metric combinations tested, with mean R² = 0.93. Directional anisotropy matches the CODE findings, with East-West exceeding North-South by 2–22% at short distances ($\lt$500 km). A critical audit confirms this is robust to distance bias: E-W pairs are 13 km longer than N-S pairs (a bias <em>against</em> the signal), and distance-matching strengthens the ratio.
 </p>
 
 <p>
-    The correlation length in raw data (λ ≈ 700–1,100 km) is shorter than in precise products (λ ≈ 4,000 km), consistent with ionospheric noise masking the long-range structure. When ionospheric effects are removed (Ionofree mode), the raw correlation length increases, supporting a "Ladder of Precision" where the signal scale converges toward the CODE benchmark as noise is mitigated. Orbital velocity coupling is detected at r = −0.763 (5.4σ) in multi-GNSS mode, and CMB alignment yields RA = 188°, Dec = −5° (20.0° from the CMB dipole), consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and is difficult to attribute solely to tested processing artifacts.
+    The correlation length in raw data (λ ≈ 700–1,100 km) is shorter than in precise products (λ ≈ 4,000 km), consistent with ionospheric noise masking the long-range structure. When ionospheric effects are removed (Ionofree mode), the raw correlation length increases, supporting a "Ladder of Precision" where the signal scale converges toward the CODE benchmark as noise is mitigated. Orbital velocity coupling is detected at r = −0.763 (nominal 5.4σ; ≈3.0σ autocorrelation-corrected in Paper 3) in multi-GNSS mode, and the directional scan recovers RA = 8°, Dec = +5° under the corrected orbital-velocity convention — ~160° from the CMB apex as an arrow, ~20° from the dipole axis, and ~4° from the aphelion velocity tangent — consistent with the 25-year analysis. The signal therefore exists in the fundamental observables and is difficult to attribute solely to tested processing artifacts.
 </p>
 
 <h2>3.2 Ionospheric Hypothesis</h2>
@@ -25,13 +25,13 @@
 </p>
 
 <p>
-    The correlation between the signal and the Solar Flux Index is r ≈ 0, indicating no significant relationship. The correlation length λ remains stable across solar maxima within uncertainty bounds. Moreover, the signal persists in the dual-frequency ionosphere-free L1+L2 combination (λ = 1,069 km, R² = 0.969), and excluding high-ionosphere periods improves the signal by 21–23%. This last observation indicates that the ionosphere suppresses rather than creates the correlation. The signal is therefore not ionospheric in origin.
+    The correlation between the signal and the Solar Flux Index is r ≈ 0, indicating no significant relationship. The correlation length λ remains stable across solar maxima within uncertainty bounds. Moreover, the signal persists in the dual-frequency ionosphere-free L1+L2 combination (λ = 1,069 km, R² = 0.969), and excluding high-ionosphere periods improves the signal by 21–23%. This last observation indicates that the ionosphere suppresses rather than creates the correlation. A simple ionospheric origin is therefore strongly disfavoured by these controls.
 </p>
 
 <h2>3.3 Geomagnetic Hypothesis</h2>
 
 <p>
-    If the signal were driven by geomagnetic storms affecting clock electronics or signal propagation, it should vary systematically with geomagnetic activity. Stratification by GFZ Kp index data across all 72 metric combinations yields median Δλ ≈ −1% at the primary threshold (Kp &lt; 3 versus Kp ≥ 3), with 60 of 72 tests falling within ±5% across all station filters and processing modes. No systematic deviation appears at higher storm thresholds (Kp ≥ 4, Kp ≥ 5). The signal is therefore geomagnetically invariant.
+    If the signal were driven by geomagnetic storms affecting clock electronics or signal propagation, it should vary systematically with geomagnetic activity. Stratification by GFZ Kp index data across all 72 metric combinations yields median Δλ ≈ −1% at the primary threshold (Kp $\lt$ 3 versus Kp ≥ 3), with 60 of 72 tests falling within ±5% across all station filters and processing modes. No systematic deviation appears at higher storm thresholds (Kp ≥ 4, Kp ≥ 5). The signal is therefore geomagnetically invariant.
 </p>
 
 <h2>3.4 Tropospheric Hypothesis</h2>
@@ -41,7 +41,7 @@
 </p>
 
 <p>
-    Analysis of 360 regressions spanning global and latitude-controlled altitude quintiles reveals that only 3.1% exhibit p &lt; 0.05 slopes, consistent with chance expectation. The Q5/Q1 ratio (highest to lowest altitude quintile) has median 0.97 (IQR 0.76–1.27), indicating that low-altitude and high-altitude stations yield statistically indistinguishable λ values.
+    Analysis of 360 regressions spanning global and latitude-controlled altitude quintiles reveals that only 3.1% exhibit p $\lt$ 0.05 slopes, consistent with chance expectation. The Q5/Q1 ratio (highest to lowest altitude quintile) has median 0.97 (IQR 0.76–1.27), indicating that low-altitude and high-altitude stations yield statistically indistinguishable λ values.
 </p>
 
 <p>
@@ -49,7 +49,7 @@
 </p>
 
 <p>
-    <strong>Comprehensive Test Summary:</strong> The altitude independence test represents one component of a broader testing framework spanning 388 independent statistical tests across multiple analysis families. False Discovery Rate correction (FDR-BH: 52.3%, Hierarchical Empirical Bayes: 39.7%, Bonferroni: 40.0%) demonstrates robustness against multiple comparison artifacts. This extensive empirical testing, combined with cross-center consistency (coefficient of variation 18.2% for comprehensive-validation correlation lengths across CODE, IGS, ESA; cf. §2.1 exponential λ<sub>T</sub> triplet CV ~13%), establishes that the observed correlations survive rigorous scrutiny across independent processing pipelines, environmental conditions, and statistical frameworks.
+    <strong>Comprehensive Test Summary:</strong> The altitude independence test represents one component of a broader testing framework spanning 388 independent statistical tests across multiple analysis families. False Discovery Rate correction (FDR-BH: 52.3%, Hierarchical Empirical Bayes: 39.7%, Bonferroni: 40.0%) demonstrates robustness against multiple comparison artifacts. This extensive empirical testing, combined with cross-center consistency (cross-centre coefficient of variation ≈ 13% on the exponential λ<sub>T</sub> triplet (CODE, IGS, ESA; §2.1)), establishes that the observed correlations survive rigorous scrutiny across independent processing pipelines, environmental conditions, and statistical frameworks.
 </p>
 
 <h2>3.5 Long-Period Stability</h2>
@@ -59,7 +59,7 @@
 </p>
 
 <p>
-    The data reveal clear coupling to multiple geophysical cycles. The 18.6-year lunar nutation shows R² = 0.641 &plusmn; 0.10 (p = 0.010, F-test with N = 12 phase bins; permutation test p = 0.0016, N = 100,000; 1.36 complete cycles observed — cycle-limited: each phase bin carries at most two independent cycle realizations). The semiannual nutation shows R² = 0.904 (p = 2.7 &times; 10<sup>−5</sup>, F-test; permutation p = 2.7 &times; 10<sup>−4</sup>; AR(1) red-noise surrogate p = 2 &times; 10<sup>−5</sup>, N = 100,000; over 50 complete cycles). The Chandler wobble (433 days) shows R² = 0.096 with phase stability of 0.72 across more than 21 cycles. Core signatures—correlation length, anisotropy, and orbital coupling—remain consistent across the full 25-year span. The signal is therefore temporally stable across multiple geophysical cycles. Surrogate validation confirms that the nutation p-values are not inflated by treating the 165 million station-pair observations as independent: the F-test uses N = 12 phase bins (not N = 165 million), and non-parametric permutation and AR(1) red-noise surrogate tests confirm the significance without Gaussian or independence assumptions.
+    The data reveal clear coupling to multiple geophysical cycles. The 18.6-year lunar nutation shows R² = 0.641 &plusmn; 0.10 (p = 0.010, F-test with N = 12 phase bins; permutation test p = 0.0016, N = 100,000; 1.36 complete cycles observed — cycle-limited: each phase bin carries at most two independent cycle realizations). The semiannual coherence component shows R² = 0.904 (p = 2.7 &times; 10<sup>−5</sup>, F-test; permutation p = 2.7 &times; 10<sup>−4</sup>; AR(1) red-noise surrogate p = 2 &times; 10<sup>−5</sup>, N = 100,000; over 50 complete cycles; apsidal-locked, compatible with nutation term or orbital second harmonic). The Chandler wobble (433 days) shows R² = 0.096 with phase stability of 0.72 across more than 21 cycles. Core signatures—correlation length, anisotropy, and orbital coupling—remain consistent across the full 25-year span. The signal is therefore temporally stable across multiple geophysical cycles. Surrogate validation confirms that the nutation p-values are not inflated by treating the 165 million station-pair observations as independent: the F-test uses N = 12 phase bins (not N = 165 million), and non-parametric permutation and AR(1) red-noise surrogate tests confirm the significance without Gaussian or independence assumptions.
 </p>
 
 <h2>3.6 Most Plausible Remaining Conventional Explanation</h2>
@@ -69,7 +69,7 @@
 </p>
 
 <p>
-    <strong>The Hypothesis:</strong> A sophisticated, distance-dependent systematic error exists in GNSS observations that: (1) produces exponential decay with λ ≈ 4,000 km; (2) exhibits East-West/North-South anisotropy ratio of 2.16; (3) couples to Earth's orbital velocity with r = −0.888; (4) aligns with the CMB dipole to 18.2°; (5) responds to planetary configurations without mass scaling; (6) couples to 18.6-year lunar nutation and semiannual nutation; (7) survives independent processing by CODE, IGS, and ESA; (8) persists in raw RINEX data processed with broadcast ephemerides only; and (9) appears identically across all 72 metric combinations.
+    <strong>The Hypothesis:</strong> A sophisticated, distance-dependent systematic error exists in GNSS observations that: (1) produces exponential decay with λ ≈ 4,000 km; (2) exhibits East-West/North-South anisotropy ratio of 2.16; (3) couples to Earth's orbital velocity with r = −0.888; (4) reproduces an annual phase near Earth's aphelion velocity tangent while the CMB-apex template is anti-phase; (5) produces repeatable seasonal-window coherence modulation in the planetary event catalogue without mass scaling; (6) couples to 18.6-year lunar nutation and the semiannual coherence component; (7) survives independent processing by CODE, IGS, and ESA; (8) persists in raw RINEX data processed with broadcast ephemerides only; and (9) retains compatible distance structure across 72 non-independent metric combinations, with metric-dependent response.
 </p>
 
 <p>
@@ -77,10 +77,10 @@
 </p>
 
 <ul>
-    <li><strong>Multi-center consistency (R² = 0.92–0.97, comprehensive-validation CV = 18.2%; exponential λ<sub>T</sub> triplet CV ~13% in §2.1):</strong> The systematic must be present in three independent processing pipelines using different algorithms, software, and analysis centers. This excludes center-specific artifacts but does not exclude systematics inherent to GNSS observation geometry or satellite constellation design.</li>
+    <li><strong>Multi-center consistency (R² = 0.92–0.97, cross-centre CV ≈ 13% on the exponential λ<sub>T</sub> triplet (§2.1)):</strong> The systematic must be present in three software- and estimator-diverse product families (Bernese, the IGS combination product, NAPEOS) within the shared IGS tracking ecosystem. This excludes center-specific artifacts but does not exclude shared-network, constellation-geometry, or datum-convention systematics, nor systematics inherent to GNSS observation geometry or satellite constellation design.</li>
     <li><strong>Raw RINEX test (all combinations, t-stats up to 112):</strong> The systematic must survive Single Point Positioning with broadcast ephemerides, which processes each station independently without network adjustment. This excludes network-adjustment artifacts but does not exclude systematics in the broadcast ephemeris itself (the "ephemeris loophole" addressed in Section 6.3.1.1).</li>
     <li><strong>25-year temporal stability:</strong> The systematic must persist across satellite constellation changes, hardware upgrades, and processing methodology evolution spanning 1.4 complete cycles of the 18.6-year lunar nutation. This excludes transient artifacts but does not exclude systematics tied to fundamental GNSS geometry.</li>
-    <li><strong>CMB frame alignment (Solar Apex geometrically incompatible):</strong> The systematic must preferentially align with the cosmological rest frame rather than galactic motion, solar motion, or ecliptic plane. The Solar Apex vector predicts N-S anisotropy, contradicting the observed E-W dominance (EW/NS = 2.16); only the CMB vector (−7° Dec) is geometrically consistent. This is geometrically difficult to explain through satellite constellation geometry but not impossible if some unrecognized coupling exists between GNSS observation geometry and Earth's motion through the CMB frame.</li>
+    <li><strong>Annual-phase recovery:</strong> The systematic must reproduce a phase near Earth's aphelion velocity tangent. The directed CMB-apex template is anti-phase and the Solar Apex is null. An annually phased direction tracking orbital velocity is geometrically difficult to explain through satellite constellation geometry but remains a possible confound if an unrecognized coupling exists between GNSS observation geometry and Earth's heliocentric motion.</li>
 </ul>
 
 <p>
@@ -88,30 +88,14 @@
 </p>
 
 <p>
-    <strong>Path to Resolution:</strong> Definitive exclusion of this hypothesis requires: (1) SLR check (Section 6.3.1.1) to close the GNSS-product branch of the ephemeris loophole, with the generic orbit-projection branch closed by the physical-confound forward model or an orbit-free clock channel; (2) multi-constellation cross-check showing identical λ across GPS, GLONASS, Galileo, and BeiDou; and (3) triangle holonomy test (Section 6.3.3) providing direct measurement of synchronization non-closure. Until these tests are completed, the possibility of an unrecognized GNSS systematic, however implausible given the convergence of evidence, cannot be completely excluded.
+    <strong>Path to Resolution:</strong> Definitive exclusion of this hypothesis requires: (1) SLR check (Section 6.3.1.1) to close the GNSS-product branch of the ephemeris loophole, with the generic orbit-projection branch closed by the physical-confound forward model or an orbit-free clock channel; (2) independently processed per-constellation cross-check recovering the same finite covariance family and band ordering across GPS, GLONASS, Galileo, and BeiDou while allowing product- and estimator-dependent scales; and (3) triangle holonomy test (Section 6.3.3) providing direct measurement of synchronization non-closure. Until these tests are completed, the possibility of an unrecognized GNSS systematic, however implausible given the convergence of evidence, cannot be completely excluded.
 </p>
 
-<h2>3.7 SLR Check: Optical Domain Evidence</h2>
-
-<p>
-    Satellite Laser Ranging (SLR) provides a technology-orthogonal test pathway that strongly constrains "clock-artifact" hypotheses at the product-provenance level. Unlike GNSS, which uses active atomic clocks and microwave L-band transmission, SLR employs two-way optical pulses reflected off passive retroreflectors (LAGEOS-1/2 and Etalon-1/2). The "clock" is a ground-based event timer, and the observable is the round-trip flight time. Any TEP signal detected in SLR cannot be attributed to receiver electronics, clock steering algorithms, microwave-specific modeling errors, or the GNSS broadcast/precise ephemeris chain — which the laser-range orbit determination does not consume. Within the conformal channel the event timer is itself the clock being read, so SLR is an instrument-level and orbit-provenance check on the same conformal clock sector: its independence is real at the level of hardware and product chain, and it does not by itself exclude the satellite-generic orbit-projection confound addressed in Section 6.3.1.1.
-</p>
-
-<p>
-    Analysis of 11 years (2015–2025) of SLR data (Paper 8) identifies four distinct signatures matching the TEP-GNSS phenomenology:
-</p>
-
-<ul>
-    <li><strong>Spectral Concentration:</strong> Residuals exhibit a 14.12× power enhancement (95% CI: 13.55–14.67) in the predicted TEP frequency band (10–500 µHz) relative to the broadband floor. This matches the spectral "clumping" observed in GNSS clocks.</li>
-    <li><strong>Instrument-Level Universality:</strong> The detection of the signal in the optical domain (~500 THz) matching the microwave domain (~1 GHz) confirms the coupling is achromatic — providing a strong argument against dispersive propagation effects (ionospheric delay), which scale as 1/f² — and replicates the channel across an independent instrument class and orbit chain.</li>
-    <li><strong>Distance-Structured Correlations:</strong> High-cadence (15-minute) pass-bin analysis yields statistically significant evidence for distance-structured inter-station correlations (Fisher-combined p = 0.0025), driven by strong negative correlations at intermediate ranges.</li>
-    <li><strong>Geodetic Resolution:</strong> The SLR analysis reinterprets persistent geodetic anomalies—such as the VLBI-SLR scale drift (0.2 ppb) and the "flicker noise" floor in station coordinates—as physical evidence of conformal metric coupling.</li>
-</ul>
-
-<p>
-    The convergence of microwave GNSS results and optical SLR results shows that the "Time Echo" is not a product of the GNSS measurement chain: the signal is hardware-independent and persists in a system devoid of satellite-borne clocks and microwave propagation — the same conformal clock sector read through a different instrument class and an independent orbit determination. The independence is instrument- and provenance-level, not channel-level: under conformal null-cone invariance the optical flight time carries no propagation content, so the SLR residual reads the ground event-timer clock — a systematics and product-provenance check, not a second physical channel.
-</p>
-
+<h2>3.7 SLR Check: Optical Sensitivity and Sampling Controls</h2>
+<p>Satellite Laser Ranging (SLR) supplies an optical test through passive retroreflectors and an orbit-determination chain that consumes no GNSS products. Under conformal null-cone invariance the ground event timer reads the clock-amplitude channel. This instrument and product independence makes SLR a useful test pathway; a common physical signal must still be established at adequate sensitivity.</p>
+<p>Paper 8 analyses 11 years (2015–2025) under sampling-matched controls. The observed 10–500 µHz spectral ratio of 14.12 is reproduced by white noise passed through the same sparse-sampling and resampling pipeline (13.97; Fisher-combined p = 0.199). A real-epoch Lomb–Scargle estimator gives 1.04 against a white-noise null of 1.05. The earlier spectral concentration therefore supplies no optical detection. The clock-amplitude channel is bounded at approximately δA ≲ 2×10<sup>−8</sup>; the roughly 5 mm excursion from the surface-depth benchmark remains below the residual floor.</p>
+<p>The nominal same-satellite inter-station result (Fisher p = 0.0025) shares an orbit-model common mode. Different-satellite pairings yield a candidate anticorrelation in the 5,000–7,500 km bin (mean r = −0.23; label-swap p = 0.046; station-clustered 95% interval [−0.43, −0.06]). It appears in only one of nine threshold/bin-width configurations, weakens to −0.054 with at least five shared bins, and changes sign across years. It is retained as an exploratory tail event. The daily-aggregation diagnostic also reverses sign between orbit solutions.</p>
+<p>The present SLR contribution is a sampling-artifact correction, an optical sensitivity bound and a defined route to an independent instrument test. It establishes neither achromatic replication of the GNSS signal nor its absence at the smaller benchmark amplitude. A stronger cross-instrument inference requires stable inter-station recovery and a demonstrated signal-amplitude transfer.</p>
 
 <h2>3.8 Why the Signal Was Not Previously Identified</h2>
 
@@ -180,13 +164,13 @@
         <tr>
             <td>Center-specific bias</td>
             <td>Multi-center consistency</td>
-            <td>Comprehensive-validation CV = 18.2%; exponential λ<sub>T</sub> triplet ~13% (§2.1)</td>
+            <td>Cross-centre CV ≈ 13% on the exponential λ<sub>T</sub> triplet (§2.1)</td>
         </tr>
     </tbody>
 </table>
 
 <p>
-    Each row represents an independent test. The signal survives all challenges, constraining viable explanations to physical mechanisms operating at planetary scales with velocity-dependent, CMB-aligned geometry.
+    The tests are complementary but not statistically independent; several are derived from the same underlying GNSS covariance data. The signal survives all challenges, constraining viable explanations to physical mechanisms operating at planetary scales with velocity-dependent, preferred-axis geometry.
 </p>
 
 <h2>3.10 Evidence Tier Classification</h2>
@@ -218,7 +202,7 @@
         <tr>
             <td></td>
             <td>East-West/North-South anisotropy</td>
-            <td>Ratio 2.16, p &lt; 10<sup>−15</sup></td>
+            <td>Ratio 2.16, p $\lt$ 10<sup>−15</sup></td>
             <td>Cross-center validated; multi-constellation</td>
         </tr>
         <tr>
@@ -229,21 +213,21 @@
         </tr>
         <tr>
             <td></td>
-            <td>CMB frame alignment</td>
-            <td>18.2° separation on CODE product; Solar Apex geometrically incompatible; MGEX scan maximum 82.7° (projection-degenerate)</td>
-            <td>Cosmological frame; not ephemeris-tied; direction product-unstable</td>
+            <td>Preferred-direction recovery</td>
+            <td>annual phase near aphelion tangent on CODE and RINEX; CMB apex anti-phase; Solar Apex null; MGEX scan projection-degenerate</td>
+            <td>orbit-coupled axis; direction product-unstable</td>
         </tr>
         <tr>
             <td></td>
-            <td>Semiannual nutation coupling</td>
+            <td>Semiannual coherence component</td>
             <td>R² = 0.904, p = 2.7 &times; 10<sup>−5</sup> (F-test)</td>
-            <td>50+ complete cycles; physical period (182.6d)</td>
+            <td>50+ complete cycles; apsidal-locked (nutation/orbital harmonic)</td>
         </tr>
         <tr>
             <td></td>
-            <td>Planetary event responses</td>
-            <td>56/156 events ≥2σ; 13/29 non-overlapping windows</td>
-            <td>No GM/r² scaling; SPP confirmed</td>
+            <td>Planetary event catalogue (bounded channel)</td>
+            <td>56/156 events ≥2σ (descriptive); opposition subset null-validated 5.5×; continuous r = +0.116, p = 0.012</td>
+            <td>GM/r² and GM/r³ scaling null bounds unmodelled transient perturbations; catalogue excess reproduced by calendar position (Paper 3)</td>
         </tr>
         <tr>
             <td></td>
@@ -259,8 +243,8 @@
         </tr>
         <tr>
             <td><strong>Tier C</strong><br>(Optical-domain consistency check)</td>
-            <td>SLR optical domain detection</td>
-            <td>14× spectral enhancement</td>
+            <td>SLR spectral bound; exploratory correlations</td>
+            <td>14.12 observed versus 13.97 sampling-matched white null</td>
             <td>Instrument-orthogonal; passive retroreflectors; same conformal clock channel</td>
         </tr>
     </tbody>
@@ -274,6 +258,6 @@
     timing-network results but probes the same conformal clock sector rather
     than a second physical channel, and does not carry the same statistical weight owing
     to sparser station coverage and asymmetric global distribution. The pattern
-    across both tiers consistently favors a velocity-dependent, CMB-aligned
+    across both tiers consistently favors a velocity-dependent, preferred-axis
     geometric mechanism over conventional explanations.
 </p>

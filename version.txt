@@ -1,4 +1,4 @@
-v0.7 (Singapore) — 28 September 2026 — Statistical-independence audit, sector scoping, and falsification hardening
+v0.7 (Singapore) — 30 September 2026 — Statistical-independence audit, sector scoping, and falsification hardening
 
 - λ_T uncertainty stated explicitly (95% CL ≈ 2,300–8,100 km; a measurement of order thousands of kilometres rather than a precise scale)
 - Nine signatures re-scoped as convergent but not statistically independent: GNSS-native signatures share the same data and phase-alignment method; SLR reframed as an instrument-level provenance check within the same conformal clock channel; CMB axis marked product-unstable (MGEX scan projection-degenerate); pulsar channel exploratory; joint ~10σ combined-significance claim retired
@@ -9,6 +9,7 @@ v0.7 (Singapore) — 28 September 2026 — Statistical-independence audit, secto
 - Falsification criteria updated to a two-layer ephemeris adjudication (SLR provenance check + physical-confound forward model or orbit-free clock channels)
 - Saturation-density scale ρ_T ≈ 20 g/cm³ and diagnostic radius R_T stated explicitly
 - Expanded falsification section and canonical-carrier alignment with Paper 4
+- Reframed the S_8 offset as a live diagnostic rather than a TEP correspondence; Tier-3 falsification rescoped to the source-dependence channel
 
 v0.6 (Singapore) — 14 September 2026 — Nine convergent signatures, Evidence Tiers, and canonical screening alignment
 

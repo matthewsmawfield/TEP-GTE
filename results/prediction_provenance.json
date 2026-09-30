@@ -129,8 +129,8 @@
       "provenance": "framework consequence"
     },
     {
-      "expectation": "Preferred-frame structure (cosmological rest frame; direction identified with CMB dipole)",
-      "earliest_statement": "Paper 0 v0.1+ (cosmological field background defines a preferred frame); 18.2-degree alignment is a measured identification",
+      "expectation": "Preferred-frame structure (cosmological rest frame; recovered axis ~18 degrees from the CMB dipole axis)",
+      "earliest_statement": "Paper 0 v0.1+ (cosmological field background defines a preferred frame); the axis separation is a measured identification",
       "doi": "10.5281/zenodo.16921912",
       "deposit_utc": "2025-08-21",
       "provenance": "framework consequence; direction measured"

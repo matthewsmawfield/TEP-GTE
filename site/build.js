@@ -59,7 +59,7 @@ async function buildStaticSite() {
             // Replace the loading div and manuscript-content div with the built content
             .replace(
                 /<div id="loading".*?<\/div>\s*<div id="manuscript-content".*?<\/div>/s,
-                `<div id="manuscript-content">${componentsHtml}</div>`
+                () => `<div id="manuscript-content">${componentsHtml}</div>`
             )
             // Remove the component loading script (keep other scripts)
             .replace(
@@ -160,7 +160,7 @@ async function buildStaticSite() {
         
         console.log('✅ Static site built successfully!');
         console.log(`📁 Output: ${outputPath}`);
-        console.log('📄 Markdown: 5-TEP-GTE-v{version}-{codename}.md (in root)');
+        console.log('📄 Markdown: 5-TEP-GTE-v0.7-Singapore.md (in root)');
         console.log(`📊 Generated ${manifest.sections.length} sections`);
         console.log('🚀 Ready for deployment');
         
@@ -188,7 +188,7 @@ function copyRecursiveSync(src, dest) {
         });
     } else {
         // Filter out raw data files
-        if (src.endsWith('.csv') || src.endsWith('.dat') || src.endsWith('.nc')) {
+        if (src.endsWith('.csv') || src.endsWith('.dat') || src.endsWith('.nc') || src.endsWith('.DS_Store')) {
             return;
         }
         fs.copyFileSync(src, dest);

@@ -50,9 +50,7 @@
             (i) <em>GNSS-product provenance</em>: Satellite Laser Ranging
             (SLR) residuals show no low-frequency spectral concentration or
             distance-structured daily-aggregation signal when analyzed
-            using identical methods applied to GNSS data &mdash; the signal
-            is then generated inside the GNSS product chain rather than
-            being physical clock correlations (Section 6.3.1.1).
+            using sampling-matched methods and demonstrated sensitivity to the predicted optical counterpart. Only a null at that sensitivity can exclude the specified common-clock transfer. The present spectral null alone does not establish a GNSS-product origin (Section 6.3.1.1).
             (ii) <em>Generic orbit-projection confound</em>: a positive SLR
             result cannot by itself exclude the wider hypothesis that any
             satellite-range observable inherits distance-structured
@@ -102,31 +100,28 @@
     "
 >
     <h4 style="margin: 0 0 10px 0; color: #3a6a9c">
-        Tier 3: Cosmological Falsification (Dark Matter Connection)
+        Tier 3: Cosmological Falsification (Source-Dependence Channel)
     </h4>
 
     <ul style="line-height: 1.8">
         <li>
-            <strong>CMB-Galaxy S<sub>8</sub> convergence:</strong>
-            Next-generation surveys (CMB-S4 + LSST) show CMB-inferred and galaxy
-            lensing-inferred S<sub>8</sub> agreeing to better than 1σ, with no
-            systematic dependence on source redshift or variability. This would
-            exclude TEP's prediction of kinematic noise in galaxy surveys
-            arising from temporal-field gradients. The current S<sub>8</sub>
-            tension (4.5σ) between CMB and galaxy lensing measurements
-            represents a target correspondence for TEP predictions.
+            <strong>CMB-Galaxy source covariance:</strong>
+            Next-generation surveys (CMB-S4 + LSST) showing no systematic
+            dependence on source redshift or variability would exclude the
+            bounded temporal-composite reconstruction channel. The current
+            S<sub>8</sub> offset is a diagnostic to be confronted, not a
+            predicted correspondence.
         </li>
     </ul>
 </div>
 
 <p style="margin-top: 20px; font-style: italic">
-    <strong>Complete Framework Falsification:</strong> The combination of Tier 1
-    (independent replication failure OR ephemeris loophole confirmed) AND Tier 2
-    (null holonomy at high precision) AND Tier 3 (S<sub>8</sub> tension resolved
-    without TEP mechanism) would exclude TEP as a viable framework rather than
-    merely constraining one regime. However, failure of any single Tier 1
-    criterion is sufficient to exclude the GNSS evidence base, which forms the
-    empirical foundation of the framework.
+    <strong>Framework Scope:</strong> Tier 1 tests the GNSS evidence base,
+    Tier 2 tests the synchronization-holonomy mechanism, and Tier 3 tests
+    the bounded weak-lensing source-dependence channel. Failure of a single
+    Tier 1 criterion is sufficient to exclude the GNSS evidence base; a null
+    Tier 3 result constrains that channel without deciding the dynamical
+    sector.
 </p>
 
 <h2>6.2 Consequences of Failed Replication</h2>
@@ -168,7 +163,7 @@
     solutions (CLK files from independent analysis centers), multi-constellation
     cross-check (verifying that the signal appears identically in GPS, GLONASS,
     Galileo, and BeiDou), and cross-center consistency (confirming
-    CODE/IGS/ESA/JPL agreement with CV &lt; 20%). Both RINEX and CLK approaches
+    CODE/IGS/ESA/JPL agreement with CV $\lt$ 20%). Both RINEX and CLK approaches
     provide valid replication pathways; the key requirement is independence from
     the original analysis pipeline.
 </p>
@@ -197,7 +192,7 @@
     product level, within a precisely stated scope. SLR is a purely
     geometric, optical measurement independent of the GNSS microwave clock
     and ephemeris loop: its satellites are passive retroreflectors, and its
-    orbits are determined from the laser ranges themselves &mdash; a
+    orbits are determined from the laser ranges themselves — a
     processing chain wholly disjoint from the GNSS broadcast and precise
     products in which an ephemeris artifact would have to live. Within the
     conformal channel, however, the SLR residual probes the same
@@ -230,12 +225,12 @@
     verdict: the SLR measurement must reach the demonstrated sensitivity
     for the GNSS-scale correlation before a null excludes the physical
     reading, and an SLR-positive outcome remains degenerate with the
-    satellite-generic orbit-projection confound &mdash;
+    satellite-generic orbit-projection confound —
     orbit-determination errors imprint spatially structured residuals on
     any satellite-range observable. The differing orbit geometry of the
     two systems (GNSS in medium Earth orbit, LAGEOS-class targets in low
     Earth orbit) makes the correlation scale itself diagnostic: a common
-    &lambda;<sub>T</sub> across independent orbit-determination chains
+    λ<sub>T</sub> across independent orbit-determination chains
     indicates station-level rather than product-level origin. Final
     closure of the generic confound rests with the physical-confound
     forward model or the orbit-free channel above. The test can be
@@ -259,24 +254,24 @@
 
 <p>
     CMB-S4 combined with LSST weak lensing would test for source-dependent
-    kinematic noise. TEP predicts that galaxy surveys (LSST) will infer S<sub
-        >8</sub
-    >
-    systematically 3–5% lower than CMB measurements (Planck, CMB-S4), with the
-    discriminator being correlation with source redshift and variability. The
-    current S<sub>8</sub> tension (4.5σ) between CMB and galaxy lensing
-    measurements represents a target correspondence for TEP
-    predictions; resolution of this tension through conventional mechanisms
-    would exclude TEP's kinematic noise explanation.
+    kinematic noise. The discriminator is covariance with source redshift and
+    variability, not a universal 3–5% downward shift: the bounded Paper 4
+    temporal-composite channel is below the observed mean S<sub>8</sub>
+    discrepancy, while the implemented Paper 18 posterior lies above the
+    DES-Y3/KiDS-1000 central values under a CDM-containing likelihood. The
+    current S<sub>8</sub> difference is therefore a live diagnostic and
+    falsification target, not a demonstrated TEP correspondence. Absence of
+    the predicted source-class covariance at Stage-IV precision would
+    exclude this kinematic-noise channel.
 </p>
 
 <h2>6.4 Path to Resolution</h2>
 
-<p>Table 9 summarizes the experimental program and its decision structure.</p>
+<p>Table 10 summarizes the experimental program and its decision structure.</p>
 
 <table>
     <caption>
-        Table 9. Three-tier experimental program for TEP testing.
+        Table 10. Three-tier experimental program for TEP testing.
     </caption>
     <thead>
         <tr>
@@ -309,14 +304,14 @@
         <tr>
             <td>Tier 2</td>
             <td>Triangle holonomy test</td>
-            <td>Null &lt; 10<sup>−19</sup></td>
+            <td>Null $\lt$ 10<sup>−19</sup></td>
             <td>Holonomy mechanism</td>
         </tr>
         <tr>
             <td>Tier 3</td>
-            <td>CMB-S4 + LSST S<sub>8</sub></td>
-            <td>Agreement &lt; 1σ</td>
-            <td>Kinematic noise</td>
+            <td>CMB-S4 + LSST source covariance</td>
+            <td>No redshift/variability dependence</td>
+            <td>Temporal-composite reconstruction</td>
         </tr>
     </tbody>
 </table>
@@ -346,7 +341,7 @@
 
 <table>
     <caption>
-        Table 10. Prediction provenance register: each tested expectation
+        Table 11. Prediction provenance register: each tested expectation
         mapped to its earliest versioned statement. Deposit timestamps are
         immutable per version DOI.
     </caption>
@@ -385,7 +380,7 @@
             <td>10.5281/zenodo.17121655; 10.5281/zenodo.17174802</td>
         </tr>
         <tr>
-            <td>Multi-center parameter consistency (&lt;5% variation)</td>
+            <td>Multi-center parameter consistency ($\lt$ 5% variation)</td>
             <td>Paper 0 v0.4 (Marseille), §E forecast</td>
             <td>2025-09-15</td>
             <td>10.5281/zenodo.17121655</td>
@@ -423,11 +418,10 @@
             <td>10.5281/zenodo.16921912</td>
         </tr>
         <tr>
-            <td>Preferred-frame structure (cosmological rest-frame
-                identification with the CMB dipole)</td>
-            <td>Paper 0 v0.1+ (cosmological field background defines a
-                preferred frame); the 18.2° alignment is the measured
-                identification</td>
+            <td>Annual orbital-phase directional structure</td>
+            <td>Paper 0 v0.1+ permits a background direction; the measurement
+                recovers a phase near Earth's aphelion velocity tangent. It does
+                not identify the directed CMB rest frame.</td>
             <td>2025-08-21</td>
             <td>10.5281/zenodo.16921912</td>
         </tr>
@@ -437,10 +431,13 @@
 <p>
     Two entries are deliberately flagged as measured identifications rather
     than pre-specified values: the ecliptic ordering of the anisotropy and the
-    18.2° CMB-dipole alignment. What was fixed in advance is the observable
+    preferred-axis direction. What was fixed in advance is the observable
     class, the estimator, the functional decay form, the correlation-length
     forecast and search range, the cross-center consistency criterion, the
-    sign of the orbital-velocity coupling, and the sector-level selectivity —
-    the elements that carry the discriminative weight of the comparison in
-    Table 3.
+    sign of the orbital-velocity coupling, and the sector-level selectivity.
+    Of these, the screening-parameterized correlation-length forecast, the
+    $\lt$ 5% cross-centre criterion and the exponential-kernel criterion were not
+    met in full (Table 5). The discriminative weight therefore rests on the
+    orbital-velocity sign, band localization, the EW &gt; NS ordering and the
+    sector-level selectivity.
 </p>
