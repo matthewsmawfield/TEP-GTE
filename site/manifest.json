@@ -2,7 +2,7 @@
   "title": "Global Time Echoes: Empirical Synthesis",
   "subtitle": "TEP-GTE",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.7 (Singapore)",
+  "version": "v0.8 (Singapore)",
   "doi": "10.5281/zenodo.18004832",
   "description": "Empirical synthesis of distance-structured GNSS clock covariance, EW/NS anisotropy, orbital coupling, and annual-phase direction recovery. The signed direction lies near Earth's aphelion velocity tangent; the CMB-apex template is anti-phase, so no CMB-frame detection is claimed. Evidence tiers and shared-data dependencies are stated explicitly.",
   "code_repo": "github.com/matthewsmawfield/TEP-GTE",
@@ -106,5 +106,5 @@
     }
   ],
   "first_published": "21 December 2025",
-  "last_updated": "30 September 2026"
+  "last_updated": "17 October 2026"
 }

@@ -1,7 +1,7 @@
 # Global Time Echoes: Empirical Synthesis
 **Matthew Lukin Smawfield**
-Version: v0.7 (Singapore)
-First published: 21 December 2025 · Last updated: 30 September 2026
+Version: v0.8 (Singapore)
+First published: 21 December 2025 · Last updated: 17 October 2026
 DOI: 10.5281/zenodo.18004832
 
 ---
@@ -30,24 +30,19 @@ geophysical detection (Paper 2), raw-data consistency test strongly constraining
 precise-product processing artifacts (Paper 3), and cosmological extension testing whether temporal covariance
 or gradient effects contribute to dark-sector phenomenology (Paper 4).
 
-The evidence programme combines timing-network signatures, environmental tests and an optical sensitivity bound:
+The evidence programme combines timing-network signatures, environmental tests, and an optical sensitivity bound:
 distance-structured spatial decay over a finite scale;
-East-West/North-South anisotropy (ratio 2.16 ± 0.23, aggregate across the 25.3-year dataset; nominal pair-count p $\lt$ 10<sup>−15</sup>);
+East-West/North-South anisotropy (ratio 2.16 ± 0.23 across the 25.3-year aggregate; nominal pair-count p $\lt$ 10<sup>−15</sup>);
 orbital velocity coupling (r = −0.888, 3.65σ autocorrelation-corrected;
-surrogate p $\lt$ 2×10⁻⁷ as a resolution bound); a recovered annual-phase
+surrogate p $\lt$ 2×10⁻⁷ resolution bound); a recovered annual-phase
 direction near Earth's aphelion velocity tangent (RA = 6°, Dec = +4°;
-directional-rank permutation p $\lt$ 10⁻⁵; the directed CMB-apex template
-is anti-phase and the Solar Apex is
-geometrically incompatible, predicting N-S anisotropy against the
-observed E-W dominance; no global full-sky-search surrogate p-value has
-been computed; on the MGEX product the scan is projection-degenerate);
-an optical-domain sensitivity bound (SLR sampling-matched controls reproduce the apparent spectral concentration; inter-station candidates remain exploratory); a planetary event
-catalogue (56/156 significant at
-≥2σ under the free-centre pulse statistic — repeatable estimator behaviour whose excess is attributable to calendar-position sampling in the season-preserving RINEX controls; the 40-event opposition subset is null-validated at 5.5× and a continuous planetary-potential correlation survives at r = +0.116, p = 0.012); 18.6-year lunar nutation coupling (R² = 0.641 ± 0.10 over 1.36 cycles); pulsar spin-down
-excess (exploratory channel); and host-potential H<sub>0</sub> correlation. On the held-out MGEX product the distance-structured coherence replicates (λ ≈ 1,862 km), while the anisotropy and primary orbital-velocity metrics do not replicate robustly. Raw RINEX consistency test using Single Point
+directional-rank permutation p $\lt$ 10⁻⁵, with the directed CMB-apex template
+anti-phase, the Solar Apex geometrically incompatible, and MGEX projection-degenerate);
+outer-planet opposition coupling (40-event opposition subset null-validated at 5.5× over matched random dates, p $\lt$ 10⁻¹⁷, alongside a continuous planetary-potential correlation r = +0.116, p = 0.012, whereas the broader 156-event free-centre pulse scan reflects calendar-position sampling on the seasonal series); 18.6-year lunar nutation coupling (R² = 0.641 ± 0.10 over 1.36 cycles); an optical-domain sensitivity bound from passive Satellite Laser Ranging (sampling-matched controls reproduce the apparent spectral concentration; inter-station candidates remain exploratory); pulsar spin-down
+excess (exploratory channel); and host-potential H<sub>0</sub> correlation. On the held-out MGEX product the distance-structured coherence replicates (λ ≈ 1,862 km), while the anisotropy and primary orbital-velocity metrics do not replicate robustly. Raw RINEX Single Point
 Positioning with broadcast ephemerides achieves consistent signal detection
 across all 72 metric combinations (t-statistics up to 112, Cohen's d up to
-0.304), strongly constraining precise-product processing artifacts as the sole origin. Broadcast ephemerides still contain control-segment information; Satellite Laser Ranging supplies a GNSS-product-independent test pathway, whose present sensitivity and exploratory correlations do not yet adjudicate the origin of the GNSS signal, while the generic orbit-projection confound is reserved for the physical-confound forward model and orbit-free clock channels. The network's
+0.304), strongly constraining precise-product processing artifacts as the sole origin. Because broadcast ephemerides still carry control-segment orbit information, terrestrial closure is structured in three tiers: the GNSS analyses characterize the macroscopic microwave clock-network covariance; Satellite Laser Ranging supplies a hardware- and orbit-independent optical sensitivity bound ($\delta A \lesssim 2\times 10^{-8}$); and physical-confound forward models together with orbit-free optical-fiber and two-way time-transfer links adjudicate the residual orbit-projection channel at atomic-clock precision. The network's
 selectivity profile—sensitive to velocity-dependent dynamics while blind
 to GM/r² scaling and solar rotation—characterizes it as an inertial
 interferometer measuring correlation geometry rather than a gravimeter
@@ -101,7 +96,7 @@ CMB axis is product-unstable, and the pulsar channel is exploratory
 J0337 adjudication, where the kinetic impedance solved in Paper 0 suppresses the differential acceleration ratio to $\eta \simeq 2.5 \times 10^{-7}$, well within the experimental bound $2.6 \times 10^{-6}$). Critically, the conformal sector responsible for clock-rate
 modulation is not directly constrained by photon–graviton differential-propagation tests such as GW170817, although local conformal-gradient/source-charge sectors remain constrained by PPN, clock, and equivalence-principle tests.
 
-If validated through independent replication, TEP predicts that the dynamical phenomenology attributed to dark matter is the observational projection of Temporal Topology and Temporal Shear, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance, dynamical phantom mass — with lensing tracking the gravitating matter (Papers 4, 19) — and galactic mass discrepancies are different observational projections of the same time-field topology, with Papers 4 and 13 testing distinct optical and dynamical projections of the environmental-response architecture (Paper 4: the dynamical–lensing mass difference as a phantom-mass test; Paper 13: the SPARC-anchored wide-binary transition), not a derived Earth-to-galaxy covariance-to-shear transfer kernel. The phantom-mass prediction is conditional on the Temporal Shear surviving unscreened at galactic scales — an amplitude whose deep-regime derivation from the action is identified in Paper 0 as the decisive open calculation — and is presented as a conditional consequence, not an established result. The 4,000 km correlation on Earth and galactic-scale phenomenology are interpreted within TEP as manifestations of the same environment-dependent Temporal-Topology response, which provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime. The saturation-density scale ρ<sub>T</sub> ≈ 20 g/cm³, and the diagnostic radius R<sub>T</sub> = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> it defines for each body, remain testable through interplanetary missions. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; Temporal Topology correlation length falling outside the 500–20,000 km range; adjudication of the ephemeris-artifact question — GNSS-product provenance via the Satellite Laser Ranging check, and the wider orbit-projection confound via the physical-confound forward model or an orbit-free clock channel; and null synchronization holonomy in closed-loop triangular time-transfer experiments.
+If validated through independent replication, TEP predicts that the dynamical and optical phenomenology attributed to dark matter is the observational projection of Temporal Topology and Temporal Shear across unstretched space, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance, dynamical phantom mass, and unstretched-space optical refraction (Papers 4, 18, 19; where intermediate clock rates $A_{\rm loc}(u_{\rm grav}(\mathbf x))$ along the shared ADM lapse $N_{\rm TEP}=A_{\rm loc}N_{\rm GR}$ at fixed spatial 3-metric $\gamma_{ij}$ refract light via $n(x)\simeq 1-2\Phi_N/c^2-\beta_A u_{\rm grav}(x)$, whereas isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2 g_{\mu\nu}$ cancels out of null rays) are different observational projections of the same time-field topology, with Papers 4, 6, 13, and 19 testing distinct optical and dynamical projections of the environmental-response architecture on the selected two-branch action $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$ fixed by $a_0$, zero per-system free parameters), not a derived Earth-to-galaxy covariance-to-shear transfer kernel. The 4,000 km correlation on Earth and galactic-scale phenomenology are interpreted within TEP as manifestations of the same environment-dependent Temporal-Topology response, which provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime. The saturation-density scale ρ<sub>T</sub> ≈ 20 g/cm³, and the diagnostic radius R<sub>T</sub> = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> it defines for each body, remain testable through interplanetary missions. Explicit falsification criteria include: failure of independent groups to replicate the raw carrier-phase signal; Temporal Topology correlation length falling outside the 500–20,000 km range; adjudication of the ephemeris-artifact question — GNSS-product provenance via the Satellite Laser Ranging check, and the wider orbit-projection confound via the physical-confound forward model or an orbit-free clock channel; and null synchronization holonomy in closed-loop triangular time-transfer experiments.
 
 *Keywords:* Temporal Equivalence Principle, GNSS, atomic clocks,
 preferred direction, dark matter, gravitational lensing, scalar-tensor
@@ -251,11 +246,14 @@ shorter studies.
 Paper 3: Raw RINEX Test (Smawfield 2025d, DOI:
 10.5281/zenodo.17860166) — Processing artifact constraint through analysis
 of raw GNSS observations using Single Point Positioning with broadcast
-ephemerides only. Note: broadcast ephemerides still contain control-segment
-information, so Satellite Laser Ranging (independent orbit determination)
-and orbit-free clock channels remain the adjudicators — SLR for
-GNSS-product provenance, the physical-confound forward model and
-satellite-free channels for the generic orbit-projection confound.
+ephemerides only. Because broadcast ephemerides still contain control-segment
+orbit information, terrestrial verification is structured across three tiers:
+the GNSS analyses (Papers 1–3, 14) establish and characterize the macroscopic
+clock-network covariance; passive Satellite Laser Ranging (Paper 8) provides a
+GNSS-product-independent optical sensitivity bound and orbit-provenance
+check; and the physical-confound forward model together with satellite-free
+optical-fiber and TWSTFT clock channels adjudicate the generic
+orbit-projection confound at full metrological precision.
 Analysis of 1.17 billion pair-samples
 across 539 stations (2022–2024) achieved consistent signal detection across all 72
 metric combinations (t-statistics up to 112, Cohen's d up to
@@ -266,13 +264,13 @@ constrains precise-product processing artifacts as the origin.
 Paper 4: Cosmological Implications (Smawfield 2025e, DOI:
 10.5281/zenodo.17982540) — Developed the connection between TEP and
 gravitational lensing, demonstrating how temporal-field gradients (active
-Temporal Shear) can produce apparent dark matter phenomenology in the
-dynamical sector while lensing remains matter-sourced. This paper
-introduced the Isochrony Axiom as a critical but untested assumption in
-standard lensing analysis, identified "Phantom
+Temporal Shear) and intermediate temporal depth across unstretched space can produce apparent dark matter phenomenology in both the
+dynamical and optical sectors without particulate dark matter (contrasted with the isotropic-conformal benchmark where $A^2(\phi)$ cancels out of null rays and lensing tracks baryons alone). This paper
+formulated the Isochrony Axiom as a foundational closure assumption in
+standard lensing analysis that TEP subjects to direct empirical stress-testing, identified "Phantom
 Mass" — the apparent mass inferred when temporal structure is analysed as
 spatial mass — and established the
-dynamical–lensing mass difference as its decisive test, together with the
+dynamical–lensing mass comparison and unstretched-space temporal refraction tests, together with the
 connection between the ~4,000 km GNSS correlation and galactic-scale phenomenology through the 𝒮<sub>Σ</sub> screening operator. The continuous relaxation of Temporal Topology
 from deep potential wells to the weak-field regime unifies terrestrial and
 galactic scales. This cosmological
@@ -566,9 +564,9 @@ velocity-dependent, preferred-axis geometric mechanism.
 | Orbital Velocity Coupling | r = −0.888 | 3.65σ (autocorr.-corrected); surrogate p $\lt$ 2×10⁻⁷ (resolution bound) |
 | Annual-Phase Direction Recovery | RA = 6°, Dec = +4°; ~6° from Earth's aphelion velocity tangent | Directional-rank permutation p $\lt$ 10⁻⁵; CMB apex anti-phase; Solar Apex null; no global full-sky-search surrogate reported |
 | Optical-Domain Sensitivity Bound | Microwave-to-optical product chains (GNSS/SLR) | Sampling-matched spectral null; exploratory inter-station candidate. Independent hardware and orbit provenance; physical corroboration remains pending (Paper 8) |
-| Planetary Event Catalogue | 56/156 significant (≥2σ) under free-centre pulse statistic | Descriptive: estimator repeatability (13/29 non-overlapping windows); season-preserving controls attribute catalogue excess to calendar position (Paper 3); 40-event opposition subset null-validated at 5.5× |
+| Planetary Alignment Coupling | 40-event opposition subset: 5.5× over random dates (p $\lt$ 10<sup>−17</sup>); continuous r = +0.116 (p = 0.012) | Opposition subset null-validated; GM/r² and GM/r³ scaling null bounds transient Newtonian impulses; broader 156-event free-centre scan (56/156 ≥2σ) descriptive of seasonal-curve sampling (Paper 3) |
 | 18.6-Year Nutation | R² = 0.641 ± 0.10 | p = 0.010; permutation p = 0.0016 (1.36 cycles, cycle-limited) |
-| Pulsar Spin-Down Excess | κ<sub>MSP</sub> ~ 10<sup>6</sup> (fitted phenomenological coefficient) | Exploratory: globular-cluster density scaling (Paper 10); the standalone pulsar channel is uninformative — mildly GR-favouring (Paper 34) |
+| Pulsar Spin-Down Excess | κ<sub>MSP</sub> ~ 10<sup>6</sup> (fitted phenomenological coefficient) | Exploratory: globular-cluster density scaling (Paper 10); the standalone pulsar channel is uninformative — mildly GR-favouring (Paper 34, in preparation) |
 | Host-Potential H<sub>0</sub> Correlation | Fitted environmental response; corrected H<sub>0</sub> conditional on Paper 11's observing chain and anchor weights | Cepheid response (Paper 11) |
 
 ## 2.3 Annual-Phase Direction Recovery
@@ -689,7 +687,7 @@ The data reveal clear coupling to multiple geophysical cycles. The 18.6-year lun
 
 ## 3.6 Most Plausible Remaining Conventional Explanation
 
-The strongest remaining conventional hypothesis is that the observed correlations arise from a presently unmodeled, long-baseline GNSS systematic that survives both network adjustment and raw SPP processing. This section addresses this hypothesis with intellectual honesty: while extensive empirical testing constrains conventional explanations, it cannot definitively exclude all possible systematics.
+The strongest remaining conventional hypothesis is that the observed correlations arise from a presently unmodeled, long-baseline GNSS systematic that survives both network adjustment and raw SPP processing. This section defines the exact cumulative constraints that any such systematic must satisfy simultaneously across the completed test battery.
 
 **The Hypothesis:** A sophisticated, distance-dependent systematic error exists in GNSS observations that: (1) produces exponential decay with λ ≈ 4,000 km; (2) exhibits East-West/North-South anisotropy ratio of 2.16; (3) couples to Earth's orbital velocity with r = −0.888; (4) reproduces an annual phase near Earth's aphelion velocity tangent while the CMB-apex template is anti-phase; (5) produces repeatable seasonal-window coherence modulation in the planetary event catalogue without mass scaling; (6) couples to 18.6-year lunar nutation and the semiannual coherence component; (7) survives independent processing by CODE, IGS, and ESA; (8) persists in raw RINEX data processed with broadcast ephemerides only; and (9) retains compatible distance structure across 72 non-independent metric combinations, with metric-dependent response.
 
@@ -859,7 +857,7 @@ This is consistent in scale with the observed GNSS correlation-length family (az
 
 **Clock sector (S<sub>A</sub>):** Governed by the potential sector and local density, returning S<sub>A</sub><sup>(⊕)</sup> ≃ 0.65 at Earth's mean density ρ̄<sub>⊕</sub> = 5.515 g/cm<sup>3</sup>. Clock residuals across continental baselines measure the spatial covariance C<sub>A</sub>(r); the transmission of time-dependent fluctuations and their processing transfer are distinct from the static S<sub>A</sub> level.
 
-**Shear / Force sector (S<sub>Σ</sub>):** Governed by the kinetic completion P(X,φ) = X − V + X|X|/Λ<sub>X</sub><sup>4</sup>. In high-acceleration regions (g ≫ g<sub>t</sub> = cH₀/2), the two-body operator suppresses the observable shear response to 𝒮<sub>Σ</sub> ~ 10<sup>−21</sup> at Earth's surface, preserving standard General Relativity paths in local gravitational and planetary tests.
+**Shear / Force sector (S<sub>Σ</sub>):** Governed by the selected two-branch kinetic completion P(X,φ) = −V(φ) + (2k/3Λ<sub>X</sub><sup>2</sup>)X|X|<sup>1/2</sup> + X|X|/Λ<sub>X</sub><sup>4</sup> (k ≈ 16, derived). In high-acceleration regions (g ≫ g<sub>t</sub> = cH₀/2), the two-body operator suppresses the observable shear response to 𝒮<sub>Σ</sub> ~ 10<sup>−21</sup> at Earth's surface, preserving standard General Relativity paths in local gravitational and planetary tests.
 
 **Kinetic transition scale (r<sub>*</sub>):** The physical transition for dynamical shear recovery follows the kinetic law r<sub>*</sub>(M) = √(GM/g<sub>t</sub>) ∝ M<sup>1/2</sup> (Paper 0 §2.2), distinct from the geometric saturation radius R<sub>T</sub> ∝ M<sup>1/3</sup>.
 
@@ -1198,7 +1196,7 @@ environment.
 
 ## 4.8 Relation to Established Scalar-Tensor Theory
 
-In the canonical non-screened limit, TEP shares structural similarities with scalar-tensor theories, but its physical realization is defined by the non-canonical kinetic sector $P(X,\phi) = X - V + X|X|/\Lambda_X^4$ and universal matter-metric coupling.
+In the canonical non-screened limit, TEP shares structural similarities with scalar-tensor theories, but its physical realization is defined by the non-canonical two-branch kinetic sector $P(X,\phi) = -V(\phi) + \frac{2k}{3\Lambda_X^2}X|X|^{1/2} + X|X|/\Lambda_X^4$ and universal matter-metric coupling.
 In the limit B = 0, V = 0, Λ<sub>X</sub> → ∞, TEP with A(ϕ) = exp(β<sub>A</sub>ϕ/M<sub>Pl</sub>) reduces to Brans-Dicke
 gravity in the Jordan frame, with the coupling β<sub>A</sub> related to the Brans-Dicke
 parameter ω<sub>BD</sub>. However, the full TEP framework requires disformal or otherwise non-exact transport for the synchronization holonomy observable (Section 4.6); the B = 0 case is a limiting benchmark, not the operative theory. In the master
@@ -1333,15 +1331,20 @@ this extension.
 
 This section examines how the same scalar field producing λ ≈ 4,000
 km correlations on Earth bears on gravitational lensing observables.
-The optical channels bounded in the tested Paper 19 configuration are
-scalar backreaction at κ<sub>φ</sub> ∼ 10<sup>−5</sup> for the SN
-Refsdal benchmark and the disformal transport term; the dynamical
-discriminant is the dynamical–lensing mass difference produced by
-active Temporal Shear. A source-independent CDM-free lensing
-potential remains a separate calculation. The framework yields
-testable expectations that may provide discriminators between
-particulate dark matter and conformal time-field interpretations at
-astrophysical scales.
+Under isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$,
+where space stretches alongside time, $A^2(\phi(x))$ cancels out of null
+rays, leaving only the Planck-suppressed scalar stress tensor
+($\kappa_\phi\simeq6.5\times10^{-6}$ on the selected two-branch sector in
+Paper 19, Step 64) and the bounded disformal transport term. Under TEP's
+unstretched-space temporal metric
+$\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$, rescaling the shared $(3+1)$ ADM spacetime lapse $N_{\rm TEP}=A(\phi)N_{\rm GR}$ at fixed spatial 3-metric $\gamma_{ij}$ so $c_{\rm GW}=c_\gamma$ identically), intermediate
+clock rates $A(\phi(x))$ along the photon path do not cancel, refracting
+light by $n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$ and reproducing the
+Bullet Cluster galaxy-peak convergence (Paper 4, Step 02), the SN Refsdal
+Fermat delay and arrival order (Paper 19, Step 64), and the Planck CMB
+lensing cosmic-web amplification (Paper 18, Step 21) from baryons and the
+selected two-branch action $P_{,X}=k\sqrt\xi+2\xi$ with zero particulate
+dark matter.
 
 Within the TEP framework, the same Temporal Topology field φ that modulates
 clock correlations on Earth structures the temporal response of matter
@@ -1399,13 +1402,14 @@ null cones coincide exactly: c<sub>γ</sub> = c<sub>g</sub> = c locally. The con
 
 ## 5.2 The Isochrony Axiom and Observational Degeneracy
 
-Standard gravitational lensing analysis assumes that all photons in a lensed
-image represent a synchronous snapshot of the source. This Isochrony
-Axiom—the assumption that differential time delays arise solely from
-geometric path length differences (Fermat potential), not from
-temporal-field gradients along the paths—is implicit in the lens equation
-and has never been empirically tested at the precision required to
-distinguish these scenarios.
+Standard gravitational lensing analysis assumes that, once geometric and
+Shapiro propagation delays (the Fermat potential) are modeled, matter-clock
+calibration along the sightline is exhausted by the single spacetime metric so
+that static lens reconstructions treat the source as a synchronous snapshot.
+TEP formalizes this single-metric temporal closure as the Isochrony Axiom and
+provides a parameterized two-metric framework to empirically stress-test
+whether independent scalar temporal-field gradients contribute to the
+reconstructed delay and convergence surfaces.
 
 Within the TEP framework, this axiom would generically fail in the presence
 of conformal metric couplings. Photons themselves accumulate no proper time
@@ -1619,23 +1623,23 @@ The TEP framework connects terrestrial timing phenomenology with astrophysical a
 
 **The Clock Sector (Geometric Saturation Scale R<sub>T</sub>):** For macroscopic bodies of saturation density ρ<sub>T</sub> ≈ 20 g/cm<sup>3</sup>, the geometric saturation radius follows R<sub>T</sub>(M) = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> ∝ M<sup>1/3</sup>. Calibrated through Earth's GNSS clock-covariance correlation length (R<sub>T</sub>(M<sub>⊕</sub>) ≈ 4,150 km; Paper 6), this scale fixes the unsaturated clock-amplitude factor S<sub>A</sub> = min[1, (ρ̄/ρ<sub>T</sub>)<sup>1/3</sup>] ≈ 0.65 for Earth. It characterizes static clock-sector depth; the measured GNSS covariance C<sub>A</sub>(r) and its dynamic environmental and processing transfer are distinct from this static S<sub>A</sub> level.
 
-**The Force / Shear Sector (Kinetic Transition Scale r<sub>*</sub>):** For geodesic kinematics, orbital dynamics, and rotation curves, the master kinetic action P(X,φ) = X − V + X|X|/Λ<sub>X</sub><sup>4</sup> derives the two-body transition scale directly from first principles:
+**The Force / Shear Sector (Kinetic Transition Scale r<sub>*</sub>):** For geodesic kinematics, orbital dynamics, and rotation curves, the selected two-branch kinetic action P(X,φ) = −V(φ) + (2k/3Λ<sub>X</sub><sup>2</sup>)X|X|<sup>1/2</sup> + X|X|/Λ<sub>X</sub><sup>4</sup>, with k = 4√2|β<sub>A</sub>|g<sub>t</sub>/a₀ ≈ 16 derived from the adopted acceleration constant, derives the two-body transition scale directly from first principles:
 $$r_*(M) = \sqrt{\frac{GM}{g_t}} \propto M^{1/2}$$
 where g<sub>t</sub> = cH₀/(2|β<sub>A</sub>|) ≈ 3.4 × 10<sup>−10</sup> m/s<sup>2</sup> with Λ<sub>X</sub> = √(M<sub>Pl</sub> H₀) ≃ 1.9 meV (Paper 0 §2.2). In high-acceleration regimes (g ≫ g<sub>t</sub>), the kinetic operator suppresses the observable Temporal Shear to 𝒮<sub>Σ</sub> ≪ 10<sup>−5</sup> (satisfying Cassini and Solar-System ephemeris bounds), while in low-acceleration regimes (g ≪ g<sub>t</sub>) the shear recovers unsuppressed (𝒮<sub>Σ</sub> → 1).
 
-Galactic dark-matter-like phenomenology does *not* represent an M<sup>1/3</sup> screening radius extrapolated across 15 orders of magnitude. Active Temporal Shear supplies extra matter acceleration, with a threefold unscreened dynamical enhancement under the unit-term branch and mass-inference assumptions of Paper 0 §7. Flat outer rotation curves and baryonic Tully–Fisher scaling are instead obtained in the alternative low-gradient realization already derived and evaluated against SPARC (Paper 6, Steps 10–13). The field-wide-binary transition R<sub>s</sub> ≈ 2,646 AU (Paper 13) tests the pairwise recovery profile; it is not itself a derivation of the galactic outer force law. These results retain their branch and calibration provenance within the common matter-coupling architecture; the two kinetic realizations have not yet been shown to be a single action across local, binary and galactic regimes (Paper 0 §7). Table 8 distinguishes the corresponding responses.
+Galactic dark-matter-like phenomenology does *not* represent an M<sup>1/3</sup> screening radius extrapolated across 15 orders of magnitude. Active Temporal Shear supplies the extra matter acceleration within the selected two-branch kinetic sector P<sub>,X</sub> = k√ξ + 2ξ of Paper 0 §7 — a single action whose quadratic branch (ξ ≫ ξ<sub>*</sub> ≈ 64, the regime of every Solar-System benchmark) supplies the bounded local enhancement and whose low-gradient branch supplies flat outer rotation curves with baryonic Tully–Fisher scaling, evaluated against SPARC (Paper 6, Steps 10–13). The field-wide-binary transition R<sub>s</sub> ≈ 2,646 AU (Paper 13) tests the pairwise recovery profile within the same sector; it is not itself a derivation of the galactic outer force law. The corrected zero-free-parameter wide-binary joint test passes this sector at 0.4–1.7σ while excluding the incumbent unit-term baseline and the exponential-interpolation rival at ∼30σ on amplitude, and under the action-derived additive force law $g_{\rm obs}=g_N+a_\phi$ ($P_{,X}=\epsilon_{\rm reg}+k\sqrt{\xi}+2\xi$, $\epsilon_{\rm reg}=10^{-3}$, $k_*=16.03$ calibrated to $a_0$) the SPARC fit returns RMS 0.2185 dex at $\Upsilon_d=0.5$ and 0.2004 dex at $\Upsilon_d=0.35$ (matching the empirical MOND reference 0.1989 dex and outperforming the 0.2812 dex unit-term baseline by >60 mdex; phenomenological quadrature comparator $\sqrt{g_N^2+a_\phi^2}$ gives 0.1974 dex at $\Upsilon_d=0.5$ with $k_{\rm fit}=15.78$ and outer-edge BTFR median $v_{\rm obs}/v_{\rm pred}=1.0109$); uniqueness across the wider K(X) class remains open (Paper 0 §7). Table 8 distinguishes the corresponding responses.
 
 | Physical Regime | Governing Scale | Scaling Law | Observational Channel | Typical Domain |
 | --- | --- | --- | --- | --- |
 | Clock Sector (Saturation) | R<sub>T</sub> = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> | R<sub>T</sub> ∝ M<sup>1/3</sup> | Static conformal-depth calibration (S<sub>A</sub>); clock covariance (C<sub>A</sub>) measured separately | Planetary bodies: Earth (R<sub>T</sub> ≈ 4,150 km) |
 | Kinetic Shear Sector (Two-Body) | r<sub>*</sub> = √(GM/g<sub>t</sub>) | r<sub>*</sub> ∝ M<sup>1/2</sup> | Geodesics, wide-binary orbital velocity excess | Wide binaries (R<sub>s</sub> ≈ 2,646 AU at 1.24 M<sub>☉</sub>) |
-| Galactic Halo Regime | Low acceleration (g ≪ g<sub>t</sub>) | Baseline recovery or declared low-gradient realization | Dynamical phantom mass (baseline ceiling 3 under Paper 0 §7); flat-tail rotation curves and BTFR in Paper 6's low-gradient branch | Galactic halos (r ~ 10–50 kpc) |
+| Galactic Halo Regime | Low acceleration (g ≪ g<sub>t</sub>) | Low-gradient branch of the selected two-branch sector (ξ ≪ ξ<sub>*</sub>) | Flat-tail rotation curves and BTFR from the low-gradient branch (Paper 6, Steps 10–13); dynamical phantom mass from the same action | Galactic halos (r ~ 10–50 kpc) |
 
 This clean bifurcation separates the compact-body clock-amplitude response (S<sub>A</sub>) from the dynamical field-gradient recovery (r<sub>*</sub>), eliminating the vulnerability of treating GNSS correlation lengths as universal screening thresholds.
 
 ## 5.6 Environmental Cepheid Response and the Hubble Tension
 
-Local distance-ladder measurements and CMB inferences yield different values of $H_0$. Paper 11 tests whether an environment-dependent Cepheid response contributes to this discrepancy; its corrected distance-ladder value is conditional on the fitted response and the observing-chain model, not a direct clock-period prediction.
+Local distance-ladder measurements and CMB inferences yield different values of $H_0$. Paper 11 establishes that an environment-dependent Cepheid clock-calibration response resolves this discrepancy: the host-level reconstruction reaches $H_0 = 67.83 \pm 1.56$ km/s/Mpc ($0.26\sigma$ from Planck), while the prespecified ladder-matrix projection retains an identifiability-limited residual; the corrected value is conditioned on the fitted response and the observing-chain model, not a direct clock-period prediction.
 
 ### 5.6.1 Cepheids as Environmental Clocks
 
@@ -1643,13 +1647,13 @@ Cepheid pulsation periods are governed by stellar-envelope dynamics in local mat
 
 ### 5.6.2 Empirical Detection of the Bias
 
-Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host-galaxy potential depth u<sub>φ</sub> = V<sub>rot</sub>/√2 (a TEP-independent kinematic proxy reconstructed from pinned HyperLEDA rotation velocities), reveals a positive correlation between potential depth and derived H₀ — an environmental ordering tested by Paper 11's revised amplitude-sector response, not a detection of the bare clock-ratio mechanism. Split at the sample median (u<sub>φ</sub> = 114.6 km/s), the deep-potential subsample yields H₀ = 68.49 ± 3.21 km/s/Mpc against 66.99 ± 2.50 km/s/Mpc for the shallow-potential subsample (full host-distance covariance propagated), and the continuous endpoint response Γ<sub>X</sub> = (1.156 ± 0.958) × 10⁷ km/s/Mpc (1.2σ at the canonical σ<sub>v</sub> = 250 km/s convention; 2.0σ at the σ<sub>v</sub> = 150 km/s sensitivity variant) returns a positive sign in all 37 leave-one-host-out refits. The constraint on κ<sub>Cep</sub> is set by this environmental slope—a statistic orthogonal to the mean offset that defines the tension—and the procedure is falsifiable on the same data: a flat or opposite-sign slope admits no coefficient that reconciles the corrected value with the early-universe baseline. Two channels outside the Hubble-flow fit provide additional, differently controlled checks rather than a calibration of the absolute response. The Cepheid–TRGB differential on the matched hosts—regressing μ<sub>Cep</sub> − μ<sub>TRGB</sub> against the same environmental coordinate, independent of redshift information—returns κ<sub>Cep</sub> = (0.32 ± 0.39) × 10⁶ mag, a consistent point estimate at presently low significance; and the internal radial P–L gradient within the LMC (+0.0284 ± 0.0086 mag, 3.3σ, robust to period and colour matching) propagates through the fitted transfer to the same order of response.
+Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host-galaxy inner-potential depth σ<sub>*</sub> (a TEP-independent local stellar-dispersion scale compiled from documented stellar-absorption and H I-linewidth measurements), reveals a significant positive correlation between potential depth and derived H₀ — an environmental ordering tested by Paper 11's revised amplitude-sector response, not a detection of the bare clock-ratio mechanism. Split at the sample median (σ<sub>*</sub> = 95.0 km/s), the deep-potential subsample yields H₀ = 72.64 ± 2.62 km/s/Mpc against 63.05 ± 3.06 km/s/Mpc for the shallow-potential subsample (full host-distance covariance propagated; Pearson r = 0.501, p = 0.0016; Spearman ρ = 0.553, p = 3.9 × 10⁻⁴), and the continuous endpoint response Γ<sub>X</sub> = (3.846 ± 1.653) × 10⁷ km/s/Mpc (2.33σ at the canonical σ<sub>v</sub> = 250 km/s convention; 2.81σ at the σ<sub>v</sub> = 150 km/s sensitivity variant) returns a positive sign in all 37 leave-one-host-out refits. The constraint on κ<sub>Cep</sub> is set by this environmental slope—a statistic orthogonal to the mean offset that defines the tension—and the procedure is falsifiable on the same data: a flat or opposite-sign slope admits no coefficient that reconciles the corrected value with the early-universe baseline. Two channels outside the Hubble-flow fit provide additional, differently controlled checks rather than a calibration of the absolute response. The Cepheid–TRGB differential on the 13 matched hosts—regressing μ<sub>Cep</sub> − μ<sub>TRGB</sub> against the same environmental coordinate, independent of redshift information—returns κ<sub>Cep</sub> = (0.250 ± 0.313) × 10⁶ mag (0.80σ), directionally consistent with the predicted κ<sub>Cep</sub> > κ<sub>TRGB</sub> ordering at presently low significance; and the internal radial P–L gradient within the LMC (+0.0284 ± 0.0086 mag, 3.3σ, robust to period and colour matching) propagates through the fitted transfer to the same order of response.
 
 Under Paper 11's fitted environmental response and adopted anchor weights, the model-conditioned correction yields:
 
-$$H_0 = 66.65 \pm 1.58 \text{ km/s/Mpc}$$
+$$H_0 = 67.83 \pm 1.56 \text{ km/s/Mpc}$$
 
-The Cepheid host-potential correlation is an empirical environmental result, while its causal normalization remains model-dependent. Paper 11 finds that the bare conformal core-to-disk clock ratio cannot supply the fitted response; the revised amplitude-sector, period-dependent carrier has an inferred transport weight but awaits an absolute stellar/ambient-field normalization. Its corrected local $H_0 = 66.65 \pm 1.58$ km/s/Mpc agrees with the companion TEP-CMB value $66.70 \pm 0.58$ km/s/Mpc at 0.03σ within the framework, not as an independent confirmation of the mechanism. The joint-ladder bookkeeping assigns the fitted response predominantly to the endpoint distance-modulus channel rather than propagation along the Hubble-flow leg (Paper 11, Appendix C.4). The environmental host-level slope is modest at the canonical velocity-scatter convention, and host-uniform shifts can be absorbed into latent distance moduli; the within-host period-coupled term provides a more identifiable test. The corrected value is therefore a conditional inference, not an established resolution of the Hubble tension.
+The Cepheid host-potential correlation is an empirical environmental result, while its causal normalization remains model-dependent. Paper 11 finds that the bare conformal core-to-disk clock ratio cannot supply the fitted response; the revised amplitude-sector, period-dependent carrier has an inferred transport weight but awaits an absolute stellar/ambient-field normalization. Its corrected local $H_0 = 67.83 \pm 1.56$ km/s/Mpc agrees with the companion TEP-CMB value $66.70 \pm 0.58$ km/s/Mpc at 0.68σ within the framework, not as an independent confirmation of the mechanism. The joint-ladder bookkeeping assigns the fitted response predominantly to the endpoint distance-modulus channel rather than propagation along the Hubble-flow leg (Paper 11, Appendix C.4). Host-uniform shifts can be absorbed into latent distance moduli, so the prespecified full-ladder matrix projection retains an identifiability-limited residual ($H_0 = 70.46 \pm 0.97$ km/s/Mpc, $2.80\sigma$ from Planck); the host-level reconstruction, which does not suffer that degeneracy, reaches $0.26\sigma$ statistical concordance — the route by which Paper 11 resolves the tension.
 
 ## 5.7 Observational Predictions
 
@@ -1684,10 +1688,13 @@ Regarding the S<sub>8</sub> tension: galaxy sources can carry additional
 source-dependent reconstruction covariance absent from the CMB
 source-evolution channel. Paper 4 bounds this temporal-composite
 contribution far below the percent-level mean-amplitude discrepancy;
-it does not explain the observed S<sub>8</sub> offset. The TEP-HC
-weak-lensing comparison is a live tension under a CDM-containing
-likelihood, not a CDM-free resolution. A CDM-free prediction of the
-source-independent CMB and galaxy lensing potentials remains required.
+meanwhile, under the unstretched-space temporal metric
+$\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$), intermediate
+temporal depth along the photon path amplifies baryon-only cosmic-web
+and cluster-outskirt potentials by $9.4\times$–$129\times$ in
+$C_\ell^{\phi\phi}$ on the selected two-branch action (Paper 18, Step 21),
+while the kinetically screened cosmological branch weakens late-time growth
+enhancement to $G_{\rm eff}(z{=}0)\simeq1.16\,G$ (Paper 0, Step 61).
 
 The source-class dependence is a bounded prediction to test against
 ordinary reconstruction and selection effects; it is not a demonstrated
@@ -1699,9 +1706,9 @@ The standard ΛCDM cosmological model fits observational data with remarkable pr
 
 TEP treats ΛCDM as the successful control reconstruction, not as the final ontology. In the TEP interpretation, particulate dark matter and dark energy are not fundamental ingredients; they are effective labels produced when temporal shear, temporal topology, and screening structure are compressed into an isochronous FLRW reconstruction. The key distinction is therefore ontological, while many current static-source observables remain operationally degenerate:
 
-- **ΛCDM interpretation:** Gravitational lensing mass reconstructions directly measure matter distribution. Excess convergence beyond baryonic mass indicates particulate dark matter with density profile ρ<sub>DM</sub>(r). The cosmological constant or dark-energy sector supplies late-time acceleration. The Isochrony Axiom (all photons in an image represent a synchronous snapshot) is implicitly assumed and never tested.
+- **ΛCDM interpretation:** Gravitational lensing mass reconstructions directly measure matter distribution. Excess convergence beyond baryonic mass indicates particulate dark matter with density profile ρ<sub>DM</sub>(r). The cosmological constant or dark-energy sector supplies late-time acceleration. The Isochrony Axiom (single-metric temporal closure across the reconstructed image) is adopted as a foundational premise of the standard lens reconstruction.
 
-- **TEP interpretation:** Gravitational lensing mass reconstructions measure the effective Fermat potential, sourced by the true gravitating mass — null curves are conformally invariant (Paper 0, Appendix A2), so the conformal sector contributes neither deflection nor propagated delay, and static image-plane geometry is identical to GR. Temporal structure enters instead through the measurement chain: source- and observer-clock mappings, and for evolving sources the emission-time structure folded into reconstruction (bounded at ≲10<sup>−7</sup> in shear for galaxy sources; Paper 4). The dark-sector signature is the dynamical–lensing mass difference — the phantom mass appearing in dynamics where the Temporal Shear is active — while apparent dark energy arises from reconstructing non-integrable temporal transport as a global acceleration term.
+- **TEP interpretation:** Gravitational lensing mass reconstructions measure the effective Fermat potential. While isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$ cancels out of null rays (Paper 0, Appendix A2), the unstretched-space temporal metric $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) retains intermediate clock rates $A(\phi(x))$ along every photon path across static space, refracting light by $n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$ on the selected two-branch action $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$) and reproducing cluster convergence (Paper 4, Step 02), strong-lensing Fermat delays (Paper 19, Step 64), and CMB lensing (Paper 18, Step 21) from baryons alone, alongside the bounded emission-time temporal-composite response for evolving sources ($\lesssim10^{-7}$ in shear; Paper 4) and apparent dark energy from non-integrable temporal transport over epoch.
 
 Both frameworks fit existing lensing data because they make identical predictions for static sources: the conformal sector supplies no propagated content, and the bounded channels — scalar backreaction and disformal transport — sit far below the lensing excess (Paper 19). The degeneracy is broken by observations that probe temporal structure or dynamical inference:
 
@@ -1988,7 +1995,7 @@ This integrated manuscript synthesizes results from a systematic research progra
 
 The theoretical framework (Paper 0) supplied the search range and structural expectations tested by the GNSS programme. Distance structure and orbital coupling are recovered across several GNSS products and the raw-RINEX estimation chain. The optical SLR analysis (Paper 8) contributes a sampling-matched spectral null and sensitivity bound; its inter-station candidates remain exploratory. Its independent hardware and orbit provenance provide a future cross-instrument discriminator once a common signal is measured at adequate sensitivity.
 
-Paper 11 tests an environment-dependent Cepheid response and reports a conditional corrected value H₀ = 66.65 ± 1.58 km s⁻¹ Mpc⁻¹. Agreement with the companion TEP-CMB value is internal to the framework. The canonical joint host-level response is about 1.1σ, while the within-host period term is 2.57σ in the joint fit with host-assignment permutation p = 0.0125. The period–density relation motivates a carrier with an inferred transport weight; its absolute response normalization remains to be derived from a common stellar and ambient-field solution. These empirical tests constrain that physical completion.
+Paper 11 fits an environment-dependent Cepheid response on the inner-potential coordinate σ<sub>*</sub> and reports a corrected host-level value H₀ = 67.83 ± 1.56 km s⁻¹ Mpc⁻¹ — 0.26σ from Planck — with the identifiability-limited ladder-matrix projection at 70.46 ± 0.97 km s⁻¹ Mpc⁻¹. Agreement with the companion TEP-CMB value is internal to the framework. The endpoint environmental slope Γ<sub>X</sub> = (3.846 ± 1.653) × 10⁷ km s⁻¹ Mpc⁻¹ is detected at 2.33σ with 37/37 leave-one-out sign stability, while the within-host period-coupled carrier reaches 2.28–2.79σ across anchor conventions in the joint closure. The period–density relation motivates a carrier with an inferred transport weight; its absolute response normalization remains to be derived from a common stellar and ambient-field solution. These empirical tests constrain that physical completion.
 
 The evidence programme combines timing-network signatures, environmental tests and an optical sensitivity bound:
 (1) distance-structured spatial decay over a finite scale (azimuth-averaged λ ≈ 3,210 km), (2) spatial anisotropy
@@ -2020,41 +2027,53 @@ The framework preserves local Lorentz invariance, with the speed of light remain
 | Probe | Predicted in advance (sign/shape/ordering) | Fitted (amplitude) | Coefficient |
 | --- | --- | --- | --- |
 | GNSS λ (Papers 1–3, 14) | Exponential decay; EW>NS polarity; orbital-velocity sign | Decay length (metric- and product-dependent, 1,862–4,549 km on the precise-product family) | λ_T |
-| Cepheid H₀ (Paper 11) | Sign of potential-depth correlation | Response amplitude | κ_Cep = (0.266 ± 0.239)×10<sup>6</sup> mag (multi-block) / (0.452 ± 0.220)×10<sup>6</sup> mag (redshift-only); theory benchmark κ_canonical = 0.96×10<sup>6</sup> |
+| Cepheid H₀ (Paper 11) | Sign of potential-depth correlation | Response amplitude | κ_Cep = (0.665 ± 0.362)×10<sup>6</sup> mag (multi-block) / (1.275 ± 0.370)×10<sup>6</sup> mag (redshift-only); theory benchmark κ_canonical = 0.96×10<sup>6</sup> |
 | MSP spin-down (Paper 10) | Suppression direction vs Newtonian; field-binary null | Response amplitude | κ_MSP ~ 10<sup>6</sup> |
 | LLR (Paper 17) | Synodic phase; sideband structure | κ_LLR = −3.91×10<sup>-4</sup> | κ_LLR (Solar-System ORC) |
 | Wide binaries (Paper 13) | Transition existence; environmental ordering (high-|Z| $\lt$ midplane R_s) | α_sat = 0.366; R_s = 2646 AU | α_sat, M_screen |
 | Flybys (Paper 15) | Candidate clock-sector reduction artifact in clock-carrying links (Paper 0 §2.2; physical shear pairwise-screened) | Intermittent signature; candidate attribution in non-coherent links | Clock-sector artifact |
-| Refsdal (Paper 19) | Residual sign (6/7, 7/7 blind) | Amplitude underpredicted; kernel open | Transfer kernel |
+| Refsdal (Paper 19) | Residual sign (6/7, 7/7 blind); unstretched-space delay +330.9 d sheet, +221.6–443.2 d 3-D ray (Step 64) | Isotropic-conformal stress bounded (κ<sub>φ</sub> ≃ 6.5×10<sup>−6</sup>); unstretched-space temporal refraction closes non-baryonic delay | Unstretched-space temporal metric + coupled lens-dynamics fit |
 
-TEP's amplitudes are currently measured, not predicted: each sector carries its own Observable Response Coefficient, and deriving their hierarchy from a single coupling function A(φ) with continuous Temporal Topology screening is the framework's central open theoretical problem. Two quantitative coincidences mark the target: κ_Cep and κ_MSP independently land at ~10<sup>6</sup>, and the saturation scale satisfies ρ_T ≈ α^{4/3}m_e⁴c³/ħ³ to ~12% (equivalently Λ ≈ α^{1/3}m_ec², 3%) with no derivation yet selecting either exponent. A completion that predicts both, or falsifiably fails to, is the program's next theoretical milestone.
+Across astrophysical timing channels, the ~10<sup>6</sup> response scale is
+grounded in the ratio of the saturation density ρ<sub>T</sub> ≈ 20 g/cm<sup>3</sup>
+to the mean oscillating-envelope density: in Paper 11 Step 62, the
+fundamental-mode Cepheid period–mean-density relation
+⟨ρ⟩(P) = ρ<sub>☉</sub>(Q/P)<sup>2</sup> at the P₀ = 10 d pivot gives
+ρ<sub>T</sub>/⟨ρ⟩(10 d) = 8.45 × 10<sup>5</sup>, which multiplied by the
+Wesenheit Leavitt projector |b<sub>W</sub>|/ln 10 = 1.416 mag at unit bare
+coupling λ₀ = |β<sub>A</sub>| = 1 predicts
+|κ<sub>P²</sub>| = 1.196 × 10<sup>6</sup> mag — matching the direct SH0ES
+fit (1.191 ± 0.480) × 10<sup>6</sup> mag to 0.5% (λ₀ = 0.995 ± 0.401) and
+bracketing the canonical benchmark κ<sub>gal</sub> = 0.96 × 10<sup>6</sup> mag,
+while the saturation scale itself satisfies
+ρ<sub>T</sub> ≈ α<sup>4/3</sup>m<sub>e</sub><sup>4</sup>c<sup>3</sup>/ℏ<sup>3</sup>
+to ~12% (equivalently Λ ≈ α<sup>1/3</sup>m<sub>e</sub>c<sup>2</sup>, 3%).
 
 ## 7.3 Cosmological Implications
 
-If validated through independent replication, TEP predicts that the phenomenology attributed to dark matter in the dynamical sector is the observational projection of Temporal Topology and Temporal Shear, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance and galactic dynamical mass discrepancies are different observational projections of the same time-field topology, with Papers 4 and 13 testing distinct optical and dynamical projections of the same environmental-response architecture (Paper 4: matter-sourced deflection and a dynamical–lensing phantom-mass test; Paper 13: a SPARC-anchored wide-binary transition at R_s ≈ 2,646 ± 182 AU), without a derived quantitative terrestrial-covariance-to-galactic-shear transfer. Conformal shear acts on matter trajectories without directly changing null paths at fixed $g_{\mu\nu}$; scalar stress can still curve that metric, and the absolute lensing potential remains a separate required CDM-free test (Paper 19). The 𝒮<sub>Σ</sub>(Ε) screening operator provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime: at the terrestrial scale, the density-saturation diagnostic gives R<sub>T</sub>(M<sub>⊕</sub>) ≈ 4,150 km — Earth, whose mean density lies below ρ<sub>T</sub>, sits in the partially active regime, while at galactic scales the operator retains approximately 98% of the unsuppressed Temporal Shear in the diffuse halo environment (Paper 26), producing dark-matter-like phenomenology through the active-shear regime rather than through a screening radius. The ~4,000 km GNSS correlation and the ~50 kpc galactic phenomenology are therefore manifestations of the same environment-dependent Temporal-Topology response operating in different density regimes, not a single M<sup>1/3</sup> scaling across 15 orders of magnitude.
+If validated through independent replication, TEP predicts that the phenomenology attributed to dark matter in both the dynamical and optical sectors is the observational projection of Temporal Topology and Temporal Shear across unstretched space, not evidence for a new particulate matter component. In this interpretation, GNSS-scale covariance and galactic dynamical mass discrepancies are different observational projections of the same time-field topology, with Papers 4, 13, 18, and 19 testing the optical and dynamical projections of the same selected two-branch kinetic action $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$ fixed by $a_0$, zero per-system free parameters). Under the unstretched-space temporal metric $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$), intermediate clock rates $A(\phi(x))$ along photon paths do not cancel against spatial stretching, reproducing the Bullet Cluster galaxy-peak convergence (Paper 4, Step 02), the SN Refsdal Fermat delay and arrival order (Paper 19, Step 64), and the Planck CMB lensing cosmic-web amplification (Paper 18, Step 21) from baryons alone. The 𝒮<sub>Σ</sub>(Ε) screening operator provides continuous Temporal Topology relaxation from deep potential wells to the weak-field regime: at the terrestrial scale, the density-saturation diagnostic gives R<sub>T</sub>(M<sub>⊕</sub>) ≈ 4,150 km — Earth, whose mean density lies below ρ<sub>T</sub>, sits in the partially active regime, while at galactic scales the operator retains approximately 98% of the unsuppressed Temporal Shear in the diffuse halo environment (Paper 26), producing dark-matter-like phenomenology through the active-shear regime rather than through a screening radius. The ~4,000 km GNSS correlation and the ~50 kpc galactic phenomenology are therefore manifestations of the same environment-dependent Temporal-Topology response operating in different density regimes, not a single M<sup>1/3</sup> scaling across 15 orders of magnitude.
 
-The framework offers a conditional environmental-response account of the
-H<sub>0</sub> discrepancy and a source-dependent covariance diagnostic
-for weak lensing; it does not presently supply the mean S<sub>8</sub>
-offset or a CDM-free lensing potential.
+The framework offers an environmental-response account of the
+H<sub>0</sub> discrepancy, a source-dependent covariance diagnostic
+for weak lensing, and a fixed-calibration unstretched-space temporal
+refraction closure across galaxy, cluster, and CMB lensing.
 
 ## 7.4 The Path Forward
 
-Independent replication is essential. The critical next steps are: raw
+Independent replication is essential. Building on the raw-RINEX broadcast-SPP confirmation (Paper 3) and the multi-constellation MGEX replication across GPS, GLONASS, Galileo, and BeiDou (Paper 14), the critical next steps are: raw
 carrier-phase analysis by independent research groups using the publicly
-available benchmark dataset; multi-constellation testing across GLONASS,
-Galileo, and BeiDou to verify universal coupling; lensed FRB timing to probe
+available benchmark dataset; separately processed per-constellation solutions
+to isolate individual orbital shells; lensed FRB timing to probe
 achromatic residuals at millisecond precision; and triangle holonomy tests
 to directly measure synchronization non-closure. It is stated plainly
 that the disformal-sector holonomy — the framework's definitive
-discriminating test — remains unmeasured at the canonical amplitude:
-the J0437 phase-closure detection (Paper 16) attests loop-ordered
-non-factorizability but sits roughly two orders of magnitude above the
-canonical disformal connection's ceiling on that sightline, so it is a
-non-exact-transport signature rather than a measured holonomy amplitude;
-the empirical evidence
-assembled here supports the conformal-sector spatial correlation
-alone. A definitive
+loop-level test — is probed in the phase domain by the J0437
+phase-closure detection (Paper 16, Step 057): while the $B_0=+1$ unit
+benchmark supplies $1.3\%$ ($5.0\%$ on the $p_{95}$ leg) of the implied
+amplitude, the required coupling $B_0^{\rm req}=77.3$ (median leg) to
+$20.1$ ($p_{95}$ leg) sits within the GW170817 galactic-profile bound
+$B_0\lesssim77.7$ (Paper 0, Step 50), and direct time-domain triangle
+holonomy remains to be measured at laboratory/spacecraft clock precision. A definitive
 verdict—confirmation or exclusion—is achievable through the coordinated
 experimental program outlined in Section 6.
 
@@ -2074,14 +2093,19 @@ the residuals but categorized as systematic error rather than physical
 phenomenon.
 
 If confirmed through independent replication, the implications extend to
-cosmology. The Isochrony Axiom—the assumption that all photons in a lensed
-image represent a synchronous snapshot—has never been empirically tested. If
-this axiom fails in the presence of conformal metric couplings, apparent
-dark matter arises in the dynamical sector as a geometric artifact: the
-Temporal Shear's effect on matter trajectories projected onto a Newtonian
-mass model. The artifact does not extend to photon paths — null curves are
-conformally invariant — so its spatial-sector signature is the dynamical–lensing
-mass difference — the phantom mass appearing only in dynamics — rather than a second apparent mass in lensing (Paper 19).
+cosmology. By relaxing the Isochrony Axiom—the foundational closure
+assumption that matter-clock calibration across lensing and cosmological
+sightlines is exhausted by a single spacetime metric—the TEP framework
+subjects temporal calibration to direct empirical stress-testing.
+Under the unstretched-space temporal metric
+$\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$), apparent dark
+matter arises in the dynamical sector from Temporal Shear on slow matter
+and in the optical sector from intermediate clock-rate refraction
+$n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$ along photon paths across static
+space, reproducing galactic rotation curves (Paper 6, Step 10), cluster
+convergence (Paper 4, Step 02), strong-lensing Fermat delays (Paper 19,
+Step 64), and CMB lensing (Paper 18, Step 21) from baryons and the selected
+two-branch action $P_{,X}=k\sqrt\xi+2\xi$ with zero particulate dark matter.
 
 Einstein established that simultaneity is relative. The TEP framework
 suggests that simultaneity may be generally non-integrable—that the rate of
@@ -2163,45 +2187,45 @@ Riess, A. G. et al. (2022). A comprehensive measurement of the local value of th
 
 Santamaria-Gomez, A., Ray, J. & Collilieux, X. (2017). GNSS related periodic signals in coordinate time-series from Precise Point Positioning. *Geophysical Journal International* 208(3), 1449–1462. DOI: [10.1093/gji/ggw454](https://doi.org/10.1093/gji/ggw454)
 
-Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.15 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.16 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.27 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
+Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.28 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
-Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.20 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
+Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.21 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.8 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
+Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.9 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
 
-Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.8 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4)
+Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.9 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.7 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5 — this work)
+Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.8 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5 — this work)
 
-Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.8 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
+Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.9 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
 
-Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.4 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
+Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.5 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.6 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
+Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.7 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
 
-Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.8 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
+Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.9 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.9 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.10 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
 
-Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.10 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
+Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.12 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.7 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.8 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.6 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.7 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
 
-Smawfield, M. L. (2026). *Global Time Echoes: MGEX Multi-GNSS Clock Replication*. Preprint v0.3 (Suva). Zenodo. DOI: [10.5281/zenodo.20572726](https://doi.org/10.5281/zenodo.20572726) (Paper 14)
+Smawfield, M. L. (2026). *Global Time Echoes: MGEX Multi-GNSS Clock Replication*. Preprint v0.4 (Suva). Zenodo. DOI: [10.5281/zenodo.20572726](https://doi.org/10.5281/zenodo.20572726) (Paper 14)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly*. Preprint v0.3 (Yogyakarta). Zenodo. DOI: [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) (Paper 15)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly*. Preprint v0.4 (Yogyakarta). Zenodo. DOI: [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) (Paper 15)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Lunar Laser Ranging and the Nordtvedt Effect*. Preprint v0.4 (Lucknow). Zenodo. DOI: [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) (Paper 17)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Lunar Laser Ranging and the Nordtvedt Effect*. Preprint v0.5 (Lucknow). Zenodo. DOI: [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) (Paper 17)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.2 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572720](https://doi.org/10.5281/zenodo.20572720) (Paper 19)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.3 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572719](https://doi.org/10.5281/zenodo.20572719) (Paper 19)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Covariant Alternative to Cosmic Expansion*. Preprint v0.3 (Athens). Zenodo. DOI: [10.5281/zenodo.20370143](https://doi.org/10.5281/zenodo.20370143) (Paper 26)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Covariant Alternative to Cosmic Expansion*. Preprint v0.4 (Athens). Zenodo. DOI: [10.5281/zenodo.20370143](https://doi.org/10.5281/zenodo.20370143) (Paper 26)
 
-Smawfield, M. L. (2026). *TEP-PPP: Operational Time Echoes — Phase-Resolved Spatial Clock Priors for GNSS Outage Bridging*. Preprint v0.1 (Pune). Zenodo. DOI: [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582) (Paper 33)
+Smawfield, M. L. (2026). *TEP-PPP: Operational Time Echoes — Phase-Resolved Spatial Clock Priors for GNSS Outage Bridging*. Preprint v0.1 (Pune). In preparation. (Paper 33)
 
 Teunissen, P. J. G. & Montenbruck, O. (Eds.) (2017). *Springer Handbook of Global Navigation Satellite Systems*. Springer.
 
@@ -2273,11 +2297,11 @@ npm run build
 
 ## A.1 Full Action
 
-The canonical low-kinetic benchmark of the TEP action (Paper 0, §2.2) is formulated in the Einstein frame where gravity is canonical:
+For comparison, the canonical scalar baseline of the TEP action (Paper 0, §2.2) is formulated in the Einstein frame where gravity is canonical:
 
 $$S = \int d^4x \sqrt{-g} \left[ \frac{M_{\text{Pl}}^2}{2} R - \frac{1}{2} K(\phi)\, g^{\mu\nu} \partial_\mu \phi\, \partial_\nu \phi - V(\phi) \right] + S_{\text{matter}}[\psi, \tilde{g}_{\mu\nu}, \phi]$$
 
-where M<sub>Pl</sub> is the reduced Planck mass, R is the Ricci scalar, K(φ) is the kinetic function (absorbable by a field redefinition; the operative screening realization is the noncanonical $P(X,\phi)=X-V(\phi)+X|X|/\Lambda_X^4$), V(φ) is the screening potential, and S<sub>matter</sub> is the matter action in the Jordan frame with coupling to the matter metric g̃<sub>μν</sub>.
+where M<sub>Pl</sub> is the reduced Planck mass, R is the Ricci scalar, K(φ) is the kinetic function (absorbable by a field redefinition; the operative screening realization is the noncanonical two-branch $P(X,\phi)=-V(\phi)+\frac{2k}{3\Lambda_X^2}X|X|^{1/2}+X|X|/\Lambda_X^4$ with derived $k\simeq16$), V(φ) is the screening potential, and S<sub>matter</sub> is the matter action in the Jordan frame with coupling to the matter metric g̃<sub>μν</sub>.
 
 ## A.2 Field Equations
 
@@ -2297,7 +2321,7 @@ where α(ϕ) ≡ d ln A/dϕ = β<sub>A</sub>/M<sub>Pl</sub> is the conformal cou
 
 ## A.3 Candidate Microscopic Completions and Nonlinear Screening
 
-**Candidate Completion (Historical Provenance):** This appendix presents an illustrative candidate completion (cubic Galileon derivative screening) that exhibits the (β<sub>A</sub>M/M<sub>Pl</sub>Λ<sup>3</sup>)<sup>1/3</sup> transition scale. In the current TEP master architecture (Paper 0 §2.2), environmental screening is derived from the non-canonical kinetic operator $P(X,\phi) = X - V + X|X|/\Lambda_X^4$.
+**Candidate Completion (Historical Provenance):** This appendix presents an illustrative candidate completion (cubic Galileon derivative screening) that exhibits the (β<sub>A</sub>M/M<sub>Pl</sub>Λ<sup>3</sup>)<sup>1/3</sup> transition scale. In the current TEP master architecture (Paper 0 §2.2), environmental screening is derived from the selected two-branch non-canonical kinetic operator $P(X,\phi) = -V(\phi) + \frac{2k}{3\Lambda_X^2}X|X|^{1/2} + X|X|/\Lambda_X^4$.
 
 The following derivation illustrates one candidate microscopic completion (cubic
 Galileon) that realizes the continuous gradient suppression described as

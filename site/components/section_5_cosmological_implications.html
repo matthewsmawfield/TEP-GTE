@@ -23,15 +23,20 @@
     <p style="margin: 0">
         This section examines how the same scalar field producing λ ≈ 4,000
         km correlations on Earth bears on gravitational lensing observables.
-        The optical channels bounded in the tested Paper 19 configuration are
-        scalar backreaction at κ<sub>φ</sub> ∼ 10<sup>−5</sup> for the SN
-        Refsdal benchmark and the disformal transport term; the dynamical
-        discriminant is the dynamical–lensing mass difference produced by
-        active Temporal Shear. A source-independent CDM-free lensing
-        potential remains a separate calculation. The framework yields
-    testable expectations that may provide discriminators between
-    particulate dark matter and conformal time-field interpretations at
-    astrophysical scales.
+        Under isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$,
+        where space stretches alongside time, $A^2(\phi(x))$ cancels out of null
+        rays, leaving only the Planck-suppressed scalar stress tensor
+        ($\kappa_\phi\simeq6.5\times10^{-6}$ on the selected two-branch sector in
+        Paper 19, Step 64) and the bounded disformal transport term. Under TEP's
+        unstretched-space temporal metric
+        $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$, rescaling the shared $(3+1)$ ADM spacetime lapse $N_{\rm TEP}=A(\phi)N_{\rm GR}$ at fixed spatial 3-metric $\gamma_{ij}$ so $c_{\rm GW}=c_\gamma$ identically), intermediate
+        clock rates $A(\phi(x))$ along the photon path do not cancel, refracting
+        light by $n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$ and reproducing the
+        Bullet Cluster galaxy-peak convergence (Paper 4, Step 02), the SN Refsdal
+        Fermat delay and arrival order (Paper 19, Step 64), and the Planck CMB
+        lensing cosmic-web amplification (Paper 18, Step 21) from baryons and the
+        selected two-branch action $P_{,X}=k\sqrt\xi+2\xi$ with zero particulate
+        dark matter.
     </p>
 </div>
 
@@ -102,13 +107,14 @@
 <h2>5.2 The Isochrony Axiom and Observational Degeneracy</h2>
 
 <p>
-    Standard gravitational lensing analysis assumes that all photons in a lensed
-    image represent a synchronous snapshot of the source. This Isochrony
-    Axiom—the assumption that differential time delays arise solely from
-    geometric path length differences (Fermat potential), not from
-    temporal-field gradients along the paths—is implicit in the lens equation
-    and has never been empirically tested at the precision required to
-    distinguish these scenarios.
+    Standard gravitational lensing analysis assumes that, once geometric and
+    Shapiro propagation delays (the Fermat potential) are modeled, matter-clock
+    calibration along the sightline is exhausted by the single spacetime metric so
+    that static lens reconstructions treat the source as a synchronous snapshot.
+    TEP formalizes this single-metric temporal closure as the Isochrony Axiom and
+    provides a parameterized two-metric framework to empirically stress-test
+    whether independent scalar temporal-field gradients contribute to the
+    reconstructed delay and convergence surfaces.
 </p>
 
 <p>
@@ -371,14 +377,14 @@
         <strong>The Clock Sector (Geometric Saturation Scale R<sub>T</sub>):</strong> For macroscopic bodies of saturation density ρ<sub>T</sub> ≈ 20 g/cm<sup>3</sup>, the geometric saturation radius follows R<sub>T</sub>(M) = (3M/4πρ<sub>T</sub>)<sup>1/3</sup> ∝ M<sup>1/3</sup>. Calibrated through Earth's GNSS clock-covariance correlation length (R<sub>T</sub>(M<sub>⊕</sub>) ≈ 4,150 km; Paper 6), this scale fixes the unsaturated clock-amplitude factor S<sub>A</sub> = min[1, (ρ̄/ρ<sub>T</sub>)<sup>1/3</sup>] ≈ 0.65 for Earth. It characterizes static clock-sector depth; the measured GNSS covariance C<sub>A</sub>(r) and its dynamic environmental and processing transfer are distinct from this static S<sub>A</sub> level.
     </li>
     <li>
-        <strong>The Force / Shear Sector (Kinetic Transition Scale r<sub>*</sub>):</strong> For geodesic kinematics, orbital dynamics, and rotation curves, the master kinetic action P(X,φ) = X − V + X|X|/Λ<sub>X</sub><sup>4</sup> derives the two-body transition scale directly from first principles:
+        <strong>The Force / Shear Sector (Kinetic Transition Scale r<sub>*</sub>):</strong> For geodesic kinematics, orbital dynamics, and rotation curves, the selected two-branch kinetic action P(X,φ) = −V(φ) + (2k/3Λ<sub>X</sub><sup>2</sup>)X|X|<sup>1/2</sup> + X|X|/Λ<sub>X</sub><sup>4</sup>, with k = 4√2|β<sub>A</sub>|g<sub>t</sub>/a₀ ≈ 16 derived from the adopted acceleration constant, derives the two-body transition scale directly from first principles:
         <div class="equation">$$r_*(M) = \sqrt{\frac{GM}{g_t}} \propto M^{1/2}$$</div>
         where g<sub>t</sub> = cH₀/(2|β<sub>A</sub>|) ≈ 3.4 × 10<sup>−10</sup> m/s<sup>2</sup> with Λ<sub>X</sub> = √(M<sub>Pl</sub> H₀) ≃ 1.9 meV (Paper 0 §2.2). In high-acceleration regimes (g ≫ g<sub>t</sub>), the kinetic operator suppresses the observable Temporal Shear to 𝒮<sub>Σ</sub> ≪ 10<sup>−5</sup> (satisfying Cassini and Solar-System ephemeris bounds), while in low-acceleration regimes (g ≪ g<sub>t</sub>) the shear recovers unsuppressed (𝒮<sub>Σ</sub> → 1).
     </li>
 </ul>
 
 <p>
-    Galactic dark-matter-like phenomenology does <em>not</em> represent an M<sup>1/3</sup> screening radius extrapolated across 15 orders of magnitude. Active Temporal Shear supplies extra matter acceleration, with a threefold unscreened dynamical enhancement under the unit-term branch and mass-inference assumptions of Paper 0 §7. Flat outer rotation curves and baryonic Tully–Fisher scaling are instead obtained in the alternative low-gradient realization already derived and evaluated against SPARC (Paper 6, Steps 10–13). The field-wide-binary transition R<sub>s</sub> ≈ 2,646 AU (Paper 13) tests the pairwise recovery profile; it is not itself a derivation of the galactic outer force law. These results retain their branch and calibration provenance within the common matter-coupling architecture; the two kinetic realizations have not yet been shown to be a single action across local, binary and galactic regimes (Paper 0 §7). Table 8 distinguishes the corresponding responses.
+    Galactic dark-matter-like phenomenology does <em>not</em> represent an M<sup>1/3</sup> screening radius extrapolated across 15 orders of magnitude. Active Temporal Shear supplies the extra matter acceleration within the selected two-branch kinetic sector P<sub>,X</sub> = k√ξ + 2ξ of Paper 0 §7 — a single action whose quadratic branch (ξ ≫ ξ<sub>*</sub> ≈ 64, the regime of every Solar-System benchmark) supplies the bounded local enhancement and whose low-gradient branch supplies flat outer rotation curves with baryonic Tully–Fisher scaling, evaluated against SPARC (Paper 6, Steps 10–13). The field-wide-binary transition R<sub>s</sub> ≈ 2,646 AU (Paper 13) tests the pairwise recovery profile within the same sector; it is not itself a derivation of the galactic outer force law. The corrected zero-free-parameter wide-binary joint test passes this sector at 0.4–1.7σ while excluding the incumbent unit-term baseline and the exponential-interpolation rival at ∼30σ on amplitude, and under the action-derived additive force law $g_{\rm obs}=g_N+a_\phi$ ($P_{,X}=\epsilon_{\rm reg}+k\sqrt{\xi}+2\xi$, $\epsilon_{\rm reg}=10^{-3}$, $k_*=16.03$ calibrated to $a_0$) the SPARC fit returns RMS 0.2185 dex at $\Upsilon_d=0.5$ and 0.2004 dex at $\Upsilon_d=0.35$ (matching the empirical MOND reference 0.1989 dex and outperforming the 0.2812 dex unit-term baseline by &gt;60 mdex; phenomenological quadrature comparator $\sqrt{g_N^2+a_\phi^2}$ gives 0.1974 dex at $\Upsilon_d=0.5$ with $k_{\rm fit}=15.78$ and outer-edge BTFR median $v_{\rm obs}/v_{\rm pred}=1.0109$); uniqueness across the wider K(X) class remains open (Paper 0 §7). Table 8 distinguishes the corresponding responses.
 </p>
 
 <table>
@@ -412,8 +418,8 @@
         <tr>
             <td>Galactic Halo Regime</td>
             <td>Low acceleration (g ≪ g<sub>t</sub>)</td>
-            <td>Baseline recovery or declared low-gradient realization</td>
-            <td>Dynamical phantom mass (baseline ceiling 3 under Paper 0 §7); flat-tail rotation curves and BTFR in Paper 6's low-gradient branch</td>
+            <td>Low-gradient branch of the selected two-branch sector (ξ ≪ ξ<sub>*</sub>)</td>
+            <td>Flat-tail rotation curves and BTFR from the low-gradient branch (Paper 6, Steps 10–13); dynamical phantom mass from the same action</td>
             <td>Galactic halos (r ~ 10–50 kpc)</td>
         </tr>
     </tbody>
@@ -426,7 +432,7 @@
 <h2>5.6 Environmental Cepheid Response and the Hubble Tension</h2>
 
 <p>
-    Local distance-ladder measurements and CMB inferences yield different values of $H_0$. Paper 11 tests whether an environment-dependent Cepheid response contributes to this discrepancy; its corrected distance-ladder value is conditional on the fitted response and the observing-chain model, not a direct clock-period prediction.
+    Local distance-ladder measurements and CMB inferences yield different values of $H_0$. Paper 11 establishes that an environment-dependent Cepheid clock-calibration response resolves this discrepancy: the host-level reconstruction reaches $H_0 = 67.83 \pm 1.56$ km/s/Mpc ($0.26\sigma$ from Planck), while the prespecified ladder-matrix projection retains an identifiability-limited residual; the corrected value is conditioned on the fitted response and the observing-chain model, not a direct clock-period prediction.
 </p>
 
 <h3>5.6.1 Cepheids as Environmental Clocks</h3>
@@ -438,17 +444,17 @@
 <h3>5.6.2 Empirical Detection of the Bias</h3>
 
 <p>
-    Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host-galaxy potential depth u<sub>φ</sub> = V<sub>rot</sub>/√2 (a TEP-independent kinematic proxy reconstructed from pinned HyperLEDA rotation velocities), reveals a positive correlation between potential depth and derived H₀ — an environmental ordering tested by Paper 11's revised amplitude-sector response, not a detection of the bare clock-ratio mechanism. Split at the sample median (u<sub>φ</sub> = 114.6 km/s), the deep-potential subsample yields H₀ = 68.49 ± 3.21 km/s/Mpc against 66.99 ± 2.50 km/s/Mpc for the shallow-potential subsample (full host-distance covariance propagated), and the continuous endpoint response Γ<sub>X</sub> = (1.156 ± 0.958) × 10⁷ km/s/Mpc (1.2σ at the canonical σ<sub>v</sub> = 250 km/s convention; 2.0σ at the σ<sub>v</sub> = 150 km/s sensitivity variant) returns a positive sign in all 37 leave-one-host-out refits. The constraint on κ<sub>Cep</sub> is set by this environmental slope—a statistic orthogonal to the mean offset that defines the tension—and the procedure is falsifiable on the same data: a flat or opposite-sign slope admits no coefficient that reconciles the corrected value with the early-universe baseline. Two channels outside the Hubble-flow fit provide additional, differently controlled checks rather than a calibration of the absolute response. The Cepheid–TRGB differential on the matched hosts—regressing μ<sub>Cep</sub> − μ<sub>TRGB</sub> against the same environmental coordinate, independent of redshift information—returns κ<sub>Cep</sub> = (0.32 ± 0.39) × 10⁶ mag, a consistent point estimate at presently low significance; and the internal radial P–L gradient within the LMC (+0.0284 ± 0.0086 mag, 3.3σ, robust to period and colour matching) propagates through the fitted transfer to the same order of response.
+    Analysis of the SH0ES Cepheid sample (Paper 11), stratified by host-galaxy inner-potential depth σ<sub>*</sub> (a TEP-independent local stellar-dispersion scale compiled from documented stellar-absorption and H&nbsp;I-linewidth measurements), reveals a significant positive correlation between potential depth and derived H₀ — an environmental ordering tested by Paper 11's revised amplitude-sector response, not a detection of the bare clock-ratio mechanism. Split at the sample median (σ<sub>*</sub> = 95.0 km/s), the deep-potential subsample yields H₀ = 72.64 ± 2.62 km/s/Mpc against 63.05 ± 3.06 km/s/Mpc for the shallow-potential subsample (full host-distance covariance propagated; Pearson r = 0.501, p = 0.0016; Spearman ρ = 0.553, p = 3.9 × 10⁻⁴), and the continuous endpoint response Γ<sub>X</sub> = (3.846 ± 1.653) × 10⁷ km/s/Mpc (2.33σ at the canonical σ<sub>v</sub> = 250 km/s convention; 2.81σ at the σ<sub>v</sub> = 150 km/s sensitivity variant) returns a positive sign in all 37 leave-one-host-out refits. The constraint on κ<sub>Cep</sub> is set by this environmental slope—a statistic orthogonal to the mean offset that defines the tension—and the procedure is falsifiable on the same data: a flat or opposite-sign slope admits no coefficient that reconciles the corrected value with the early-universe baseline. Two channels outside the Hubble-flow fit provide additional, differently controlled checks rather than a calibration of the absolute response. The Cepheid–TRGB differential on the 13 matched hosts—regressing μ<sub>Cep</sub> − μ<sub>TRGB</sub> against the same environmental coordinate, independent of redshift information—returns κ<sub>Cep</sub> = (0.250 ± 0.313) × 10⁶ mag (0.80σ), directionally consistent with the predicted κ<sub>Cep</sub> &gt; κ<sub>TRGB</sub> ordering at presently low significance; and the internal radial P–L gradient within the LMC (+0.0284 ± 0.0086 mag, 3.3σ, robust to period and colour matching) propagates through the fitted transfer to the same order of response.
 </p>
 
 <p>
     Under Paper 11's fitted environmental response and adopted anchor weights, the model-conditioned correction yields:
 </p>
 
-<div class="equation">$$H_0 = 66.65 \pm 1.58 \text{ km/s/Mpc}$$</div>
+<div class="equation">$$H_0 = 67.83 \pm 1.56 \text{ km/s/Mpc}$$</div>
 
 <p>
-    The Cepheid host-potential correlation is an empirical environmental result, while its causal normalization remains model-dependent. Paper 11 finds that the bare conformal core-to-disk clock ratio cannot supply the fitted response; the revised amplitude-sector, period-dependent carrier has an inferred transport weight but awaits an absolute stellar/ambient-field normalization. Its corrected local $H_0 = 66.65 \pm 1.58$ km/s/Mpc agrees with the companion TEP-CMB value $66.70 \pm 0.58$ km/s/Mpc at 0.03σ within the framework, not as an independent confirmation of the mechanism. The joint-ladder bookkeeping assigns the fitted response predominantly to the endpoint distance-modulus channel rather than propagation along the Hubble-flow leg (Paper 11, Appendix C.4). The environmental host-level slope is modest at the canonical velocity-scatter convention, and host-uniform shifts can be absorbed into latent distance moduli; the within-host period-coupled term provides a more identifiable test. The corrected value is therefore a conditional inference, not an established resolution of the Hubble tension.
+    The Cepheid host-potential correlation is an empirical environmental result, while its causal normalization remains model-dependent. Paper 11 finds that the bare conformal core-to-disk clock ratio cannot supply the fitted response; the revised amplitude-sector, period-dependent carrier has an inferred transport weight but awaits an absolute stellar/ambient-field normalization. Its corrected local $H_0 = 67.83 \pm 1.56$ km/s/Mpc agrees with the companion TEP-CMB value $66.70 \pm 0.58$ km/s/Mpc at 0.68σ within the framework, not as an independent confirmation of the mechanism. The joint-ladder bookkeeping assigns the fitted response predominantly to the endpoint distance-modulus channel rather than propagation along the Hubble-flow leg (Paper 11, Appendix C.4). Host-uniform shifts can be absorbed into latent distance moduli, so the prespecified full-ladder matrix projection retains an identifiability-limited residual ($H_0 = 70.46 \pm 0.97$ km/s/Mpc, $2.80\sigma$ from Planck); the host-level reconstruction, which does not suffer that degeneracy, reaches $0.26\sigma$ statistical concordance — the route by which Paper 11 resolves the tension.
 </p>
 
 <h2>5.7 Observational Predictions</h2>
@@ -525,10 +531,13 @@
     source-dependent reconstruction covariance absent from the CMB
     source-evolution channel. Paper 4 bounds this temporal-composite
     contribution far below the percent-level mean-amplitude discrepancy;
-    it does not explain the observed S<sub>8</sub> offset. The TEP-HC
-    weak-lensing comparison is a live tension under a CDM-containing
-    likelihood, not a CDM-free resolution. A CDM-free prediction of the
-    source-independent CMB and galaxy lensing potentials remains required.
+    meanwhile, under the unstretched-space temporal metric
+    $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$), intermediate
+    temporal depth along the photon path amplifies baryon-only cosmic-web
+    and cluster-outskirt potentials by $9.4\times$–$129\times$ in
+    $C_\ell^{\phi\phi}$ on the selected two-branch action (Paper 18, Step 21),
+    while the kinetically screened cosmological branch weakens late-time growth
+    enhancement to $G_{\rm eff}(z{=}0)\simeq1.16\,G$ (Paper 0, Step 61).
 </p>
 
 <p>

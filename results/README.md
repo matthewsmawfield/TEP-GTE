@@ -93,19 +93,19 @@ in the respective repo). To regenerate the primary results from scratch:
 
 ```bash
 # Paper 1
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GNSS"
+cd "TEP-GNSS"
 # see scripts/README.md
 
 # Paper 2
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GNSS-II"
+cd "TEP-GNSS-II"
 # see scripts/README.md
 
 # Paper 3
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GNSS-RINEX"
+cd "TEP-GNSS-RINEX"
 # see scripts/README.md
 
 # Paper 4
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-GL"
+cd "TEP-GL"
 # see scripts/README.md
 ```
 

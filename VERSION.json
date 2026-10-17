@@ -1,9 +1,9 @@
 {
-  "version": "0.7",
+  "version": "0.8",
   "codename": "Singapore",
-  "date": "2026-09-30",
+  "date": "2026-10-17",
   "description": "Paper 5: Global Time Echoes: Empirical Synthesis",
   "doi": "10.5281/zenodo.18004832",
-  "previous_version": "0.6",
+  "previous_version": "0.7",
   "paper": "5"
 }

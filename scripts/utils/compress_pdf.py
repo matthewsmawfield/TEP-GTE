@@ -82,7 +82,7 @@ def _compress_repo_pdfs(quality='ebook'):
     Convenience entry point used when running this module directly.
     """
     base_dir = Path(__file__).resolve().parent.parent.parent
-    pdf_name = "5-TEP-GTE-v0.7-Singapore.pdf"
+    pdf_name = "B5-TEP-GTE-v0.8-Singapore.pdf"
     pdf_path = base_dir / pdf_name
     site_pdf_path = base_dir / "site" / "public" / "docs" / pdf_name
 

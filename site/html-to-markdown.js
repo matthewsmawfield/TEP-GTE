@@ -232,7 +232,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.7 (Singapore)';
+            .trim() : 'v0.8 (Singapore)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
         const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 29 November 2025';
@@ -302,7 +302,7 @@ class HTMLToMarkdownConverter {
             const versionMatch = manifest.version.match(/v(\d+\.\d+)\s*\(([^)]+)\)/);
             const versionNum = versionMatch ? versionMatch[1] : '0.3';
             const codename = versionMatch ? versionMatch[2] : 'Singapore';
-            const filename = `5-TEP-GTE-v${versionNum}-${codename}.md`;
+            const filename = `B5-TEP-GTE-v${versionNum}-${codename}.md`;
             
             // Write to file
             const outputPath = path.join(__dirname, '..', filename);

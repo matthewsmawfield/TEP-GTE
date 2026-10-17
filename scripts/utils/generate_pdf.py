@@ -14,7 +14,7 @@ def generate_pdf(quality="maximum", wait_time=5):
     # Paths
     base_dir = Path(__file__).resolve().parent.parent.parent
     html_path = base_dir / "site" / "dist" / "index.html"
-    pdf_name = "5-TEP-GTE-v0.7-Singapore.pdf"
+    pdf_name = "B5-TEP-GTE-v0.8-Singapore.pdf"
     output_path = base_dir / "site" / "public" / "docs" / pdf_name
     root_output = base_dir / pdf_name
     

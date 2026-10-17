@@ -160,7 +160,7 @@ async function buildStaticSite() {
         
         console.log('✅ Static site built successfully!');
         console.log(`📁 Output: ${outputPath}`);
-        console.log('📄 Markdown: 5-TEP-GTE-v0.7-Singapore.md (in root)');
+        console.log('📄 Markdown: B5-TEP-GTE-v0.8-Singapore.md (in root)');
         console.log(`📊 Generated ${manifest.sections.length} sections`);
         console.log('🚀 Ready for deployment');
         
